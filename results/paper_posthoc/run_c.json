@@ -1,0 +1,18 @@
+{
+  "stage": "c",
+  "elapsed_seconds": 60.1,
+  "summary": {
+    "S2": {
+      "corpora": 25,
+      "corpora_median_below_0.5pct": 25,
+      "largest_median_pct": 0.3927033189764378,
+      "largest_median_corpus": "bright_pony"
+    },
+    "six_draws": {
+      "corpora": 25,
+      "corpora_median_below_0.5pct": 25,
+      "largest_median_pct": 0.41803901697491763,
+      "largest_median_corpus": "bright_pony"
+    }
+  }
+}

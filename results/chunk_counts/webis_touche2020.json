@@ -1,0 +1,20 @@
+{
+  "corpus": "webis_touche2020",
+  "chunks_total": 1639001,
+  "chunks_with_pool_term": 1552902,
+  "distinct_texts_with_pool_term": 1531278,
+  "sidecar_unique_chunks": 183630,
+  "sidecar_unique_chunks_by_seed": {
+    "42": 183630,
+    "1": 183771,
+    "2": 183432,
+    "3": 183760,
+    "4": 183697,
+    "5": 183560
+  },
+  "terms": 10000,
+  "term_coverage_mean": 0.05892867963293686,
+  "term_coverage_median": 0.047505938242280284,
+  "terms_fully_covered_share": 0.0,
+  "seconds": 1034.8
+}

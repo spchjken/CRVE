@@ -1,0 +1,5 @@
+group,estimator,auc,ci95_low,ci95_high,collections,eligible_queries,collection_list
+under_1M,pair_pooled_over_group,0.5854748603351956,,,19,244,
+under_1M,macro_collections_ge20_eligible,0.5684952318585605,0.5119644731169728,0.6213999975186157,6,215,fiqa;nfcorpus;scidocs;scifact;trec_covid;webis_touche2020
+over_1M,pair_pooled_over_group,0.5858585858585859,,,5,91,
+over_1M,macro_collections_ge20_eligible,0.5592417061611374,0.45945553111250786,0.6683951677703582,1,54,dbpedia_entity

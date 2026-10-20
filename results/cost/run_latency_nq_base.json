@@ -1,0 +1,15 @@
+{
+  "stage": "latency_nq_base",
+  "queries": 100,
+  "load_seconds": {
+    "terrier_index_s": 0.986846245000379,
+    "ours_assets_s": 40.3453761249998,
+    "bge_qe_s": 0.387387389000196
+  },
+  "rss_gib": {
+    "after_index_gib": 1.0318107604980469,
+    "after_ours_gib": 2.3834609985351562,
+    "after_bge_qe_gib": 2.856792449951172
+  },
+  "peak_rss_gib": 3.9208106994628906
+}

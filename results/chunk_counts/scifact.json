@@ -1,0 +1,20 @@
+{
+  "corpus": "scifact",
+  "chunks_total": 19183,
+  "chunks_with_pool_term": 19181,
+  "distinct_texts_with_pool_term": 19181,
+  "sidecar_unique_chunks": 18942,
+  "sidecar_unique_chunks_by_seed": {
+    "42": 18942,
+    "1": 18938,
+    "2": 18941,
+    "3": 18937,
+    "4": 18941,
+    "5": 18934
+  },
+  "terms": 10000,
+  "term_coverage_mean": 0.8120462268988691,
+  "term_coverage_median": 1.0,
+  "terms_fully_covered_share": 0.6841,
+  "seconds": 8.7
+}

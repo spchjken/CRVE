@@ -1,0 +1,20 @@
+{
+  "corpus": "bright_biology",
+  "chunks_total": 80655,
+  "chunks_with_pool_term": 79030,
+  "distinct_texts_with_pool_term": 69385,
+  "sidecar_unique_chunks": 53026,
+  "sidecar_unique_chunks_by_seed": {
+    "42": 53026,
+    "1": 53007,
+    "2": 53092,
+    "3": 53104,
+    "4": 52969,
+    "5": 52996
+  },
+  "terms": 10000,
+  "term_coverage_mean": 0.5842427750097497,
+  "term_coverage_median": 0.6060606060606061,
+  "terms_fully_covered_share": 0.3254,
+  "seconds": 30.4
+}

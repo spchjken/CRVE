@@ -1,0 +1,20 @@
+{
+  "corpus": "bright_leetcode",
+  "chunks_total": 1341274,
+  "chunks_with_pool_term": 1319683,
+  "distinct_texts_with_pool_term": 1309264,
+  "sidecar_unique_chunks": 180836,
+  "sidecar_unique_chunks_by_seed": {
+    "42": 180836,
+    "1": 180976,
+    "2": 180948,
+    "3": 180990,
+    "4": 181074,
+    "5": 181018
+  },
+  "terms": 10000,
+  "term_coverage_mean": 0.12047569736840155,
+  "term_coverage_median": 0.09803921568627451,
+  "terms_fully_covered_share": 0.0,
+  "seconds": 628.7
+}

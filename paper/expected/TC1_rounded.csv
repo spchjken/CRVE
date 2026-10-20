@@ -1,0 +1,26 @@
+group,collection,documents,build_s,build_min,of_which_encoding_s,peak_rss_gib,extra_disk_mb,terrier_index_mb,extra_disk_pct_of_index,gate2_chunks,lower_bound,notes
+under 1M,SciFact,5183,45.5,0.8,7.2,2.378,61.1,25.5,239.4,18942,False,full build
+under 1M,NFCorpus,3633,31.9,0.5,5.4,2.980,44.4,18.6,238.9,13755,False,full build
+under 1M,TREC-COVID,171331,694.7,11.6,49.2,5.186,312.4,287.0,108.9,154343,False,full build
+under 1M,FiQA,57600,210.1,3.5,26.0,5.041,159.2,84.0,189.7,82847,False,full build
+under 1M,Quora,522931,181.5,3.0,29.8,4.594,153.4,212.6,72.1,158730,False,full build
+under 1M,ArguAna,8674,50.6,0.8,8.1,2.482,64.2,25.6,250.9,20130,False,full build
+under 1M,SCIDOCS,25657,150.4,2.5,20.6,3.520,137.8,69.0,199.7,58443,False,full build
+under 1M,Touché-2020,382545,2152.3,35.9,57.1,7.628,405.2,685.1,59.2,183630,False,full build
+under 1M,AoPS,188002,527.9,8.8,39.6,4.778,173.2,165.7,104.5,125773,False,full build
+under 1M,Economics,50220,113.2,1.9,16.6,5.298,114.2,168.8,67.7,54709,False,full build
+under 1M,LeetCode,413932,1151.3,19.2,57.2,5.888,313.6,577.6,54.3,180836,False,full build
+under 1M,Stack Overflow,107081,555.3,9.3,27.4,5.248,154.3,285.1,54.1,87527,False,full build
+under 1M,Sustainable Living,60792,118.6,2.0,18.3,5.311,118.2,193.5,61.1,60160,False,full build
+under 1M,Biology,57359,102.1,1.7,16.1,6.206,113.5,149.1,76.1,53026,False,full build
+under 1M,Earth Science,121249,221.5,3.7,31.4,6.730,182.0,330.7,55.0,100419,False,full build
+under 1M,Psychology,52835,125.5,2.1,18.0,6.683,126.5,191.0,66.2,59872,False,full build
+under 1M,Robotics,61961,94.2,1.6,16.2,6.650,88.9,74.3,119.7,54080,False,full build
+under 1M,Pony,7894,14.3,0.2,3.6,6.504,12.1,8.3,145.6,7693,False,full build
+under 1M,TheoremQA-Questions,188002,526.8,8.8,40.1,6.617,173.2,165.7,104.5,125773,False,full build
+under 1M,TheoremQA-Theorems,23839,78.9,1.3,12.0,6.593,43.1,23.8,181.0,33293,False,full build
+over 1M,NQ,2681468,3743.7,62.4,59.8,2.476,324.7,2304.9,14.1,193789,True,lower bound: PPMI sidecar restricted to tested-query anchors; peak RSS excludes the PPMI step (not measured; the full PPMI sidecar does not fit the RAM budget with the current code)
+over 1M,DBPedia-Entity,4635922,4356.7,72.6,59.7,2.453,302.5,4041.0,7.5,194873,True,lower bound: PPMI sidecar restricted to tested-query anchors; peak RSS excludes the PPMI step (not measured; the full PPMI sidecar does not fit the RAM budget with the current code)
+over 1M,HotpotQA,5233329,4699.7,78.3,60.6,2.430,335.3,4178.7,8.0,195537,True,lower bound: PPMI sidecar restricted to tested-query anchors; peak RSS excludes the PPMI step (not measured; the full PPMI sidecar does not fit the RAM budget with the current code)
+over 1M,FEVER,5416568,7975.5,132.9,61.9,2.657,355.5,5555.7,6.4,197098,True,lower bound: PPMI sidecar restricted to tested-query anchors; peak RSS excludes the PPMI step (not measured; the full PPMI sidecar does not fit the RAM budget with the current code)
+over 1M,Climate-FEVER,5416593,8013.4,133.6,62.2,2.515,349.3,5555.7,6.3,197099,True,lower bound: PPMI sidecar restricted to tested-query anchors; peak RSS excludes the PPMI step (not measured; the full PPMI sidecar does not fit the RAM budget with the current code)

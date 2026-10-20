@@ -1,0 +1,20 @@
+{
+  "corpus": "bright_earth_science",
+  "chunks_total": 221156,
+  "chunks_with_pool_term": 198443,
+  "distinct_texts_with_pool_term": 190700,
+  "sidecar_unique_chunks": 100419,
+  "sidecar_unique_chunks_by_seed": {
+    "42": 100419,
+    "1": 100353,
+    "2": 100410,
+    "3": 100292,
+    "4": 100465,
+    "5": 100296
+  },
+  "terms": 10000,
+  "term_coverage_mean": 0.4215837319642357,
+  "term_coverage_median": 0.35714285714285715,
+  "terms_fully_covered_share": 0.0693,
+  "seconds": 71.9
+}

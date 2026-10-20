@@ -1,0 +1,20 @@
+{
+  "corpus": "bright_theoremqa_questions",
+  "chunks_total": 519592,
+  "chunks_with_pool_term": 508779,
+  "distinct_texts_with_pool_term": 477890,
+  "sidecar_unique_chunks": 125773,
+  "sidecar_unique_chunks_by_seed": {
+    "42": 125773,
+    "1": 125868,
+    "2": 125656,
+    "3": 125871,
+    "4": 125683,
+    "5": 125550
+  },
+  "terms": 10000,
+  "term_coverage_mean": 0.45784044406069063,
+  "term_coverage_median": 0.37037037037037035,
+  "terms_fully_covered_share": 0.2056,
+  "seconds": 250.7
+}

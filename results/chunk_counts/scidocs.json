@@ -1,0 +1,20 @@
+{
+  "corpus": "scidocs",
+  "chunks_total": 69398,
+  "chunks_with_pool_term": 69172,
+  "distinct_texts_with_pool_term": 69137,
+  "sidecar_unique_chunks": 58443,
+  "sidecar_unique_chunks_by_seed": {
+    "42": 58443,
+    "1": 58489,
+    "2": 58475,
+    "3": 58453,
+    "4": 58481,
+    "5": 58486
+  },
+  "terms": 10000,
+  "term_coverage_mean": 0.631950817095568,
+  "term_coverage_median": 0.8,
+  "terms_fully_covered_share": 0.4406,
+  "seconds": 44.9
+}

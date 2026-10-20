@@ -1,0 +1,7 @@
+quantity,gate1,group,evaluation,chunks,collections,queries,bm25_ndcg10_macro,value,relative_pct,ci95_low,ci95_high,reading
+gain over BM25,two-channel (co-occurrence and lexical profile),under 1M,after the corrections,"randomly drawn, 20 per term (seed 42)",6,12083,0.4632347214862511,0.011501733358265867,2.482916937090442,,,
+gain over BM25,two-channel (co-occurrence and lexical profile),over 1M,after the corrections,"randomly drawn, 20 per term (seed 42)",5,18458,0.3654567813748074,0.0038790849775266556,1.0614346689460716,,,
+gain over BM25,co-occurrence channel alone,under 1M,after the corrections,"randomly drawn, 20 per term (seed 42)",6,12083,0.4632347214862511,0.00956884022327763,2.0656569508815705,,,
+gain over BM25,co-occurrence channel alone,over 1M,after the corrections,"randomly drawn, 20 per term (seed 42)",5,18458,0.3654567813748074,0.0036820051346748844,1.0075076786983113,,,
+paired difference: two-channel minus co-occurrence alone,,under 1M,before the corrections,"randomly drawn, 20 per term (seed 42)",6,12083,,0.0018169733036682869,,-0.0027294363327776553,0.007046521548220113,uncertain
+paired difference: two-channel minus co-occurrence alone,,over 1M,before the corrections,"randomly drawn, 20 per term (seed 42)",5,18458,,0.00019707984285177106,,-0.0007675527601595263,0.0011932350033153581,uncertain

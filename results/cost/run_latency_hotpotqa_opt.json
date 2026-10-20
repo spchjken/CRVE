@@ -1,0 +1,12 @@
+{
+  "stage": "latency_hotpotqa_opt",
+  "queries": 100,
+  "same_top5": {
+    "ours_A_cpu": 100,
+    "ours_B_gpu": 100,
+    "ours_C_gpu_parallel": 100
+  },
+  "torch_threads": 4,
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "peak_rss_gib": 3.653533935546875
+}

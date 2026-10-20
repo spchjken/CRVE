@@ -1,0 +1,151 @@
+{
+  "replicates": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "condition_1_macro_90pct": {
+    "a030_gain": 0.0064343314997881065,
+    "full_gain": 0.0075507003101870085,
+    "kept": 0.8521502953980632,
+    "holds": false
+  },
+  "condition_2_per_corpus_half": {
+    "holds": false,
+    "corpora": {
+      "arguana": {
+        "a030_gain": 0.002831497696862192,
+        "full_gain": 0.005803258917472236,
+        "kept": 0.48791510720592257,
+        "holds": false
+      },
+      "bright_biology": {
+        "a030_gain": 0.004050549343533883,
+        "full_gain": 0.0059780205946467855,
+        "kept": 0.6775736683077138,
+        "holds": true
+      },
+      "bright_earth_science": {
+        "a030_gain": 0.010554121766426052,
+        "full_gain": 0.010554121766426052,
+        "kept": 1.0,
+        "holds": true
+      },
+      "bright_economics": {
+        "a030_gain": 0.0028466525711443027,
+        "full_gain": 0.0026454251210576564,
+        "kept": 1.0760662051951009,
+        "holds": true
+      },
+      "bright_pony": {
+        "a030_gain": 0.005661538987196524,
+        "full_gain": 0.00811192398153505,
+        "kept": 0.6979280131425948,
+        "holds": true
+      },
+      "bright_psychology": {
+        "a030_gain": 0.02148617192841488,
+        "full_gain": 0.013421811684877273,
+        "kept": 1.6008399188482092,
+        "holds": true
+      },
+      "bright_sustainable_living": {
+        "a030_gain": 0.003452765688240162,
+        "full_gain": 0.007650334475649373,
+        "kept": 0.45132218718412115,
+        "holds": false
+      },
+      "bright_theoremqa_questions": {
+        "a030_gain": 0.0028436160762154985,
+        "full_gain": 0.005457540987420371,
+        "kept": 0.5210434667866045,
+        "holds": true
+      },
+      "fiqa": {
+        "a030_gain": 0.0022435515321083356,
+        "full_gain": 0.006183617410307603,
+        "kept": 0.36282185381788207,
+        "holds": false
+      },
+      "nfcorpus": {
+        "a030_gain": 0.017387935928533136,
+        "full_gain": 0.029105299130971814,
+        "kept": 0.5974147817649507,
+        "holds": true
+      },
+      "scidocs": {
+        "a030_gain": 0.009860081749354955,
+        "full_gain": 0.009498795120563317,
+        "kept": 1.038034995407945,
+        "holds": true
+      },
+      "scifact": {
+        "a030_gain": 0.03237786906728753,
+        "full_gain": 0.0325429350659807,
+        "kept": 0.9949277470406864,
+        "holds": true
+      },
+      "webis_touche2020": {
+        "a030_gain": 0.027898193409246878,
+        "full_gain": 0.027898193409246878,
+        "kept": 1.0,
+        "holds": true
+      }
+    }
+  },
+  "costs_little": false,
+  "per_replicate_macro_ndcg10": [
+    {
+      "pool": "a030",
+      "rep": 1,
+      "macro_ndcg10": 0.00605763856216789
+    },
+    {
+      "pool": "a030",
+      "rep": 2,
+      "macro_ndcg10": 0.006637610381905109
+    },
+    {
+      "pool": "a030",
+      "rep": 3,
+      "macro_ndcg10": 0.006189984399604338
+    },
+    {
+      "pool": "a030",
+      "rep": 4,
+      "macro_ndcg10": 0.006835608408689626
+    },
+    {
+      "pool": "a030",
+      "rep": 5,
+      "macro_ndcg10": 0.006450815746573567
+    },
+    {
+      "pool": "full",
+      "rep": 1,
+      "macro_ndcg10": 0.007525779503667026
+    },
+    {
+      "pool": "full",
+      "rep": 2,
+      "macro_ndcg10": 0.007871974293541292
+    },
+    {
+      "pool": "full",
+      "rep": 3,
+      "macro_ndcg10": 0.00742039631708426
+    },
+    {
+      "pool": "full",
+      "rep": 4,
+      "macro_ndcg10": 0.0074402387442339055
+    },
+    {
+      "pool": "full",
+      "rep": 5,
+      "macro_ndcg10": 0.007495112692408551
+    }
+  ]
+}

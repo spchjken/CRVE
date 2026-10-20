@@ -1,0 +1,25 @@
+# Exact versions used for the paper's runs and for paper/expected/ (Python 3.12.3; Java: OpenJDK 21).
+# Other versions may change the last digits of the figure PDFs or of retrieval scores.
+
+# paper/make_all.py (tables and figures from the stored results)
+numpy==2.4.6
+pandas==3.0.3
+pyarrow==24.0.0
+matplotlib==3.11.2
+
+# pipeline (src/, scripts/): Terrier 5.11 through PyTerrier (PyTerrier downloads the pinned jar on first use)
+pyterrier==1.1.2
+pyjnius==1.7.0
+ir_measures==0.4.3
+torch==2.12.0
+transformers==5.10.2
+tokenizers==0.22.2
+sentence-transformers==5.5.1
+huggingface_hub==1.17.0
+psutil==7.2.2
+PyYAML==6.0.3
+requests==2.33.1
+gdown==5.2.0                # scripts/fetch_assets.py
+
+# tests
+pytest==9.0.3

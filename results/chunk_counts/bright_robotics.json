@@ -1,0 +1,20 @@
+{
+  "corpus": "bright_robotics",
+  "chunks_total": 109513,
+  "chunks_with_pool_term": 105136,
+  "distinct_texts_with_pool_term": 81500,
+  "sidecar_unique_chunks": 54080,
+  "sidecar_unique_chunks_by_seed": {
+    "42": 54080,
+    "1": 54120,
+    "2": 54092,
+    "3": 54216,
+    "4": 54220,
+    "5": 54158
+  },
+  "terms": 10000,
+  "term_coverage_mean": 0.7411406955094583,
+  "term_coverage_median": 1.0,
+  "terms_fully_covered_share": 0.5812,
+  "seconds": 32.2
+}

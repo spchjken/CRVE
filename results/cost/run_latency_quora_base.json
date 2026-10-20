@@ -1,0 +1,15 @@
+{
+  "stage": "latency_quora_base",
+  "queries": 100,
+  "load_seconds": {
+    "terrier_index_s": 0.7231732360000933,
+    "ours_assets_s": 6.237987924000208,
+    "bge_qe_s": 0.37628390300005776
+  },
+  "rss_gib": {
+    "after_index_gib": 1.1223335266113281,
+    "after_ours_gib": 1.6438446044921875,
+    "after_bge_qe_gib": 2.2082061767578125
+  },
+  "peak_rss_gib": 3.283092498779297
+}

@@ -1,0 +1,3810 @@
+{
+  "note": "UPPER BOUND: oracle arms use the qrels of the evaluated queries; greedy per-term labels, not an exhaustive subset search; BM25 only; used queries, descriptive, post hoc; 95% unadjusted; no verdicts",
+  "main": {
+    "under_1M": {
+      "O1 - A5 | ndcg10": {
+        "macro": 0.009440103814122617,
+        "ci95_low": 0.00749548287779085,
+        "ci95_high": 0.011509958011339092,
+        "reading": "above zero",
+        "ref_level": 0.2505718288071247,
+        "rel_to_ref_pct": 3.767424238815389,
+        "collections": 20,
+        "queries": 2083
+      },
+      "O1 - A5 | ndcg50": {
+        "macro": 0.0055015052564607375,
+        "ci95_low": 0.004205115046458018,
+        "ci95_high": 0.006878966838241696,
+        "reading": "above zero",
+        "ref_level": 0.2777846746021541,
+        "rel_to_ref_pct": 1.9804927195281905,
+        "collections": 20,
+        "queries": 2083
+      },
+      "O1 - A5 | recall1000": {
+        "macro": -0.0004630913730430926,
+        "ci95_low": -0.0009179057957876058,
+        "ci95_high": -3.31193902637826e-06,
+        "reading": "below zero",
+        "ref_level": 0.683412324250469,
+        "rel_to_ref_pct": -0.06776163622026966,
+        "collections": 20,
+        "queries": 2083
+      },
+      "O2 - A5 | ndcg10": {
+        "macro": 0.016297404599039785,
+        "ci95_low": 0.013730085056551645,
+        "ci95_high": 0.01901201267982181,
+        "reading": "above zero",
+        "ref_level": 0.2505718288071247,
+        "rel_to_ref_pct": 6.504084947069033,
+        "collections": 20,
+        "queries": 2083
+      },
+      "O2 - A5 | ndcg50": {
+        "macro": 0.007963186529585992,
+        "ci95_low": 0.005675266935284579,
+        "ci95_high": 0.010295665726935741,
+        "reading": "above zero",
+        "ref_level": 0.2777846746021541,
+        "rel_to_ref_pct": 2.8666759751922757,
+        "collections": 20,
+        "queries": 2083
+      },
+      "O2 - A5 | recall1000": {
+        "macro": -0.003688079098553779,
+        "ci95_low": -0.0055259523316132115,
+        "ci95_high": -0.002027524660898329,
+        "reading": "below zero",
+        "ref_level": 0.683412324250469,
+        "rel_to_ref_pct": -0.5396565100868896,
+        "collections": 20,
+        "queries": 2083
+      },
+      "O3 - A5 | ndcg10": {
+        "macro": 0.016066211659079482,
+        "ci95_low": 0.01351219543500168,
+        "ci95_high": 0.01873198230634813,
+        "reading": "above zero",
+        "ref_level": 0.2505718288071247,
+        "rel_to_ref_pct": 6.411818812818858,
+        "collections": 20,
+        "queries": 2083
+      },
+      "O3 - A5 | ndcg50": {
+        "macro": 0.008090956005050415,
+        "ci95_low": 0.005806629496469175,
+        "ci95_high": 0.010419254188156197,
+        "reading": "above zero",
+        "ref_level": 0.2777846746021541,
+        "rel_to_ref_pct": 2.9126718443479143,
+        "collections": 20,
+        "queries": 2083
+      },
+      "O3 - A5 | recall1000": {
+        "macro": -0.003606928200270014,
+        "ci95_low": -0.005447698235805826,
+        "ci95_high": -0.0019376115047850051,
+        "reading": "below zero",
+        "ref_level": 0.683412324250469,
+        "rel_to_ref_pct": -0.5277821415096522,
+        "collections": 20,
+        "queries": 2083
+      },
+      "O1 - base | ndcg10": {
+        "macro": 0.01896368838795335,
+        "ci95_low": 0.016206831300215205,
+        "ci95_high": 0.021870546045069068,
+        "reading": "above zero",
+        "ref_level": 0.24104824423329396,
+        "rel_to_ref_pct": 7.867175489401078,
+        "collections": 20,
+        "queries": 2083
+      },
+      "O2 - base | ndcg10": {
+        "macro": 0.02582098917287052,
+        "ci95_low": 0.023001212120650923,
+        "ci95_high": 0.02880887173304277,
+        "reading": "above zero",
+        "ref_level": 0.24104824423329396,
+        "rel_to_ref_pct": 10.711959033346107,
+        "collections": 20,
+        "queries": 2083
+      },
+      "O3 - base | ndcg10": {
+        "macro": 0.025589796232910217,
+        "ci95_low": 0.02277346054934537,
+        "ci95_high": 0.02864687486276568,
+        "reading": "above zero",
+        "ref_level": 0.24104824423329396,
+        "rel_to_ref_pct": 10.616047552764424,
+        "collections": 20,
+        "queries": 2083
+      },
+      "A5 - base | ndcg10": {
+        "macro": 0.009523584573830736,
+        "ci95_low": 0.006313697634391852,
+        "ci95_high": 0.012766298934761644,
+        "reading": "above zero",
+        "ref_level": 0.24104824423329396,
+        "rel_to_ref_pct": 3.9509039379741413,
+        "collections": 20,
+        "queries": 2083
+      },
+      "A10 - base | ndcg10": {
+        "macro": 0.009276655691023932,
+        "ci95_low": 0.005220588342326568,
+        "ci95_high": 0.013358457790663664,
+        "reading": "above zero",
+        "ref_level": 0.24104824423329396,
+        "rel_to_ref_pct": 3.8484643273508756,
+        "collections": 20,
+        "queries": 2083
+      },
+      "O2 - O1 | ndcg10": {
+        "macro": 0.006857300784917167,
+        "ci95_low": 0.004899086397762552,
+        "ci95_high": 0.008885172118008582,
+        "reading": "above zero",
+        "ref_level": 0.26001193262124733,
+        "rel_to_ref_pct": 2.6373023406221976,
+        "collections": 20,
+        "queries": 2083
+      },
+      "O3 - O2 | ndcg10": {
+        "macro": -0.00023119293996030216,
+        "ci95_low": -0.0008356987943546679,
+        "ci95_high": 0.0002530086970574276,
+        "reading": "uncertain (interval crosses zero)",
+        "ref_level": 0.26686923340616453,
+        "rel_to_ref_pct": -0.0866315449741018,
+        "collections": 20,
+        "queries": 2083
+      },
+      "levels_ndcg10": {
+        "A10": 0.2503248999243179,
+        "A5": 0.2505718288071247,
+        "O1": 0.26001193262124733,
+        "O2": 0.26686923340616453,
+        "O3": 0.2666380404662042,
+        "base": 0.24104824423329396
+      }
+    },
+    "over_1M": {
+      "O1 - A5 | ndcg10": {
+        "macro": 0.01344802657819176,
+        "ci95_low": 0.01027567323163541,
+        "ci95_high": 0.017009910040367122,
+        "reading": "above zero",
+        "ref_level": 0.3546104230246201,
+        "rel_to_ref_pct": 3.7923382125905767,
+        "collections": 5,
+        "queries": 1000
+      },
+      "O1 - A5 | ndcg50": {
+        "macro": 0.008762965301198045,
+        "ci95_low": 0.00609066246567495,
+        "ci95_high": 0.011759361747143045,
+        "reading": "above zero",
+        "ref_level": 0.3941574563538717,
+        "rel_to_ref_pct": 2.223214393115709,
+        "collections": 5,
+        "queries": 1000
+      },
+      "O1 - A5 | recall1000": {
+        "macro": -0.0006057036831751043,
+        "ci95_low": -0.00135241057157795,
+        "ci95_high": 8.416233882080095e-06,
+        "reading": "uncertain (interval crosses zero)",
+        "ref_level": 0.7888812914418266,
+        "rel_to_ref_pct": -0.07678007955646517,
+        "collections": 5,
+        "queries": 1000
+      },
+      "O2 - A5 | ndcg10": {
+        "macro": 0.02233019276745104,
+        "ci95_low": 0.017643433043024074,
+        "ci95_high": 0.02732261332186348,
+        "reading": "above zero",
+        "ref_level": 0.3546104230246201,
+        "rel_to_ref_pct": 6.2971055889975025,
+        "collections": 5,
+        "queries": 1000
+      },
+      "O2 - A5 | ndcg50": {
+        "macro": 0.01578516848049255,
+        "ci95_low": 0.011549145257389226,
+        "ci95_high": 0.020292226107183065,
+        "reading": "above zero",
+        "ref_level": 0.3941574563538717,
+        "rel_to_ref_pct": 4.004787484299356,
+        "collections": 5,
+        "queries": 1000
+      },
+      "O2 - A5 | recall1000": {
+        "macro": -0.01003781276839577,
+        "ci95_low": -0.01618852928348411,
+        "ci95_high": -0.0045704650821670675,
+        "reading": "below zero",
+        "ref_level": 0.7888812914418266,
+        "rel_to_ref_pct": -1.2724110556671726,
+        "collections": 5,
+        "queries": 1000
+      },
+      "O3 - A5 | ndcg10": {
+        "macro": 0.02233019276745104,
+        "ci95_low": 0.017643433043024074,
+        "ci95_high": 0.02732261332186348,
+        "reading": "above zero",
+        "ref_level": 0.3546104230246201,
+        "rel_to_ref_pct": 6.2971055889975025,
+        "collections": 5,
+        "queries": 1000
+      },
+      "O3 - A5 | ndcg50": {
+        "macro": 0.01578516848049255,
+        "ci95_low": 0.011549145257389226,
+        "ci95_high": 0.020292226107183065,
+        "reading": "above zero",
+        "ref_level": 0.3941574563538717,
+        "rel_to_ref_pct": 4.004787484299356,
+        "collections": 5,
+        "queries": 1000
+      },
+      "O3 - A5 | recall1000": {
+        "macro": -0.01003781276839577,
+        "ci95_low": -0.01618852928348411,
+        "ci95_high": -0.0045704650821670675,
+        "reading": "below zero",
+        "ref_level": 0.7888812914418266,
+        "rel_to_ref_pct": -1.2724110556671726,
+        "collections": 5,
+        "queries": 1000
+      },
+      "O1 - base | ndcg10": {
+        "macro": 0.019277659350801283,
+        "ci95_low": 0.015012698331950045,
+        "ci95_high": 0.023814883442151043,
+        "reading": "above zero",
+        "ref_level": 0.3487807902520106,
+        "rel_to_ref_pct": 5.527156279699999,
+        "collections": 5,
+        "queries": 1000
+      },
+      "O2 - base | ndcg10": {
+        "macro": 0.028159825540060558,
+        "ci95_low": 0.023012219218481407,
+        "ci95_high": 0.03354209444636365,
+        "reading": "above zero",
+        "ref_level": 0.3487807902520106,
+        "rel_to_ref_pct": 8.073789132627905,
+        "collections": 5,
+        "queries": 1000
+      },
+      "O3 - base | ndcg10": {
+        "macro": 0.028159825540060558,
+        "ci95_low": 0.023012219218481407,
+        "ci95_high": 0.03354209444636365,
+        "reading": "above zero",
+        "ref_level": 0.3487807902520106,
+        "rel_to_ref_pct": 8.073789132627905,
+        "collections": 5,
+        "queries": 1000
+      },
+      "A5 - base | ndcg10": {
+        "macro": 0.0058296327726095245,
+        "ci95_low": 0.0007969645858561918,
+        "ci95_high": 0.010864985927747851,
+        "reading": "above zero",
+        "ref_level": 0.3487807902520106,
+        "rel_to_ref_pct": 1.6714317231741287,
+        "collections": 5,
+        "queries": 1000
+      },
+      "A10 - base | ndcg10": {
+        "macro": 0.004802641439349631,
+        "ci95_low": -0.0012579499373504507,
+        "ci95_high": 0.01096444593127237,
+        "reading": "uncertain (interval crosses zero)",
+        "ref_level": 0.3487807902520106,
+        "rel_to_ref_pct": 1.376979917924808,
+        "collections": 5,
+        "queries": 1000
+      },
+      "O2 - O1 | ndcg10": {
+        "macro": 0.008882166189259282,
+        "ci95_low": 0.005618746541237436,
+        "ci95_high": 0.01248804115060838,
+        "reading": "above zero",
+        "ref_level": 0.36805844960281187,
+        "rel_to_ref_pct": 2.4132488192689014,
+        "collections": 5,
+        "queries": 1000
+      },
+      "O3 - O2 | ndcg10": {
+        "macro": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "reading": "uncertain (interval crosses zero)",
+        "ref_level": 0.3769406157920711,
+        "rel_to_ref_pct": 0.0,
+        "collections": 5,
+        "queries": 1000
+      },
+      "levels_ndcg10": {
+        "A10": 0.3535834316913602,
+        "A5": 0.3546104230246201,
+        "O1": 0.36805844960281187,
+        "O2": 0.3769406157920711,
+        "O3": 0.3769406157920711,
+        "base": 0.3487807902520106
+      }
+    }
+  },
+  "secondary": {
+    "under_1M": {
+      "harmful_in_top5": {
+        "macro": 0.14414583826428506,
+        "ci95": [
+          0.12984836168032757,
+          0.15874249710168295
+        ],
+        "n_collections": 20,
+        "per_corpus": {
+          "arguana": 0.075,
+          "bright_aops": 0.01639344262295082,
+          "bright_biology": 0.07547169811320754,
+          "bright_earth_science": 0.07575757575757576,
+          "bright_economics": 0.018867924528301886,
+          "bright_leetcode": 0.021739130434782608,
+          "bright_pony": 0.11290322580645161,
+          "bright_psychology": 0.0196078431372549,
+          "bright_robotics": 0.0196078431372549,
+          "bright_stackoverflow": 0.08955223880597014,
+          "bright_sustainable_living": 0.017241379310344827,
+          "bright_theoremqa_questions": 0.013888888888888888,
+          "bright_theoremqa_theorems": 0.038461538461538464,
+          "fiqa": 0.215,
+          "nfcorpus": 0.30158730158730157,
+          "quora": 0.095,
+          "scidocs": 0.295,
+          "scifact": 0.13,
+          "trec_covid": 0.66,
+          "webis_touche2020": 0.5918367346938775
+        },
+        "eligible_queries": {
+          "arguana": 200,
+          "bright_aops": 61,
+          "bright_biology": 53,
+          "bright_earth_science": 66,
+          "bright_economics": 53,
+          "bright_leetcode": 92,
+          "bright_pony": 62,
+          "bright_psychology": 51,
+          "bright_robotics": 51,
+          "bright_stackoverflow": 67,
+          "bright_sustainable_living": 58,
+          "bright_theoremqa_questions": 144,
+          "bright_theoremqa_theorems": 26,
+          "fiqa": 200,
+          "nfcorpus": 189,
+          "quora": 200,
+          "scidocs": 200,
+          "scifact": 200,
+          "trec_covid": 50,
+          "webis_touche2020": 49
+        }
+      },
+      "helpful_6_10_mean": {
+        "macro": 0.21649021536873764,
+        "ci95": [
+          0.18783453025723007,
+          0.2463418042965891
+        ],
+        "n_collections": 20,
+        "per_corpus": {
+          "arguana": 0.13,
+          "bright_aops": 0.0,
+          "bright_biology": 0.07547169811320754,
+          "bright_earth_science": 0.19696969696969696,
+          "bright_economics": 0.11320754716981132,
+          "bright_leetcode": 0.010869565217391304,
+          "bright_pony": 0.16129032258064516,
+          "bright_psychology": 0.11764705882352941,
+          "bright_robotics": 0.0392156862745098,
+          "bright_stackoverflow": 0.1044776119402985,
+          "bright_sustainable_living": 0.08620689655172414,
+          "bright_theoremqa_questions": 0.0,
+          "bright_theoremqa_theorems": 0.0,
+          "fiqa": 0.125,
+          "nfcorpus": 0.8359788359788359,
+          "quora": 0.02,
+          "scidocs": 0.31,
+          "scifact": 0.23,
+          "trec_covid": 1.1,
+          "webis_touche2020": 0.673469387755102
+        },
+        "eligible_queries": {
+          "arguana": 200,
+          "bright_aops": 61,
+          "bright_biology": 53,
+          "bright_earth_science": 66,
+          "bright_economics": 53,
+          "bright_leetcode": 92,
+          "bright_pony": 62,
+          "bright_psychology": 51,
+          "bright_robotics": 51,
+          "bright_stackoverflow": 67,
+          "bright_sustainable_living": 58,
+          "bright_theoremqa_questions": 144,
+          "bright_theoremqa_theorems": 26,
+          "fiqa": 200,
+          "nfcorpus": 189,
+          "quora": 200,
+          "scidocs": 200,
+          "scifact": 200,
+          "trec_covid": 50,
+          "webis_touche2020": 49
+        }
+      },
+      "helpful_6_10_any": {
+        "macro": 0.1281874682559818,
+        "ci95": [
+          0.11387350518285456,
+          0.1423259518453826
+        ],
+        "n_collections": 20,
+        "per_corpus": {
+          "arguana": 0.065,
+          "bright_aops": 0.0,
+          "bright_biology": 0.05660377358490566,
+          "bright_earth_science": 0.12121212121212122,
+          "bright_economics": 0.05660377358490566,
+          "bright_leetcode": 0.010869565217391304,
+          "bright_pony": 0.06451612903225806,
+          "bright_psychology": 0.058823529411764705,
+          "bright_robotics": 0.0392156862745098,
+          "bright_stackoverflow": 0.07462686567164178,
+          "bright_sustainable_living": 0.034482758620689655,
+          "bright_theoremqa_questions": 0.0,
+          "bright_theoremqa_theorems": 0.0,
+          "fiqa": 0.09,
+          "nfcorpus": 0.4074074074074074,
+          "quora": 0.02,
+          "scidocs": 0.2,
+          "scifact": 0.115,
+          "trec_covid": 0.68,
+          "webis_touche2020": 0.46938775510204084
+        },
+        "eligible_queries": {
+          "arguana": 200,
+          "bright_aops": 61,
+          "bright_biology": 53,
+          "bright_earth_science": 66,
+          "bright_economics": 53,
+          "bright_leetcode": 92,
+          "bright_pony": 62,
+          "bright_psychology": 51,
+          "bright_robotics": 51,
+          "bright_stackoverflow": 67,
+          "bright_sustainable_living": 58,
+          "bright_theoremqa_questions": 144,
+          "bright_theoremqa_theorems": 26,
+          "fiqa": 200,
+          "nfcorpus": 189,
+          "quora": 200,
+          "scidocs": 200,
+          "scifact": 200,
+          "trec_covid": 50,
+          "webis_touche2020": 49
+        }
+      },
+      "o2_has_rank_6_10": {
+        "macro": 0.12687926719778073,
+        "ci95": [
+          0.11267892272959946,
+          0.14099370183768906
+        ],
+        "n_collections": 20,
+        "per_corpus": {
+          "arguana": 0.06,
+          "bright_aops": 0.0,
+          "bright_biology": 0.05660377358490566,
+          "bright_earth_science": 0.12121212121212122,
+          "bright_economics": 0.05660377358490566,
+          "bright_leetcode": 0.010869565217391304,
+          "bright_pony": 0.06451612903225806,
+          "bright_psychology": 0.058823529411764705,
+          "bright_robotics": 0.0392156862745098,
+          "bright_stackoverflow": 0.07462686567164178,
+          "bright_sustainable_living": 0.034482758620689655,
+          "bright_theoremqa_questions": 0.0,
+          "bright_theoremqa_theorems": 0.0,
+          "fiqa": 0.09,
+          "nfcorpus": 0.3862433862433862,
+          "quora": 0.02,
+          "scidocs": 0.2,
+          "scifact": 0.115,
+          "trec_covid": 0.68,
+          "webis_touche2020": 0.46938775510204084
+        },
+        "eligible_queries": {
+          "arguana": 200,
+          "bright_aops": 61,
+          "bright_biology": 53,
+          "bright_earth_science": 66,
+          "bright_economics": 53,
+          "bright_leetcode": 92,
+          "bright_pony": 62,
+          "bright_psychology": 51,
+          "bright_robotics": 51,
+          "bright_stackoverflow": 67,
+          "bright_sustainable_living": 58,
+          "bright_theoremqa_questions": 144,
+          "bright_theoremqa_theorems": 26,
+          "fiqa": 200,
+          "nfcorpus": 189,
+          "quora": 200,
+          "scidocs": 200,
+          "scifact": 200,
+          "trec_covid": 50,
+          "webis_touche2020": 49
+        }
+      },
+      "auc": {
+        "macro": 0.5990736822410492,
+        "ci95": [
+          0.5346999010241555,
+          0.641886450161385
+        ],
+        "n_collections": 19,
+        "per_corpus": {
+          "arguana": 0.75,
+          "bright_biology": 0.08333333333333333,
+          "bright_earth_science": 0.5714285714285714,
+          "bright_economics": 1.0,
+          "bright_leetcode": 0.0,
+          "bright_pony": 0.8333333333333334,
+          "bright_psychology": 1.0,
+          "bright_robotics": 0.4166666666666667,
+          "bright_stackoverflow": 0.4,
+          "bright_sustainable_living": 1.0,
+          "bright_theoremqa_questions": 0.6666666666666666,
+          "bright_theoremqa_theorems": 0.5,
+          "fiqa": 0.5,
+          "nfcorpus": 0.5990639625585024,
+          "quora": 0.75,
+          "scidocs": 0.5892857142857143,
+          "scifact": 0.6086956521739131,
+          "trec_covid": 0.584045584045584,
+          "webis_touche2020": 0.5298804780876494
+        },
+        "eligible_queries": {
+          "arguana": 5,
+          "bright_biology": 2,
+          "bright_earth_science": 5,
+          "bright_economics": 1,
+          "bright_leetcode": 1,
+          "bright_pony": 2,
+          "bright_psychology": 1,
+          "bright_robotics": 1,
+          "bright_stackoverflow": 2,
+          "bright_sustainable_living": 3,
+          "bright_theoremqa_questions": 2,
+          "bright_theoremqa_theorems": 1,
+          "fiqa": 21,
+          "nfcorpus": 61,
+          "quora": 3,
+          "scidocs": 42,
+          "scifact": 21,
+          "trec_covid": 39,
+          "webis_touche2020": 31
+        }
+      },
+      "o1_below_a5": {
+        "macro": 0.011910241874527588,
+        "ci95": [
+          0.006110657596371882,
+          0.018256424792139077
+        ],
+        "n_collections": 20,
+        "per_corpus": {
+          "arguana": 0.0,
+          "bright_aops": 0.0,
+          "bright_biology": 0.0,
+          "bright_earth_science": 0.0,
+          "bright_economics": 0.0,
+          "bright_leetcode": 0.0,
+          "bright_pony": 0.0,
+          "bright_psychology": 0.0,
+          "bright_robotics": 0.0,
+          "bright_stackoverflow": 0.0,
+          "bright_sustainable_living": 0.0,
+          "bright_theoremqa_questions": 0.0,
+          "bright_theoremqa_theorems": 0.0,
+          "fiqa": 0.0,
+          "nfcorpus": 0.021164021164021163,
+          "quora": 0.0,
+          "scidocs": 0.015,
+          "scifact": 0.0,
+          "trec_covid": 0.1,
+          "webis_touche2020": 0.10204081632653061
+        },
+        "eligible_queries": {
+          "arguana": 200,
+          "bright_aops": 61,
+          "bright_biology": 53,
+          "bright_earth_science": 66,
+          "bright_economics": 53,
+          "bright_leetcode": 92,
+          "bright_pony": 62,
+          "bright_psychology": 51,
+          "bright_robotics": 51,
+          "bright_stackoverflow": 67,
+          "bright_sustainable_living": 58,
+          "bright_theoremqa_questions": 144,
+          "bright_theoremqa_theorems": 26,
+          "fiqa": 200,
+          "nfcorpus": 189,
+          "quora": 200,
+          "scidocs": 200,
+          "scifact": 200,
+          "trec_covid": 50,
+          "webis_touche2020": 49
+        }
+      },
+      "o3_below_best_single": {
+        "macro": 0.0383836608699541,
+        "ci95": [
+          0.026188891802486992,
+          0.05182866070713538
+        ],
+        "n_collections": 19,
+        "per_corpus": {
+          "arguana": 0.0,
+          "bright_biology": 0.0,
+          "bright_earth_science": 0.0,
+          "bright_economics": 0.0,
+          "bright_leetcode": 0.0,
+          "bright_pony": 0.0,
+          "bright_psychology": 0.0,
+          "bright_robotics": 0.0,
+          "bright_stackoverflow": 0.0,
+          "bright_sustainable_living": 0.0,
+          "bright_theoremqa_questions": 0.0,
+          "bright_theoremqa_theorems": 0.0,
+          "fiqa": 0.0,
+          "nfcorpus": 0.1308411214953271,
+          "quora": 0.07692307692307693,
+          "scidocs": 0.04285714285714286,
+          "scifact": 0.022222222222222223,
+          "trec_covid": 0.2857142857142857,
+          "webis_touche2020": 0.17073170731707318
+        },
+        "eligible_queries": {
+          "arguana": 23,
+          "bright_biology": 6,
+          "bright_earth_science": 10,
+          "bright_economics": 5,
+          "bright_leetcode": 2,
+          "bright_pony": 11,
+          "bright_psychology": 4,
+          "bright_robotics": 4,
+          "bright_stackoverflow": 7,
+          "bright_sustainable_living": 6,
+          "bright_theoremqa_questions": 5,
+          "bright_theoremqa_theorems": 1,
+          "fiqa": 41,
+          "nfcorpus": 107,
+          "quora": 13,
+          "scidocs": 70,
+          "scifact": 45,
+          "trec_covid": 42,
+          "webis_touche2020": 41
+        }
+      },
+      "o3_minus_sum_helpful": {
+        "macro": -0.0711593957515352,
+        "ci95": [
+          -0.1020846154071346,
+          -0.04688967569729111
+        ],
+        "n_collections": 19,
+        "per_corpus": {
+          "arguana": -0.045852163369568676,
+          "bright_biology": -0.0009381470626176891,
+          "bright_earth_science": -0.04558826936476289,
+          "bright_economics": -0.024995937170599662,
+          "bright_leetcode": -0.007190668785575199,
+          "bright_pony": -0.04550826552215521,
+          "bright_psychology": -0.29059435423031443,
+          "bright_robotics": -0.03174124399512483,
+          "bright_stackoverflow": -0.0016066318161739232,
+          "bright_sustainable_living": -0.03953869316779405,
+          "bright_theoremqa_questions": -0.020168952963001467,
+          "bright_theoremqa_theorems": 0.0,
+          "fiqa": -0.063688707903312,
+          "nfcorpus": -0.17278995228372557,
+          "quora": -0.01579848976800889,
+          "scidocs": -0.07303171661233822,
+          "scifact": -0.2782366889130038,
+          "trec_covid": -0.1228372080541787,
+          "webis_touche2020": -0.07192242829691353
+        },
+        "eligible_queries": {
+          "arguana": 23,
+          "bright_biology": 6,
+          "bright_earth_science": 10,
+          "bright_economics": 5,
+          "bright_leetcode": 2,
+          "bright_pony": 11,
+          "bright_psychology": 4,
+          "bright_robotics": 4,
+          "bright_stackoverflow": 7,
+          "bright_sustainable_living": 6,
+          "bright_theoremqa_questions": 5,
+          "bright_theoremqa_theorems": 1,
+          "fiqa": 41,
+          "nfcorpus": 107,
+          "quora": 13,
+          "scidocs": 70,
+          "scifact": 45,
+          "trec_covid": 42,
+          "webis_touche2020": 41
+        }
+      },
+      "label_share_by_rank": {
+        "helpful@1": {
+          "macro": 0.08660996712969031,
+          "ci95": [
+            0.07373091487998108,
+            0.09970250091248795
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.05,
+            "bright_aops": 0.0,
+            "bright_biology": 0.018867924528301886,
+            "bright_earth_science": 0.030303030303030304,
+            "bright_economics": 0.018867924528301886,
+            "bright_leetcode": 0.0,
+            "bright_pony": 0.06451612903225806,
+            "bright_psychology": 0.058823529411764705,
+            "bright_robotics": 0.0392156862745098,
+            "bright_stackoverflow": 0.029850746268656716,
+            "bright_sustainable_living": 0.05172413793103448,
+            "bright_theoremqa_questions": 0.013888888888888888,
+            "bright_theoremqa_theorems": 0.0,
+            "fiqa": 0.08,
+            "nfcorpus": 0.24338624338624337,
+            "quora": 0.04,
+            "scidocs": 0.085,
+            "scifact": 0.1,
+            "trec_covid": 0.42,
+            "webis_touche2020": 0.3877551020408163
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "helpful@2": {
+          "macro": 0.07299884069721135,
+          "ci95": [
+            0.06122773044150975,
+            0.08526815158721043
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.015,
+            "bright_aops": 0.0,
+            "bright_biology": 0.018867924528301886,
+            "bright_earth_science": 0.030303030303030304,
+            "bright_economics": 0.0,
+            "bright_leetcode": 0.0,
+            "bright_pony": 0.03225806451612903,
+            "bright_psychology": 0.0392156862745098,
+            "bright_robotics": 0.0,
+            "bright_stackoverflow": 0.0,
+            "bright_sustainable_living": 0.06896551724137931,
+            "bright_theoremqa_questions": 0.027777777777777776,
+            "bright_theoremqa_theorems": 0.0,
+            "fiqa": 0.06,
+            "nfcorpus": 0.20105820105820105,
+            "quora": 0.015,
+            "scidocs": 0.13,
+            "scifact": 0.095,
+            "trec_covid": 0.4,
+            "webis_touche2020": 0.32653061224489793
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "helpful@3": {
+          "macro": 0.07381452095522187,
+          "ci95": [
+            0.061015987271868494,
+            0.0870950792449715
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.005,
+            "bright_aops": 0.0,
+            "bright_biology": 0.03773584905660377,
+            "bright_earth_science": 0.045454545454545456,
+            "bright_economics": 0.07547169811320754,
+            "bright_leetcode": 0.010869565217391304,
+            "bright_pony": 0.08064516129032258,
+            "bright_psychology": 0.0392156862745098,
+            "bright_robotics": 0.0196078431372549,
+            "bright_stackoverflow": 0.014925373134328358,
+            "bright_sustainable_living": 0.06896551724137931,
+            "bright_theoremqa_questions": 0.006944444444444444,
+            "bright_theoremqa_theorems": 0.038461538461538464,
+            "fiqa": 0.03,
+            "nfcorpus": 0.23809523809523808,
+            "quora": 0.0,
+            "scidocs": 0.085,
+            "scifact": 0.075,
+            "trec_covid": 0.36,
+            "webis_touche2020": 0.24489795918367346
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "helpful@4": {
+          "macro": 0.06475448358813796,
+          "ci95": [
+            0.053159835615182234,
+            0.07669822261396106
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.01,
+            "bright_aops": 0.0,
+            "bright_biology": 0.03773584905660377,
+            "bright_earth_science": 0.07575757575757576,
+            "bright_economics": 0.03773584905660377,
+            "bright_leetcode": 0.0,
+            "bright_pony": 0.04838709677419355,
+            "bright_psychology": 0.0392156862745098,
+            "bright_robotics": 0.0196078431372549,
+            "bright_stackoverflow": 0.014925373134328358,
+            "bright_sustainable_living": 0.06896551724137931,
+            "bright_theoremqa_questions": 0.0,
+            "bright_theoremqa_theorems": 0.0,
+            "fiqa": 0.03,
+            "nfcorpus": 0.24867724867724866,
+            "quora": 0.005,
+            "scidocs": 0.085,
+            "scifact": 0.05,
+            "trec_covid": 0.32,
+            "webis_touche2020": 0.20408163265306123
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "helpful@5": {
+          "macro": 0.06079551148145697,
+          "ci95": [
+            0.0497267912805779,
+            0.07218394321931597
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.03,
+            "bright_aops": 0.0,
+            "bright_biology": 0.018867924528301886,
+            "bright_earth_science": 0.045454545454545456,
+            "bright_economics": 0.018867924528301886,
+            "bright_leetcode": 0.010869565217391304,
+            "bright_pony": 0.03225806451612903,
+            "bright_psychology": 0.0392156862745098,
+            "bright_robotics": 0.0196078431372549,
+            "bright_stackoverflow": 0.014925373134328358,
+            "bright_sustainable_living": 0.034482758620689655,
+            "bright_theoremqa_questions": 0.0,
+            "bright_theoremqa_theorems": 0.0,
+            "fiqa": 0.045,
+            "nfcorpus": 0.23809523809523808,
+            "quora": 0.01,
+            "scidocs": 0.075,
+            "scifact": 0.08,
+            "trec_covid": 0.34,
+            "webis_touche2020": 0.16326530612244897
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "helpful@6": {
+          "macro": 0.051067686598487816,
+          "ci95": [
+            0.040445123057808265,
+            0.062103240045015044
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.025,
+            "bright_aops": 0.0,
+            "bright_biology": 0.018867924528301886,
+            "bright_earth_science": 0.045454545454545456,
+            "bright_economics": 0.018867924528301886,
+            "bright_leetcode": 0.0,
+            "bright_pony": 0.04838709677419355,
+            "bright_psychology": 0.0392156862745098,
+            "bright_robotics": 0.0,
+            "bright_stackoverflow": 0.014925373134328358,
+            "bright_sustainable_living": 0.017241379310344827,
+            "bright_theoremqa_questions": 0.0,
+            "bright_theoremqa_theorems": 0.0,
+            "fiqa": 0.035,
+            "nfcorpus": 0.1693121693121693,
+            "quora": 0.005,
+            "scidocs": 0.07,
+            "scifact": 0.03,
+            "trec_covid": 0.28,
+            "webis_touche2020": 0.20408163265306123
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "helpful@7": {
+          "macro": 0.05000335945589081,
+          "ci95": [
+            0.0395833792791306,
+            0.06084714295272046
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.02,
+            "bright_aops": 0.0,
+            "bright_biology": 0.0,
+            "bright_earth_science": 0.045454545454545456,
+            "bright_economics": 0.03773584905660377,
+            "bright_leetcode": 0.0,
+            "bright_pony": 0.03225806451612903,
+            "bright_psychology": 0.0392156862745098,
+            "bright_robotics": 0.0,
+            "bright_stackoverflow": 0.029850746268656716,
+            "bright_sustainable_living": 0.034482758620689655,
+            "bright_theoremqa_questions": 0.0,
+            "bright_theoremqa_theorems": 0.0,
+            "fiqa": 0.03,
+            "nfcorpus": 0.2328042328042328,
+            "quora": 0.005,
+            "scidocs": 0.075,
+            "scifact": 0.055,
+            "trec_covid": 0.2,
+            "webis_touche2020": 0.16326530612244897
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "helpful@8": {
+          "macro": 0.037833876999186764,
+          "ci95": [
+            0.02886875341593468,
+            0.04765189908913027
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.03,
+            "bright_aops": 0.0,
+            "bright_biology": 0.03773584905660377,
+            "bright_earth_science": 0.015151515151515152,
+            "bright_economics": 0.018867924528301886,
+            "bright_leetcode": 0.0,
+            "bright_pony": 0.03225806451612903,
+            "bright_psychology": 0.0196078431372549,
+            "bright_robotics": 0.0196078431372549,
+            "bright_stackoverflow": 0.0,
+            "bright_sustainable_living": 0.017241379310344827,
+            "bright_theoremqa_questions": 0.0,
+            "bright_theoremqa_theorems": 0.0,
+            "fiqa": 0.02,
+            "nfcorpus": 0.1595744680851064,
+            "quora": 0.01,
+            "scidocs": 0.05,
+            "scifact": 0.045,
+            "trec_covid": 0.2,
+            "webis_touche2020": 0.08163265306122448
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 188,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "helpful@9": {
+          "macro": 0.03720511586893086,
+          "ci95": [
+            0.02834515192686319,
+            0.04662802022526603
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.02,
+            "bright_aops": 0.0,
+            "bright_biology": 0.018867924528301886,
+            "bright_earth_science": 0.045454545454545456,
+            "bright_economics": 0.018867924528301886,
+            "bright_leetcode": 0.0,
+            "bright_pony": 0.016129032258064516,
+            "bright_psychology": 0.0196078431372549,
+            "bright_robotics": 0.0,
+            "bright_stackoverflow": 0.014925373134328358,
+            "bright_sustainable_living": 0.0,
+            "bright_theoremqa_questions": 0.0,
+            "bright_theoremqa_theorems": 0.0,
+            "fiqa": 0.03,
+            "nfcorpus": 0.14361702127659576,
+            "quora": 0.0,
+            "scidocs": 0.055,
+            "scifact": 0.06,
+            "trec_covid": 0.22,
+            "webis_touche2020": 0.08163265306122448
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 188,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "helpful@10": {
+          "macro": 0.040495565391417535,
+          "ci95": [
+            0.031256284824377735,
+            0.05049901023890902
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.035,
+            "bright_aops": 0.0,
+            "bright_biology": 0.0,
+            "bright_earth_science": 0.045454545454545456,
+            "bright_economics": 0.018867924528301886,
+            "bright_leetcode": 0.010869565217391304,
+            "bright_pony": 0.03225806451612903,
+            "bright_psychology": 0.0,
+            "bright_robotics": 0.0196078431372549,
+            "bright_stackoverflow": 0.04477611940298507,
+            "bright_sustainable_living": 0.017241379310344827,
+            "bright_theoremqa_questions": 0.0,
+            "bright_theoremqa_theorems": 0.0,
+            "fiqa": 0.01,
+            "nfcorpus": 0.13297872340425532,
+            "quora": 0.0,
+            "scidocs": 0.06,
+            "scifact": 0.04,
+            "trec_covid": 0.2,
+            "webis_touche2020": 0.14285714285714285
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 188,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "harmful@1": {
+          "macro": 0.05299314934774043,
+          "ci95": [
+            0.042964798935365776,
+            0.06342065297565797
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.01,
+            "bright_aops": 0.0,
+            "bright_biology": 0.03773584905660377,
+            "bright_earth_science": 0.0,
+            "bright_economics": 0.0,
+            "bright_leetcode": 0.010869565217391304,
+            "bright_pony": 0.0,
+            "bright_psychology": 0.0,
+            "bright_robotics": 0.0,
+            "bright_stackoverflow": 0.014925373134328358,
+            "bright_sustainable_living": 0.0,
+            "bright_theoremqa_questions": 0.006944444444444444,
+            "bright_theoremqa_theorems": 0.0,
+            "fiqa": 0.1,
+            "nfcorpus": 0.14285714285714285,
+            "quora": 0.035,
+            "scidocs": 0.11,
+            "scifact": 0.045,
+            "trec_covid": 0.22,
+            "webis_touche2020": 0.32653061224489793
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "harmful@2": {
+          "macro": 0.06542088246391851,
+          "ci95": [
+            0.053668490479118924,
+            0.07760562709139092
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.025,
+            "bright_aops": 0.0,
+            "bright_biology": 0.07547169811320754,
+            "bright_earth_science": 0.015151515151515152,
+            "bright_economics": 0.0,
+            "bright_leetcode": 0.0,
+            "bright_pony": 0.016129032258064516,
+            "bright_psychology": 0.0,
+            "bright_robotics": 0.0196078431372549,
+            "bright_stackoverflow": 0.029850746268656716,
+            "bright_sustainable_living": 0.0,
+            "bright_theoremqa_questions": 0.0,
+            "bright_theoremqa_theorems": 0.038461538461538464,
+            "fiqa": 0.095,
+            "nfcorpus": 0.15343915343915343,
+            "quora": 0.045,
+            "scidocs": 0.125,
+            "scifact": 0.045,
+            "trec_covid": 0.36,
+            "webis_touche2020": 0.2653061224489796
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "harmful@3": {
+          "macro": 0.06299250101553562,
+          "ci95": [
+            0.05167225108546589,
+            0.07477514392466607
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.04,
+            "bright_aops": 0.0,
+            "bright_biology": 0.05660377358490566,
+            "bright_earth_science": 0.015151515151515152,
+            "bright_economics": 0.0,
+            "bright_leetcode": 0.021739130434782608,
+            "bright_pony": 0.06451612903225806,
+            "bright_psychology": 0.0196078431372549,
+            "bright_robotics": 0.0196078431372549,
+            "bright_stackoverflow": 0.014925373134328358,
+            "bright_sustainable_living": 0.0,
+            "bright_theoremqa_questions": 0.0,
+            "bright_theoremqa_theorems": 0.0,
+            "fiqa": 0.055,
+            "nfcorpus": 0.12698412698412698,
+            "quora": 0.04,
+            "scidocs": 0.11,
+            "scifact": 0.03,
+            "trec_covid": 0.36,
+            "webis_touche2020": 0.2857142857142857
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "harmful@4": {
+          "macro": 0.047096960804010025,
+          "ci95": [
+            0.03751862925563529,
+            0.05757603362064822
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.03,
+            "bright_aops": 0.01639344262295082,
+            "bright_biology": 0.018867924528301886,
+            "bright_earth_science": 0.045454545454545456,
+            "bright_economics": 0.018867924528301886,
+            "bright_leetcode": 0.0,
+            "bright_pony": 0.04838709677419355,
+            "bright_psychology": 0.0,
+            "bright_robotics": 0.0,
+            "bright_stackoverflow": 0.029850746268656716,
+            "bright_sustainable_living": 0.0,
+            "bright_theoremqa_questions": 0.006944444444444444,
+            "bright_theoremqa_theorems": 0.0,
+            "fiqa": 0.075,
+            "nfcorpus": 0.13227513227513227,
+            "quora": 0.03,
+            "scidocs": 0.08,
+            "scifact": 0.025,
+            "trec_covid": 0.14,
+            "webis_touche2020": 0.24489795918367346
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "harmful@5": {
+          "macro": 0.0476200508232207,
+          "ci95": [
+            0.03793716704335142,
+            0.05797033141961743
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.02,
+            "bright_aops": 0.01639344262295082,
+            "bright_biology": 0.018867924528301886,
+            "bright_earth_science": 0.015151515151515152,
+            "bright_economics": 0.0,
+            "bright_leetcode": 0.0,
+            "bright_pony": 0.03225806451612903,
+            "bright_psychology": 0.0,
+            "bright_robotics": 0.0,
+            "bright_stackoverflow": 0.029850746268656716,
+            "bright_sustainable_living": 0.017241379310344827,
+            "bright_theoremqa_questions": 0.0,
+            "bright_theoremqa_theorems": 0.0,
+            "fiqa": 0.075,
+            "nfcorpus": 0.14814814814814814,
+            "quora": 0.025,
+            "scidocs": 0.11,
+            "scifact": 0.04,
+            "trec_covid": 0.18,
+            "webis_touche2020": 0.22448979591836735
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "harmful@6": {
+          "macro": 0.04895284115677576,
+          "ci95": [
+            0.03890236067128001,
+            0.05918534501662049
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.025,
+            "bright_aops": 0.0,
+            "bright_biology": 0.018867924528301886,
+            "bright_earth_science": 0.015151515151515152,
+            "bright_economics": 0.0,
+            "bright_leetcode": 0.0,
+            "bright_pony": 0.0,
+            "bright_psychology": 0.0,
+            "bright_robotics": 0.0,
+            "bright_stackoverflow": 0.014925373134328358,
+            "bright_sustainable_living": 0.034482758620689655,
+            "bright_theoremqa_questions": 0.006944444444444444,
+            "bright_theoremqa_theorems": 0.0,
+            "fiqa": 0.05,
+            "nfcorpus": 0.1746031746031746,
+            "quora": 0.005,
+            "scidocs": 0.08,
+            "scifact": 0.05,
+            "trec_covid": 0.3,
+            "webis_touche2020": 0.20408163265306123
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "harmful@7": {
+          "macro": 0.05200128569203157,
+          "ci95": [
+            0.04152802653129299,
+            0.0633609383575989
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.03,
+            "bright_aops": 0.03278688524590164,
+            "bright_biology": 0.018867924528301886,
+            "bright_earth_science": 0.0,
+            "bright_economics": 0.018867924528301886,
+            "bright_leetcode": 0.0,
+            "bright_pony": 0.016129032258064516,
+            "bright_psychology": 0.0392156862745098,
+            "bright_robotics": 0.0,
+            "bright_stackoverflow": 0.0,
+            "bright_sustainable_living": 0.06896551724137931,
+            "bright_theoremqa_questions": 0.0,
+            "bright_theoremqa_theorems": 0.0,
+            "fiqa": 0.07,
+            "nfcorpus": 0.1111111111111111,
+            "quora": 0.01,
+            "scidocs": 0.09,
+            "scifact": 0.05,
+            "trec_covid": 0.28,
+            "webis_touche2020": 0.20408163265306123
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "harmful@8": {
+          "macro": 0.055761360660158875,
+          "ci95": [
+            0.04476017838262242,
+            0.06740347528353693
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.03,
+            "bright_aops": 0.01639344262295082,
+            "bright_biology": 0.03773584905660377,
+            "bright_earth_science": 0.030303030303030304,
+            "bright_economics": 0.0,
+            "bright_leetcode": 0.0,
+            "bright_pony": 0.0,
+            "bright_psychology": 0.0196078431372549,
+            "bright_robotics": 0.0,
+            "bright_stackoverflow": 0.0,
+            "bright_sustainable_living": 0.034482758620689655,
+            "bright_theoremqa_questions": 0.006944444444444444,
+            "bright_theoremqa_theorems": 0.038461538461538464,
+            "fiqa": 0.045,
+            "nfcorpus": 0.19680851063829788,
+            "quora": 0.025,
+            "scidocs": 0.105,
+            "scifact": 0.045,
+            "trec_covid": 0.26,
+            "webis_touche2020": 0.22448979591836735
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 188,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "harmful@9": {
+          "macro": 0.05433873327482323,
+          "ci95": [
+            0.04380711838422877,
+            0.06513525095005904
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.04,
+            "bright_aops": 0.0,
+            "bright_biology": 0.018867924528301886,
+            "bright_earth_science": 0.045454545454545456,
+            "bright_economics": 0.0,
+            "bright_leetcode": 0.0,
+            "bright_pony": 0.06451612903225806,
+            "bright_psychology": 0.0392156862745098,
+            "bright_robotics": 0.0196078431372549,
+            "bright_stackoverflow": 0.029850746268656716,
+            "bright_sustainable_living": 0.034482758620689655,
+            "bright_theoremqa_questions": 0.013888888888888888,
+            "bright_theoremqa_theorems": 0.0,
+            "fiqa": 0.05,
+            "nfcorpus": 0.19680851063829788,
+            "quora": 0.02,
+            "scidocs": 0.105,
+            "scifact": 0.025,
+            "trec_covid": 0.18,
+            "webis_touche2020": 0.20408163265306123
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 188,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "harmful@10": {
+          "macro": 0.051363684641043884,
+          "ci95": [
+            0.04135010387356564,
+            0.0618783007568551
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.05,
+            "bright_aops": 0.01639344262295082,
+            "bright_biology": 0.0,
+            "bright_earth_science": 0.0,
+            "bright_economics": 0.0,
+            "bright_leetcode": 0.0,
+            "bright_pony": 0.03225806451612903,
+            "bright_psychology": 0.0196078431372549,
+            "bright_robotics": 0.0,
+            "bright_stackoverflow": 0.014925373134328358,
+            "bright_sustainable_living": 0.017241379310344827,
+            "bright_theoremqa_questions": 0.0,
+            "bright_theoremqa_theorems": 0.0,
+            "fiqa": 0.05,
+            "nfcorpus": 0.2127659574468085,
+            "quora": 0.005,
+            "scidocs": 0.105,
+            "scifact": 0.04,
+            "trec_covid": 0.26,
+            "webis_touche2020": 0.20408163265306123
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 188,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "neutral@1": {
+          "macro": 0.8603968835225692,
+          "ci95": [
+            0.8468225323605287,
+            0.8736644290605968
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.94,
+            "bright_aops": 1.0,
+            "bright_biology": 0.9433962264150944,
+            "bright_earth_science": 0.9696969696969697,
+            "bright_economics": 0.9811320754716981,
+            "bright_leetcode": 0.9891304347826086,
+            "bright_pony": 0.9354838709677419,
+            "bright_psychology": 0.9411764705882353,
+            "bright_robotics": 0.9607843137254902,
+            "bright_stackoverflow": 0.9552238805970149,
+            "bright_sustainable_living": 0.9482758620689655,
+            "bright_theoremqa_questions": 0.9791666666666666,
+            "bright_theoremqa_theorems": 1.0,
+            "fiqa": 0.82,
+            "nfcorpus": 0.6137566137566137,
+            "quora": 0.925,
+            "scidocs": 0.805,
+            "scifact": 0.855,
+            "trec_covid": 0.36,
+            "webis_touche2020": 0.2857142857142857
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "neutral@2": {
+          "macro": 0.8615802768388701,
+          "ci95": [
+            0.8479587309910196,
+            0.874952132944349
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.96,
+            "bright_aops": 1.0,
+            "bright_biology": 0.9056603773584906,
+            "bright_earth_science": 0.9545454545454546,
+            "bright_economics": 1.0,
+            "bright_leetcode": 1.0,
+            "bright_pony": 0.9516129032258065,
+            "bright_psychology": 0.9607843137254902,
+            "bright_robotics": 0.9803921568627451,
+            "bright_stackoverflow": 0.9701492537313433,
+            "bright_sustainable_living": 0.9310344827586207,
+            "bright_theoremqa_questions": 0.9722222222222222,
+            "bright_theoremqa_theorems": 0.9615384615384616,
+            "fiqa": 0.845,
+            "nfcorpus": 0.6455026455026455,
+            "quora": 0.94,
+            "scidocs": 0.745,
+            "scifact": 0.86,
+            "trec_covid": 0.24,
+            "webis_touche2020": 0.40816326530612246
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "neutral@3": {
+          "macro": 0.8631929780292426,
+          "ci95": [
+            0.8481773493754884,
+            0.8778384907066313
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.955,
+            "bright_aops": 1.0,
+            "bright_biology": 0.9056603773584906,
+            "bright_earth_science": 0.9393939393939394,
+            "bright_economics": 0.9245283018867925,
+            "bright_leetcode": 0.967391304347826,
+            "bright_pony": 0.8548387096774194,
+            "bright_psychology": 0.9411764705882353,
+            "bright_robotics": 0.9607843137254902,
+            "bright_stackoverflow": 0.9701492537313433,
+            "bright_sustainable_living": 0.9310344827586207,
+            "bright_theoremqa_questions": 0.9930555555555556,
+            "bright_theoremqa_theorems": 0.9615384615384616,
+            "fiqa": 0.915,
+            "nfcorpus": 0.6349206349206349,
+            "quora": 0.96,
+            "scidocs": 0.805,
+            "scifact": 0.895,
+            "trec_covid": 0.28,
+            "webis_touche2020": 0.46938775510204084
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "neutral@4": {
+          "macro": 0.888148555607852,
+          "ci95": [
+            0.8737375602422321,
+            0.9018060572287031
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.96,
+            "bright_aops": 0.9836065573770492,
+            "bright_biology": 0.9433962264150944,
+            "bright_earth_science": 0.8787878787878788,
+            "bright_economics": 0.9433962264150944,
+            "bright_leetcode": 1.0,
+            "bright_pony": 0.9032258064516129,
+            "bright_psychology": 0.9607843137254902,
+            "bright_robotics": 0.9803921568627451,
+            "bright_stackoverflow": 0.9552238805970149,
+            "bright_sustainable_living": 0.9310344827586207,
+            "bright_theoremqa_questions": 0.9930555555555556,
+            "bright_theoremqa_theorems": 1.0,
+            "fiqa": 0.895,
+            "nfcorpus": 0.6190476190476191,
+            "quora": 0.965,
+            "scidocs": 0.835,
+            "scifact": 0.925,
+            "trec_covid": 0.54,
+            "webis_touche2020": 0.5510204081632653
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "neutral@5": {
+          "macro": 0.8915844376953224,
+          "ci95": [
+            0.877934128320676,
+            0.9047469755607362
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.95,
+            "bright_aops": 0.9836065573770492,
+            "bright_biology": 0.9622641509433962,
+            "bright_earth_science": 0.9393939393939394,
+            "bright_economics": 0.9811320754716981,
+            "bright_leetcode": 0.9891304347826086,
+            "bright_pony": 0.9354838709677419,
+            "bright_psychology": 0.9607843137254902,
+            "bright_robotics": 0.9803921568627451,
+            "bright_stackoverflow": 0.9552238805970149,
+            "bright_sustainable_living": 0.9482758620689655,
+            "bright_theoremqa_questions": 1.0,
+            "bright_theoremqa_theorems": 1.0,
+            "fiqa": 0.88,
+            "nfcorpus": 0.6137566137566137,
+            "quora": 0.965,
+            "scidocs": 0.815,
+            "scifact": 0.88,
+            "trec_covid": 0.48,
+            "webis_touche2020": 0.6122448979591837
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "neutral@6": {
+          "macro": 0.8999794722447365,
+          "ci95": [
+            0.8870515403227658,
+            0.9128831436422705
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.95,
+            "bright_aops": 1.0,
+            "bright_biology": 0.9622641509433962,
+            "bright_earth_science": 0.9393939393939394,
+            "bright_economics": 0.9811320754716981,
+            "bright_leetcode": 1.0,
+            "bright_pony": 0.9516129032258065,
+            "bright_psychology": 0.9607843137254902,
+            "bright_robotics": 1.0,
+            "bright_stackoverflow": 0.9701492537313433,
+            "bright_sustainable_living": 0.9482758620689655,
+            "bright_theoremqa_questions": 0.9930555555555556,
+            "bright_theoremqa_theorems": 1.0,
+            "fiqa": 0.915,
+            "nfcorpus": 0.656084656084656,
+            "quora": 0.99,
+            "scidocs": 0.85,
+            "scifact": 0.92,
+            "trec_covid": 0.42,
+            "webis_touche2020": 0.5918367346938775
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "neutral@7": {
+          "macro": 0.8979953548520776,
+          "ci95": [
+            0.8843496186476516,
+            0.9114975782524255
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.95,
+            "bright_aops": 0.9672131147540983,
+            "bright_biology": 0.9811320754716981,
+            "bright_earth_science": 0.9545454545454546,
+            "bright_economics": 0.9433962264150944,
+            "bright_leetcode": 1.0,
+            "bright_pony": 0.9516129032258065,
+            "bright_psychology": 0.9215686274509803,
+            "bright_robotics": 1.0,
+            "bright_stackoverflow": 0.9701492537313433,
+            "bright_sustainable_living": 0.896551724137931,
+            "bright_theoremqa_questions": 1.0,
+            "bright_theoremqa_theorems": 1.0,
+            "fiqa": 0.9,
+            "nfcorpus": 0.656084656084656,
+            "quora": 0.985,
+            "scidocs": 0.835,
+            "scifact": 0.895,
+            "trec_covid": 0.52,
+            "webis_touche2020": 0.6326530612244898
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 189,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "neutral@8": {
+          "macro": 0.9064047623406543,
+          "ci95": [
+            0.8926850866143132,
+            0.9196592734087442
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.94,
+            "bright_aops": 0.9836065573770492,
+            "bright_biology": 0.9245283018867925,
+            "bright_earth_science": 0.9545454545454546,
+            "bright_economics": 0.9811320754716981,
+            "bright_leetcode": 1.0,
+            "bright_pony": 0.967741935483871,
+            "bright_psychology": 0.9607843137254902,
+            "bright_robotics": 0.9803921568627451,
+            "bright_stackoverflow": 1.0,
+            "bright_sustainable_living": 0.9482758620689655,
+            "bright_theoremqa_questions": 0.9930555555555556,
+            "bright_theoremqa_theorems": 0.9615384615384616,
+            "fiqa": 0.935,
+            "nfcorpus": 0.6436170212765957,
+            "quora": 0.965,
+            "scidocs": 0.845,
+            "scifact": 0.91,
+            "trec_covid": 0.54,
+            "webis_touche2020": 0.6938775510204082
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 188,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "neutral@9": {
+          "macro": 0.9084561508562461,
+          "ci95": [
+            0.8951007047833437,
+            0.9214689005372453
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.94,
+            "bright_aops": 1.0,
+            "bright_biology": 0.9622641509433962,
+            "bright_earth_science": 0.9090909090909091,
+            "bright_economics": 0.9811320754716981,
+            "bright_leetcode": 1.0,
+            "bright_pony": 0.9193548387096774,
+            "bright_psychology": 0.9411764705882353,
+            "bright_robotics": 0.9803921568627451,
+            "bright_stackoverflow": 0.9552238805970149,
+            "bright_sustainable_living": 0.9655172413793104,
+            "bright_theoremqa_questions": 0.9861111111111112,
+            "bright_theoremqa_theorems": 1.0,
+            "fiqa": 0.92,
+            "nfcorpus": 0.6595744680851063,
+            "quora": 0.98,
+            "scidocs": 0.84,
+            "scifact": 0.915,
+            "trec_covid": 0.6,
+            "webis_touche2020": 0.7142857142857143
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 188,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        },
+        "neutral@10": {
+          "macro": 0.9081407499675386,
+          "ci95": [
+            0.8951855463762612,
+            0.920774256699112
+          ],
+          "n_collections": 20,
+          "per_corpus": {
+            "arguana": 0.915,
+            "bright_aops": 0.9836065573770492,
+            "bright_biology": 1.0,
+            "bright_earth_science": 0.9545454545454546,
+            "bright_economics": 0.9811320754716981,
+            "bright_leetcode": 0.9891304347826086,
+            "bright_pony": 0.9354838709677419,
+            "bright_psychology": 0.9803921568627451,
+            "bright_robotics": 0.9803921568627451,
+            "bright_stackoverflow": 0.9402985074626866,
+            "bright_sustainable_living": 0.9655172413793104,
+            "bright_theoremqa_questions": 1.0,
+            "bright_theoremqa_theorems": 1.0,
+            "fiqa": 0.94,
+            "nfcorpus": 0.6542553191489362,
+            "quora": 0.995,
+            "scidocs": 0.835,
+            "scifact": 0.92,
+            "trec_covid": 0.54,
+            "webis_touche2020": 0.6530612244897959
+          },
+          "eligible_queries": {
+            "arguana": 200,
+            "bright_aops": 61,
+            "bright_biology": 53,
+            "bright_earth_science": 66,
+            "bright_economics": 53,
+            "bright_leetcode": 92,
+            "bright_pony": 62,
+            "bright_psychology": 51,
+            "bright_robotics": 51,
+            "bright_stackoverflow": 67,
+            "bright_sustainable_living": 58,
+            "bright_theoremqa_questions": 144,
+            "bright_theoremqa_theorems": 26,
+            "fiqa": 200,
+            "nfcorpus": 188,
+            "quora": 200,
+            "scidocs": 200,
+            "scifact": 200,
+            "trec_covid": 50,
+            "webis_touche2020": 49
+          }
+        }
+      },
+      "label_counts": {
+        "neutral": 18358,
+        "helpful": 1192,
+        "harmful": 1167
+      }
+    },
+    "over_1M": {
+      "harmful_in_top5": {
+        "macro": 0.153356783919598,
+        "ci95": [
+          0.13234673366834174,
+          0.1754071608040201
+        ],
+        "n_collections": 5,
+        "per_corpus": {
+          "climate_fever": 0.155,
+          "dbpedia_entity": 0.35678391959798994,
+          "fever": 0.08,
+          "hotpotqa": 0.07,
+          "nq": 0.105
+        },
+        "eligible_queries": {
+          "climate_fever": 200,
+          "dbpedia_entity": 199,
+          "fever": 200,
+          "hotpotqa": 200,
+          "nq": 200
+        }
+      },
+      "helpful_6_10_mean": {
+        "macro": 0.09526633165829144,
+        "ci95": [
+          0.07419082914572864,
+          0.117356783919598
+        ],
+        "n_collections": 5,
+        "per_corpus": {
+          "climate_fever": 0.035,
+          "dbpedia_entity": 0.2663316582914573,
+          "fever": 0.075,
+          "hotpotqa": 0.055,
+          "nq": 0.045
+        },
+        "eligible_queries": {
+          "climate_fever": 200,
+          "dbpedia_entity": 199,
+          "fever": 200,
+          "hotpotqa": 200,
+          "nq": 200
+        }
+      },
+      "helpful_6_10_any": {
+        "macro": 0.07719597989949747,
+        "ci95": [
+          0.061206030150753786,
+          0.09323618090452261
+        ],
+        "n_collections": 5,
+        "per_corpus": {
+          "climate_fever": 0.03,
+          "dbpedia_entity": 0.19597989949748743,
+          "fever": 0.07,
+          "hotpotqa": 0.05,
+          "nq": 0.04
+        },
+        "eligible_queries": {
+          "climate_fever": 200,
+          "dbpedia_entity": 199,
+          "fever": 200,
+          "hotpotqa": 200,
+          "nq": 200
+        }
+      },
+      "o2_has_rank_6_10": {
+        "macro": 0.07719597989949747,
+        "ci95": [
+          0.061206030150753786,
+          0.09323618090452261
+        ],
+        "n_collections": 5,
+        "per_corpus": {
+          "climate_fever": 0.03,
+          "dbpedia_entity": 0.19597989949748743,
+          "fever": 0.07,
+          "hotpotqa": 0.05,
+          "nq": 0.04
+        },
+        "eligible_queries": {
+          "climate_fever": 200,
+          "dbpedia_entity": 199,
+          "fever": 200,
+          "hotpotqa": 200,
+          "nq": 200
+        }
+      },
+      "auc": {
+        "macro": 0.6099021714599708,
+        "ci95": [
+          0.47434413524630487,
+          0.7115022637003985
+        ],
+        "n_collections": 5,
+        "per_corpus": {
+          "climate_fever": 0.6,
+          "dbpedia_entity": 0.5592417061611374,
+          "fever": 0.6521739130434783,
+          "hotpotqa": 0.42857142857142855,
+          "nq": 0.8095238095238095
+        },
+        "eligible_queries": {
+          "climate_fever": 12,
+          "dbpedia_entity": 54,
+          "fever": 11,
+          "hotpotqa": 3,
+          "nq": 11
+        }
+      },
+      "o1_below_a5": {
+        "macro": 0.004015075376884422,
+        "ci95": [
+          0.001,
+          0.008035175879396984
+        ],
+        "n_collections": 5,
+        "per_corpus": {
+          "climate_fever": 0.0,
+          "dbpedia_entity": 0.01507537688442211,
+          "fever": 0.005,
+          "hotpotqa": 0.0,
+          "nq": 0.0
+        },
+        "eligible_queries": {
+          "climate_fever": 200,
+          "dbpedia_entity": 199,
+          "fever": 200,
+          "hotpotqa": 200,
+          "nq": 200
+        }
+      },
+      "o3_below_best_single": {
+        "macro": 0.02831541218637993,
+        "ci95": [
+          0.008602150537634409,
+          0.05698924731182795
+        ],
+        "n_collections": 5,
+        "per_corpus": {
+          "climate_fever": 0.05555555555555555,
+          "dbpedia_entity": 0.08602150537634409,
+          "fever": 0.0,
+          "hotpotqa": 0.0,
+          "nq": 0.0
+        },
+        "eligible_queries": {
+          "climate_fever": 18,
+          "dbpedia_entity": 93,
+          "fever": 31,
+          "hotpotqa": 16,
+          "nq": 29
+        }
+      },
+      "o3_minus_sum_helpful": {
+        "macro": -0.016358361936030134,
+        "ci95": [
+          -0.03692872338325344,
+          0.005355111363810078
+        ],
+        "n_collections": 5,
+        "per_corpus": {
+          "climate_fever": 0.030832508489013366,
+          "dbpedia_entity": -0.014675834710627809,
+          "fever": 0.003735796662190046,
+          "hotpotqa": -0.03428996503686669,
+          "nq": -0.06739431508385958
+        },
+        "eligible_queries": {
+          "climate_fever": 18,
+          "dbpedia_entity": 93,
+          "fever": 31,
+          "hotpotqa": 16,
+          "nq": 29
+        }
+      },
+      "label_share_by_rank": {
+        "helpful@1": {
+          "macro": 0.05712562814070351,
+          "ci95": [
+            0.043110552763819095,
+            0.0711859296482412
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.025,
+            "dbpedia_entity": 0.12562814070351758,
+            "fever": 0.055,
+            "hotpotqa": 0.025,
+            "nq": 0.055
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "helpful@2": {
+          "macro": 0.04113567839195979,
+          "ci95": [
+            0.03008040201005025,
+            0.053185929648241204
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.01,
+            "dbpedia_entity": 0.135678391959799,
+            "fever": 0.015,
+            "hotpotqa": 0.02,
+            "nq": 0.025
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "helpful@3": {
+          "macro": 0.03106030150753769,
+          "ci95": [
+            0.021025125628140705,
+            0.04209045226130653
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.025,
+            "dbpedia_entity": 0.06030150753768844,
+            "fever": 0.035,
+            "hotpotqa": 0.01,
+            "nq": 0.025
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "helpful@4": {
+          "macro": 0.031100502512562817,
+          "ci95": [
+            0.021070351758793966,
+            0.0421356783919598
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.02,
+            "dbpedia_entity": 0.10050251256281408,
+            "fever": 0.01,
+            "hotpotqa": 0.0,
+            "nq": 0.025
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "helpful@5": {
+          "macro": 0.03309547738693468,
+          "ci95": [
+            0.02305527638190955,
+            0.044140703517587934
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.02,
+            "dbpedia_entity": 0.09547738693467336,
+            "fever": 0.025,
+            "hotpotqa": 0.0,
+            "nq": 0.025
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "helpful@6": {
+          "macro": 0.018045226130653267,
+          "ci95": [
+            0.010030150753768844,
+            0.02611909547738659
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.005,
+            "dbpedia_entity": 0.04522613065326633,
+            "fever": 0.02,
+            "hotpotqa": 0.005,
+            "nq": 0.015
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "helpful@7": {
+          "macro": 0.02407035175879397,
+          "ci95": [
+            0.015050251256281408,
+            0.03409045226130653
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.01,
+            "dbpedia_entity": 0.07035175879396985,
+            "fever": 0.025,
+            "hotpotqa": 0.015,
+            "nq": 0.0
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "helpful@8": {
+          "macro": 0.01906532663316583,
+          "ci95": [
+            0.011040201005025126,
+            0.02809045226130653
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.01,
+            "dbpedia_entity": 0.06532663316582915,
+            "fever": 0.005,
+            "hotpotqa": 0.01,
+            "nq": 0.005
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "helpful@9": {
+          "macro": 0.020040201005025127,
+          "ci95": [
+            0.012020100502512562,
+            0.02906030150753769
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.005,
+            "dbpedia_entity": 0.04020100502512563,
+            "fever": 0.015,
+            "hotpotqa": 0.02,
+            "nq": 0.02
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "helpful@10": {
+          "macro": 0.014045226130653269,
+          "ci95": [
+            0.007030150753768843,
+            0.02206532663316583
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.005,
+            "dbpedia_entity": 0.04522613065326633,
+            "fever": 0.01,
+            "hotpotqa": 0.005,
+            "nq": 0.005
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "harmful@1": {
+          "macro": 0.05916080402010051,
+          "ci95": [
+            0.04512562814070352,
+            0.07418103015075377
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.05,
+            "dbpedia_entity": 0.16080402010050251,
+            "fever": 0.015,
+            "hotpotqa": 0.035,
+            "nq": 0.035
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "harmful@2": {
+          "macro": 0.05013065326633166,
+          "ci95": [
+            0.03710050251256282,
+            0.06415577889447235
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.04,
+            "dbpedia_entity": 0.1306532663316583,
+            "fever": 0.035,
+            "hotpotqa": 0.01,
+            "nq": 0.035
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "harmful@3": {
+          "macro": 0.03407537688442211,
+          "ci95": [
+            0.023070351758793968,
+            0.04609045226130653
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.035,
+            "dbpedia_entity": 0.07537688442211055,
+            "fever": 0.01,
+            "hotpotqa": 0.015,
+            "nq": 0.035
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "harmful@4": {
+          "macro": 0.042090452261306525,
+          "ci95": [
+            0.03008542713567839,
+            0.0551105527638191
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.045,
+            "dbpedia_entity": 0.09045226130653267,
+            "fever": 0.05,
+            "hotpotqa": 0.005,
+            "nq": 0.02
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "harmful@5": {
+          "macro": 0.04210050251256282,
+          "ci95": [
+            0.03009045226130654,
+            0.05513065326633167
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.065,
+            "dbpedia_entity": 0.10050251256281408,
+            "fever": 0.015,
+            "hotpotqa": 0.01,
+            "nq": 0.02
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "harmful@6": {
+          "macro": 0.03609045226130654,
+          "ci95": [
+            0.02506532663316583,
+            0.04811557788944724
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.04,
+            "dbpedia_entity": 0.09045226130653267,
+            "fever": 0.03,
+            "hotpotqa": 0.005,
+            "nq": 0.015
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "harmful@7": {
+          "macro": 0.03813065326633166,
+          "ci95": [
+            0.027095351758793965,
+            0.050155778894472355
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.015,
+            "dbpedia_entity": 0.1306532663316583,
+            "fever": 0.025,
+            "hotpotqa": 0.0,
+            "nq": 0.02
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "harmful@8": {
+          "macro": 0.04109547738693467,
+          "ci95": [
+            0.029080402010050254,
+            0.054100502512562806
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.055,
+            "dbpedia_entity": 0.09547738693467336,
+            "fever": 0.015,
+            "hotpotqa": 0.015,
+            "nq": 0.025
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "harmful@9": {
+          "macro": 0.04613065326633166,
+          "ci95": [
+            0.03409045226130654,
+            0.059185929648241195
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.02,
+            "dbpedia_entity": 0.1306532663316583,
+            "fever": 0.015,
+            "hotpotqa": 0.03,
+            "nq": 0.035
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "harmful@10": {
+          "macro": 0.031090452261306533,
+          "ci95": [
+            0.021055276381909547,
+            0.04211570351758794
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.025,
+            "dbpedia_entity": 0.09045226130653267,
+            "fever": 0.015,
+            "hotpotqa": 0.015,
+            "nq": 0.01
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "neutral@1": {
+          "macro": 0.883713567839196,
+          "ci95": [
+            0.8646381909547738,
+            0.9027386934673366
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.925,
+            "dbpedia_entity": 0.7135678391959799,
+            "fever": 0.93,
+            "hotpotqa": 0.94,
+            "nq": 0.91
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "neutral@2": {
+          "macro": 0.9087336683417085,
+          "ci95": [
+            0.8916631909547739,
+            0.9257688442211055
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.95,
+            "dbpedia_entity": 0.7336683417085427,
+            "fever": 0.95,
+            "hotpotqa": 0.97,
+            "nq": 0.94
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "neutral@3": {
+          "macro": 0.9348643216080401,
+          "ci95": [
+            0.9188442211055274,
+            0.9498793969849245
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.94,
+            "dbpedia_entity": 0.864321608040201,
+            "fever": 0.955,
+            "hotpotqa": 0.975,
+            "nq": 0.94
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "neutral@4": {
+          "macro": 0.9268090452261306,
+          "ci95": [
+            0.9107837939698492,
+            0.9418492462311556
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.935,
+            "dbpedia_entity": 0.8090452261306532,
+            "fever": 0.94,
+            "hotpotqa": 0.995,
+            "nq": 0.955
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "neutral@5": {
+          "macro": 0.9248040201005026,
+          "ci95": [
+            0.9087437185929648,
+            0.9398542713567839
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.915,
+            "dbpedia_entity": 0.8040201005025126,
+            "fever": 0.96,
+            "hotpotqa": 0.99,
+            "nq": 0.955
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "neutral@6": {
+          "macro": 0.9458643216080402,
+          "ci95": [
+            0.9318291457286432,
+            0.958899623115578
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.955,
+            "dbpedia_entity": 0.864321608040201,
+            "fever": 0.95,
+            "hotpotqa": 0.99,
+            "nq": 0.97
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "neutral@7": {
+          "macro": 0.9377989949748743,
+          "ci95": [
+            0.9237386934673367,
+            0.9518341708542714
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.975,
+            "dbpedia_entity": 0.7989949748743719,
+            "fever": 0.95,
+            "hotpotqa": 0.985,
+            "nq": 0.98
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "neutral@8": {
+          "macro": 0.9398391959798996,
+          "ci95": [
+            0.9248089195979898,
+            0.9538594221105527
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.935,
+            "dbpedia_entity": 0.8391959798994975,
+            "fever": 0.98,
+            "hotpotqa": 0.975,
+            "nq": 0.97
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "neutral@9": {
+          "macro": 0.9338291457286433,
+          "ci95": [
+            0.9187788944723618,
+            0.9488342964824119
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.975,
+            "dbpedia_entity": 0.8291457286432161,
+            "fever": 0.97,
+            "hotpotqa": 0.95,
+            "nq": 0.945
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        },
+        "neutral@10": {
+          "macro": 0.9548643216080401,
+          "ci95": [
+            0.9418340452261306,
+            0.9668994974874373
+          ],
+          "n_collections": 5,
+          "per_corpus": {
+            "climate_fever": 0.97,
+            "dbpedia_entity": 0.864321608040201,
+            "fever": 0.975,
+            "hotpotqa": 0.98,
+            "nq": 0.985
+          },
+          "eligible_queries": {
+            "climate_fever": 200,
+            "dbpedia_entity": 199,
+            "fever": 200,
+            "hotpotqa": 200,
+            "nq": 200
+          }
+        }
+      },
+      "label_counts": {
+        "neutral": 9283,
+        "harmful": 419,
+        "helpful": 288
+      }
+    }
+  },
+  "counts": {
+    "under_1M": {
+      "collections": 20,
+      "queries": 2083,
+      "labels": 20717
+    },
+    "over_1M": {
+      "collections": 5,
+      "queries": 1000,
+      "labels": 9990
+    }
+  },
+  "checks": {
+    "arguana": {
+      "checks_passed": true,
+      "queries": 200,
+      "draw_queries": 1310,
+      "check2_base": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 2000,
+      "check5_outcome_rows": 1200
+    },
+    "bright_aops": {
+      "checks_passed": true,
+      "queries": 61,
+      "draw_queries": 61,
+      "check2_base": {
+        "rows": 61,
+        "expected": 61,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 61,
+        "expected": 61,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 61,
+        "expected": 61,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 610,
+      "check5_outcome_rows": 366
+    },
+    "bright_biology": {
+      "checks_passed": true,
+      "queries": 53,
+      "draw_queries": 53,
+      "check2_base": {
+        "rows": 53,
+        "expected": 53,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 53,
+        "expected": 53,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 53,
+        "expected": 53,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 530,
+      "check5_outcome_rows": 318
+    },
+    "bright_earth_science": {
+      "checks_passed": true,
+      "queries": 66,
+      "draw_queries": 66,
+      "check2_base": {
+        "rows": 66,
+        "expected": 66,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 66,
+        "expected": 66,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 66,
+        "expected": 66,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 660,
+      "check5_outcome_rows": 396
+    },
+    "bright_economics": {
+      "checks_passed": true,
+      "queries": 53,
+      "draw_queries": 53,
+      "check2_base": {
+        "rows": 53,
+        "expected": 53,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 53,
+        "expected": 53,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 53,
+        "expected": 53,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 530,
+      "check5_outcome_rows": 318
+    },
+    "bright_leetcode": {
+      "checks_passed": true,
+      "queries": 92,
+      "draw_queries": 92,
+      "check2_base": {
+        "rows": 92,
+        "expected": 92,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 92,
+        "expected": 92,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 92,
+        "expected": 92,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 920,
+      "check5_outcome_rows": 552
+    },
+    "bright_pony": {
+      "checks_passed": true,
+      "queries": 62,
+      "draw_queries": 62,
+      "check2_base": {
+        "rows": 62,
+        "expected": 62,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 62,
+        "expected": 62,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 62,
+        "expected": 62,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 620,
+      "check5_outcome_rows": 372
+    },
+    "bright_psychology": {
+      "checks_passed": true,
+      "queries": 51,
+      "draw_queries": 51,
+      "check2_base": {
+        "rows": 51,
+        "expected": 51,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 51,
+        "expected": 51,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 51,
+        "expected": 51,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 510,
+      "check5_outcome_rows": 306
+    },
+    "bright_robotics": {
+      "checks_passed": true,
+      "queries": 51,
+      "draw_queries": 51,
+      "check2_base": {
+        "rows": 51,
+        "expected": 51,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 51,
+        "expected": 51,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 51,
+        "expected": 51,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 510,
+      "check5_outcome_rows": 306
+    },
+    "bright_stackoverflow": {
+      "checks_passed": true,
+      "queries": 67,
+      "draw_queries": 67,
+      "check2_base": {
+        "rows": 67,
+        "expected": 67,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 67,
+        "expected": 67,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 67,
+        "expected": 67,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 670,
+      "check5_outcome_rows": 402
+    },
+    "bright_sustainable_living": {
+      "checks_passed": true,
+      "queries": 58,
+      "draw_queries": 58,
+      "check2_base": {
+        "rows": 58,
+        "expected": 58,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 58,
+        "expected": 58,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 58,
+        "expected": 58,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 580,
+      "check5_outcome_rows": 348
+    },
+    "bright_theoremqa_questions": {
+      "checks_passed": true,
+      "queries": 144,
+      "draw_queries": 144,
+      "check2_base": {
+        "rows": 144,
+        "expected": 144,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 144,
+        "expected": 144,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 144,
+        "expected": 144,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 1440,
+      "check5_outcome_rows": 864
+    },
+    "bright_theoremqa_theorems": {
+      "checks_passed": true,
+      "queries": 26,
+      "draw_queries": 26,
+      "check2_base": {
+        "rows": 26,
+        "expected": 26,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 26,
+        "expected": 26,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 26,
+        "expected": 26,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 260,
+      "check5_outcome_rows": 156
+    },
+    "fiqa": {
+      "checks_passed": true,
+      "queries": 200,
+      "draw_queries": 598,
+      "check2_base": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 2000,
+      "check5_outcome_rows": 1200
+    },
+    "nfcorpus": {
+      "checks_passed": true,
+      "queries": 200,
+      "draw_queries": 273,
+      "check2_base": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 1887,
+      "check5_outcome_rows": 1200
+    },
+    "quora": {
+      "checks_passed": true,
+      "queries": 200,
+      "draw_queries": 9950,
+      "check2_base": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 2000,
+      "check5_outcome_rows": 1200
+    },
+    "scidocs": {
+      "checks_passed": true,
+      "queries": 200,
+      "draw_queries": 902,
+      "check2_base": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 2000,
+      "check5_outcome_rows": 1200
+    },
+    "scifact": {
+      "checks_passed": true,
+      "queries": 200,
+      "draw_queries": 250,
+      "check2_base": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 2000,
+      "check5_outcome_rows": 1200
+    },
+    "trec_covid": {
+      "checks_passed": true,
+      "queries": 50,
+      "draw_queries": 50,
+      "check2_base": {
+        "rows": 50,
+        "expected": 50,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 50,
+        "expected": 50,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 50,
+        "expected": 50,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 500,
+      "check5_outcome_rows": 300
+    },
+    "webis_touche2020": {
+      "checks_passed": true,
+      "queries": 49,
+      "draw_queries": 49,
+      "check2_base": {
+        "rows": 49,
+        "expected": 49,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 49,
+        "expected": 49,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 49,
+        "expected": 49,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 490,
+      "check5_outcome_rows": 294
+    },
+    "nq": {
+      "checks_passed": true,
+      "queries": 200,
+      "draw_queries": 3452,
+      "check2_base": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 2000,
+      "check5_outcome_rows": 1200
+    },
+    "dbpedia_entity": {
+      "checks_passed": true,
+      "queries": 200,
+      "draw_queries": 400,
+      "check2_base": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 1990,
+      "check5_outcome_rows": 1200
+    },
+    "hotpotqa": {
+      "checks_passed": true,
+      "queries": 200,
+      "draw_queries": 7405,
+      "check2_base": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 2000,
+      "check5_outcome_rows": 1200
+    },
+    "fever": {
+      "checks_passed": true,
+      "queries": 200,
+      "draw_queries": 6666,
+      "check2_base": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 2000,
+      "check5_outcome_rows": 1200
+    },
+    "climate_fever": {
+      "checks_passed": true,
+      "queries": 200,
+      "draw_queries": 1535,
+      "check2_base": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check3_a5": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check4_a10": {
+        "rows": 200,
+        "expected": 200,
+        "max_abs": 0.0,
+        "ok": true
+      },
+      "check5_labels": 2000,
+      "check5_outcome_rows": 1200
+    }
+  }
+}

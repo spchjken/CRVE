@@ -1,0 +1,86 @@
+item,check,computed,reference,ok
+T5,prf_oracle/ base arm (bm25) equals 'BM25 (ours)' per query on the capped sets (max |diff|),0.0,0.0,True
+T5,prf_oracle/ base arm (dph) equals 'DPH (ours)' per query on the capped sets (max |diff|),0.0,0.0,True
+T5,under_1M bm25 prf_oracle mean gain vs prf_oracle/risk_profile.csv,0.01650143449373061,0.0165014344937306,True
+T5,under_1M bm25 prf_oracle below/above/worst,5/12/arguana,5/12/arguana,True
+T5,under_1M bm25 rm3_cv mean gain vs prf_oracle/risk_profile.csv,-0.0035468089223200565,-0.00354680892232,True
+T5,under_1M bm25 rm3_cv below/above/worst,11/5/bright_economics,11/5/bright_economics,True
+T5,under_1M bm25 bo1_cv mean gain vs prf_oracle/risk_profile.csv,0.0034630445025180282,0.003463044502518,True
+T5,under_1M bm25 bo1_cv below/above/worst,11/7/scifact,11/7/scifact,True
+T5,under_1M dph prf_oracle mean gain vs prf_oracle/risk_profile.csv,0.011368550456006538,0.0113685504560065,True
+T5,under_1M dph prf_oracle below/above/worst,3/12/quora,3/12/quora,True
+T5,under_1M dph rm3_cv mean gain vs prf_oracle/risk_profile.csv,0.004939500192297872,0.0049395001922978,True
+T5,under_1M dph rm3_cv below/above/worst,8/8/quora,8/8/quora,True
+T5,under_1M dph bo1_cv mean gain vs prf_oracle/risk_profile.csv,-0.009496285913427669,-0.0094962859134276,True
+T5,under_1M dph bo1_cv below/above/worst,13/5/quora,13/5/quora,True
+T5,over_1M bm25 prf_oracle mean gain vs prf_oracle/risk_profile.csv,0.0016617157837244656,0.0016617157837244,True
+T5,over_1M bm25 prf_oracle below/above/worst,2/2/hotpotqa,2/2/hotpotqa,True
+T5,over_1M bm25 rm3_cv mean gain vs prf_oracle/risk_profile.csv,-0.0006882630715049354,-0.0006882630715049,True
+T5,over_1M bm25 rm3_cv below/above/worst,2/2/hotpotqa,2/2/hotpotqa,True
+T5,over_1M bm25 bo1_cv mean gain vs prf_oracle/risk_profile.csv,-0.007247235846125327,-0.0072472358461253,True
+T5,over_1M bm25 bo1_cv below/above/worst,2/2/hotpotqa,2/2/hotpotqa,True
+T5,over_1M dph prf_oracle mean gain vs prf_oracle/risk_profile.csv,0.0036185326027611655,0.0036185326027611,True
+T5,over_1M dph prf_oracle below/above/worst,1/2/hotpotqa,1/2/hotpotqa,True
+T5,over_1M dph rm3_cv mean gain vs prf_oracle/risk_profile.csv,-0.0003143451370914652,-0.0003143451370914,True
+T5,over_1M dph rm3_cv below/above/worst,1/2/hotpotqa,1/2/hotpotqa,True
+T5,over_1M dph bo1_cv mean gain vs prf_oracle/risk_profile.csv,-0.015728111455971285,-0.0157281114559712,True
+T5,over_1M dph bo1_cv below/above/worst,3/1/hotpotqa,3/1/hotpotqa,True
+T5b,share of Quora queries with BM25 nDCG@10 = 1 (Section 6.2: 60%),60,60,True
+T5b,share of CRVE's net loss on Quora from BM25 = 1 queries (Section 6.2: about four fifths),4,4,True
+T6,K=5 full method gain vs gate1_order_18_corpora.csv,0.007373621347758632,0.0073736213477586,True
+T6,K=5 full method gain ci low,0.004677046214371389,0.0046770462143713,True
+T6,K=5 full method gain ci high,0.010191901249907806,0.0101919012499078,True
+T6,K=5 Gate 1 order gain vs gate1_order_18_corpora.csv,0.0018045808058220025,0.001804580805822,True
+T6,K=5 Gate 1 order gain ci low,-0.00042143449572951217,-0.0004214344957295,True
+T6,K=5 Gate 1 order gain ci high,0.004177902730330807,0.0041779027303308,True
+T6,K=5 paired Gate 2 contribution vs gate1_order_paired.csv,0.005569040541936629,0.0055690405419366,True
+T6,K=5 paired interval low,0.0027735204963341294,0.0027735204963341,True
+T6,K=10 full method gain vs gate1_order_18_corpora.csv,0.009095067650919907,0.0090950676509199,True
+T6,K=10 full method gain ci low,0.006116328742204037,0.006116328742204,True
+T6,K=10 full method gain ci high,0.012208600863044455,0.0122086008630444,True
+T6,K=10 Gate 1 order gain vs gate1_order_18_corpora.csv,0.002227170664459111,0.0022271706644591,True
+T6,K=10 Gate 1 order gain ci low,-0.0007495195420221481,-0.0007495195420221,True
+T6,K=10 Gate 1 order gain ci high,0.005360656949311751,0.0053606569493117,True
+T6,K=10 paired Gate 2 contribution vs gate1_order_paired.csv,0.006867896986460797,0.0068678969864607,True
+T6,K=10 paired interval low,0.0036244804597359193,0.0036244804597359,True
+F2,under_1M BM25 L=10 vs analysis.json,0.0024242926109543,0.002424292610954334,True
+F2,under_1M BM25 L=25 vs analysis.json,0.0048214260958063,0.004821426095806353,True
+F2,under_1M BM25 L=50 vs analysis.json,0.0061864351225022,0.006186435122502212,True
+F2,under_1M BM25 L=100 vs analysis.json,0.0078178399272587,0.007817839927258778,True
+F2,under_1M BM25 L=200 vs analysis.json,0.0092650379219904,0.009265037921990413,True
+F2,under_1M BM25 L=300 vs analysis.json,0.0096084811476582,0.009608481147658257,True
+F2,under_1M BM25 L=500 vs analysis.json,0.0097766248847374,0.009776624884737472,True
+F2,under 1M BM25 L=10 vs reference constant (Section 5.3),0.0024,0.0024,True
+F2,under 1M BM25 L=200 vs reference constant (Section 5.3),0.0093,0.0093,True
+T7,under_1M BM25 draw min recomputed vs analysis.json,0.0073899471701343224,0.0073899471701343224,True
+T7,under_1M BM25 draw max recomputed vs analysis.json,0.008741578656432245,0.008741578656432245,True
+T7,under_1M BM25 S2 - draw mean: Holm macro vs 95% summary macro,0.0011290672322036223,0.0011290672322036,True
+T7,under_1M BM25 S2 reading vs stored,non-inferior,non-inferior,True
+T7,under_1M BM25 S1 - draw mean: Holm macro vs 95% summary macro,0.0015680124992641907,0.0015680124992641,True
+T7,under_1M BM25 S1 reading vs stored,non-inferior,non-inferior,True
+T7,under_1M BM25 S4 - draw mean: Holm macro vs 95% summary macro,0.001185847894259333,0.0011858478942593,True
+T7,under_1M BM25 S4 reading vs stored,non-inferior,non-inferior,True
+T7,over_1M BM25 draw min recomputed vs analysis_over_1M.json,0.0032186222947633487,0.0032186222947633487,True
+T7,over_1M BM25 draw max recomputed vs analysis_over_1M.json,0.005755316546344276,0.005755316546344276,True
+T7,over_1M BM25 S2 - draw mean: Holm macro vs 95% summary macro,0.00084083983172981,0.0008408398317298,True
+T7,over_1M BM25 S2 reading vs stored,non-inferior,non-inferior,True
+T7,over_1M BM25 S1 - draw mean: Holm macro vs 95% summary macro,-5.9182915790362194e-05,-5.9182915790362194e-05,True
+T7,over_1M BM25 S1 reading vs stored,non-inferior,non-inferior,True
+T7,over_1M BM25 S4 - draw mean: Holm macro vs 95% summary macro,0.0004055459818775828,0.0004055459818775,True
+T7,over_1M BM25 S4 reading vs stored,non-inferior,non-inferior,True
+T7,BM25 under 1M S1 - draw mean vs reference constant (Table 6),0.0016,0.0016,True
+T7,BM25 under 1M S2 - draw mean vs reference constant (Table 6),0.0011,0.0011,True
+T7,DPH under 1M S2 - draw mean vs reference constant (Table 6),0.0023,0.0023,True
+T7,DPH under 1M S1 - draw mean vs reference constant (Table 6),-0.0007,-0.0007,True
+T8,BM25 under 1M K=5 w=0.2 vs reference constant (Table A4),0.0091,0.0091,True
+T8,BM25 under 1M K=5 w=0.1 vs reference constant (Table A4),0.0069,0.0069,True
+T8,DPH over 1M K=5 w=0.2 vs reference constant (Table A4),-0.0001,-0.0001,True
+T8,BM25 over 1M K=5 w=0.2 vs reference constant (Table A4),0.0044,0.0044,True
+pool,kept share = ratio of the stored replicate-mean gains,0.8521502953980632,0.8521502953980632,True
+pool,kept share (about 85%),85,85,True
+pool,interval of the kept share (66% to 103%),66-103,66-103,True
+pool,"collections keeping less than half (FiQA, Sustainable Living, ArguAna: 36% to 49%)",fiqa;bright_sustainable_living;arguana 36-49,fiqa;bright_sustainable_living;arguana 36-49,True
+weighting,under 1M certainty - flat (+0.0005),0.0005,0.0005,True
+weighting,"under 1M interval (Holm 97.5%: -0.0031, +0.0047)",97.5% -0.0031 +0.0047,97.5% -0.0031 +0.0047,True
+weighting,over 1M certainty - flat (-0.0008),-0.0008,-0.0008,True
+weighting,"over 1M interval (95%: -0.0021, +0.0004)",95% -0.0021 +0.0004,95% -0.0021 +0.0004,True

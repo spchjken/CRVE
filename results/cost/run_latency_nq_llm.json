@@ -1,0 +1,14 @@
+{
+  "stage": "latency_nq_llm",
+  "queries": 100,
+  "rss_gib": {
+    "process_gib": 1.1441268920898438
+  },
+  "peak_rss_gib": 1.1441268920898438,
+  "llm_identical_to_cache": {
+    "compared": 100,
+    "identical": 49
+  },
+  "llm_generation_ms_median": 599.005,
+  "ollama_ps": "NAME          ID              SIZE      PROCESSOR    CONTEXT    UNTIL   \nqwen3.5:4b    d8b0f5e9760c    3.1 GB    100% GPU     4096       Forever    \n"
+}

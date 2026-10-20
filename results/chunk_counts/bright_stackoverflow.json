@@ -1,0 +1,20 @@
+{
+  "corpus": "bright_stackoverflow",
+  "chunks_total": 706733,
+  "chunks_with_pool_term": 699828,
+  "distinct_texts_with_pool_term": 192501,
+  "sidecar_unique_chunks": 87527,
+  "sidecar_unique_chunks_by_seed": {
+    "42": 87527,
+    "1": 87732,
+    "2": 87545,
+    "3": 87604,
+    "4": 87538,
+    "5": 87659
+  },
+  "terms": 10000,
+  "term_coverage_mean": 0.4939906791773728,
+  "term_coverage_median": 0.425531914893617,
+  "terms_fully_covered_share": 0.2563,
+  "seconds": 268.6
+}

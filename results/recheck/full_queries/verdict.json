@@ -1,0 +1,147 @@
+{
+  "primaries": {
+    "P2": {
+      "group": "over_1M",
+      "contrast": "primary_flat - bm25",
+      "holm_step": 1,
+      "level": 0.9875,
+      "macro": 0.0038790849775266556,
+      "interval": [
+        0.0012427003917629112,
+        0.006367417960490169
+      ],
+      "p_one_sided": 0.0,
+      "below_floor": 0,
+      "n_corpora": 5,
+      "pooled": 0.005707778335146637,
+      "per_corpus": {
+        "climate_fever": 0.009106698987611612,
+        "dbpedia_entity": -0.004981171554374102,
+        "fever": 0.011608228991400588,
+        "hotpotqa": 0.0018280822596745305,
+        "nq": 0.0018335862033206512
+      },
+      "confirmed": true
+    },
+    "P4": {
+      "group": "over_1M",
+      "contrast": "boost_flat - bm25",
+      "holm_step": 2,
+      "level": 0.9833,
+      "macro": 0.003682005134674883,
+      "interval": [
+        0.001355215088255711,
+        0.0059260319838174685
+      ],
+      "p_one_sided": 0.0,
+      "below_floor": 0,
+      "n_corpora": 5,
+      "pooled": 0.005749869835626267,
+      "per_corpus": {
+        "climate_fever": 0.007260352389446185,
+        "dbpedia_entity": -0.004800974347540409,
+        "fever": 0.011572786837337073,
+        "hotpotqa": 0.0021078367980899757,
+        "nq": 0.002270023996041593
+      },
+      "confirmed": true
+    },
+    "P3": {
+      "group": "under_1M",
+      "contrast": "boost_flat - bm25",
+      "holm_step": 3,
+      "level": 0.975,
+      "macro": 0.00956884022327763,
+      "interval": [
+        0.002548272699966982,
+        0.017510094234724494
+      ],
+      "p_one_sided": 0.0009,
+      "below_floor": 1,
+      "n_corpora": 6,
+      "pooled": -0.010640156746715987,
+      "per_corpus": {
+        "arguana": 0.006221645259272647,
+        "fiqa": 0.0028488401415523805,
+        "nfcorpus": 0.021701866195078176,
+        "quora": -0.015107591125827149,
+        "scidocs": 0.010770681926985803,
+        "scifact": 0.030977598942603924
+      },
+      "confirmed": true
+    },
+    "P1": {
+      "group": "under_1M",
+      "contrast": "primary_flat - bm25",
+      "holm_step": 4,
+      "level": 0.95,
+      "macro": 0.011501733358265867,
+      "interval": [
+        0.003246100612215125,
+        0.02038929750445848
+      ],
+      "p_one_sided": 0.0029,
+      "below_floor": 1,
+      "n_corpora": 6,
+      "pooled": -0.009874538182761492,
+      "per_corpus": {
+        "arguana": 0.00892476051020662,
+        "fiqa": 0.009002210587327945,
+        "nfcorpus": 0.020375041547683864,
+        "quora": -0.014703733280677925,
+        "scidocs": 0.010429457932489483,
+        "scifact": 0.03498266285256521
+      },
+      "confirmed": true
+    }
+  },
+  "secondaries": {
+    "S1": {
+      "group": "under_1M",
+      "contrast": "primary_certainty - primary_flat",
+      "holm_step": 1,
+      "level": 0.975,
+      "macro": 0.00046422192170557575,
+      "interval": [
+        -0.003051807895442696,
+        0.004689619655174104
+      ],
+      "p_one_sided": 0.4133,
+      "below_floor": 0,
+      "n_corpora": 6,
+      "pooled": -0.003597661807841932,
+      "per_corpus": {
+        "arguana": 0.0023084259463973305,
+        "fiqa": -0.0013673013461581883,
+        "nfcorpus": -0.002360319887130577,
+        "quora": -0.004636961359781982,
+        "scidocs": -0.0008406630185500464,
+        "scifact": 0.009682151195456918
+      },
+      "confirmed": false
+    },
+    "S2": {
+      "group": "over_1M",
+      "contrast": "primary_certainty - primary_flat",
+      "holm_step": 2,
+      "level": 0.95,
+      "macro": -0.0008132779478180266,
+      "interval": [
+        -0.0020591643245684945,
+        0.00044146675269175637
+      ],
+      "p_one_sided": 0.8968,
+      "below_floor": 0,
+      "n_corpora": 5,
+      "pooled": -0.0010995083555389398,
+      "per_corpus": {
+        "climate_fever": -0.0045009148183442075,
+        "dbpedia_entity": 0.0023558323533268604,
+        "fever": -0.0019048842255635428,
+        "hotpotqa": -0.0006037898452991841,
+        "nq": 0.0005873667967899411
+      },
+      "confirmed": false
+    }
+  }
+}

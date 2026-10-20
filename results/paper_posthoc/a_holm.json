@@ -1,0 +1,782 @@
+{
+  "all": {
+    "under_1M": {
+      "BM25+S2 - BM25+RM3": {
+        "macro": 0.021383024739877805,
+        "holm_step": 2,
+        "level": 0.9929,
+        "interval": [
+          0.013692269399241102,
+          0.029509558938948757
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S2 - BM25+Bo1": {
+        "macro": 0.009552970402993919,
+        "holm_step": 6,
+        "level": 0.9833,
+        "interval": [
+          0.0030068533778457303,
+          0.016087241097922363
+        ],
+        "p_two_sided": 0.0004,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S2 - BM25+BGE-QE": {
+        "macro": 0.020436900781636645,
+        "holm_step": 1,
+        "level": 0.9938,
+        "interval": [
+          0.012112914117825602,
+          0.02865676806480073
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S2 - BM25+LLM-Q2E": {
+        "macro": -0.0009350513005598129,
+        "holm_step": 8,
+        "level": 0.95,
+        "interval": [
+          -0.004868004835001648,
+          0.0029405593709172233
+        ],
+        "p_two_sided": 0.6276,
+        "decided": false,
+        "direction": "undecided"
+      },
+      "DPH+S2 - DPH+RM3": {
+        "macro": 0.015566177771446216,
+        "holm_step": 5,
+        "level": 0.9875,
+        "interval": [
+          0.008215280593427857,
+          0.023001659077944304
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S2 - DPH+Bo1": {
+        "macro": 0.024213499655883895,
+        "holm_step": 4,
+        "level": 0.99,
+        "interval": [
+          0.015680098143579926,
+          0.03284196302553457
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S2 - DPH+BGE-QE": {
+        "macro": 0.032226968712741534,
+        "holm_step": 3,
+        "level": 0.9917,
+        "interval": [
+          0.022687267850305906,
+          0.04200023049522938
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S2 - DPH+LLM-Q2E": {
+        "macro": 0.001855156996471299,
+        "holm_step": 7,
+        "level": 0.975,
+        "interval": [
+          -0.0030115158679177604,
+          0.0064989936353040765
+        ],
+        "p_two_sided": 0.391,
+        "decided": false,
+        "direction": "undecided"
+      },
+      "BM25+S1 - BM25+RM3": {
+        "macro": 0.02182197000693837,
+        "holm_step": 2,
+        "level": 0.9929,
+        "interval": [
+          0.013954791331539207,
+          0.029936123057190896
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S1 - BM25+Bo1": {
+        "macro": 0.009991915670054485,
+        "holm_step": 6,
+        "level": 0.9833,
+        "interval": [
+          0.0033975484338410753,
+          0.016628850711863277
+        ],
+        "p_two_sided": 0.0004,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S1 - BM25+BGE-QE": {
+        "macro": 0.02087584604869721,
+        "holm_step": 1,
+        "level": 0.9938,
+        "interval": [
+          0.011934495111268754,
+          0.02975957205746184
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S1 - BM25+LLM-Q2E": {
+        "macro": -0.0004961060334992453,
+        "holm_step": 8,
+        "level": 0.95,
+        "interval": [
+          -0.004614762174540248,
+          0.003419849990902748
+        ],
+        "p_two_sided": 0.8106,
+        "decided": false,
+        "direction": "undecided"
+      },
+      "DPH+S1 - DPH+RM3": {
+        "macro": 0.012525281245727857,
+        "holm_step": 5,
+        "level": 0.9875,
+        "interval": [
+          0.004904126320731708,
+          0.019964420734308416
+        ],
+        "p_two_sided": 0.0002,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S1 - DPH+Bo1": {
+        "macro": 0.021172603130165536,
+        "holm_step": 4,
+        "level": 0.99,
+        "interval": [
+          0.012786752832969686,
+          0.03016655930047237
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S1 - DPH+BGE-QE": {
+        "macro": 0.029186072187023175,
+        "holm_step": 3,
+        "level": 0.9917,
+        "interval": [
+          0.019656036841298383,
+          0.03859384954749165
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S1 - DPH+LLM-Q2E": {
+        "macro": -0.0011857395292470593,
+        "holm_step": 7,
+        "level": 0.975,
+        "interval": [
+          -0.006012321643740092,
+          0.0034223860297263094
+        ],
+        "p_two_sided": 0.576,
+        "decided": false,
+        "direction": "undecided"
+      }
+    },
+    "over_1M": {
+      "BM25+S2 - BM25+RM3": {
+        "macro": 0.024218516773543274,
+        "holm_step": 4,
+        "level": 0.99,
+        "interval": [
+          0.02047295877125974,
+          0.02782507845781823
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S2 - BM25+Bo1": {
+        "macro": 0.017188276060737077,
+        "holm_step": 2,
+        "level": 0.9929,
+        "interval": [
+          0.013485629023945763,
+          0.020885309297207836
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S2 - BM25+BGE-QE": {
+        "macro": 0.010035554835226525,
+        "holm_step": 1,
+        "level": 0.9938,
+        "interval": [
+          0.006247475420627499,
+          0.01382989916609701
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S2 - BM25+LLM-Q2E": {
+        "macro": -0.008138226761303154,
+        "holm_step": 3,
+        "level": 0.9917,
+        "interval": [
+          -0.011385384584107027,
+          -0.0050025606346001325
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "below 0"
+      },
+      "DPH+S2 - DPH+RM3": {
+        "macro": 0.012939082166842331,
+        "holm_step": 8,
+        "level": 0.95,
+        "interval": [
+          0.010230314929043785,
+          0.015658006323230594
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S2 - DPH+Bo1": {
+        "macro": 0.021828012425933015,
+        "holm_step": 6,
+        "level": 0.9833,
+        "interval": [
+          0.018153141021415613,
+          0.025561862710831232
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S2 - DPH+BGE-QE": {
+        "macro": 0.025753170766099082,
+        "holm_step": 5,
+        "level": 0.9875,
+        "interval": [
+          0.02189809623478319,
+          0.02956480842551951
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S2 - DPH+LLM-Q2E": {
+        "macro": -0.013545951230695852,
+        "holm_step": 7,
+        "level": 0.975,
+        "interval": [
+          -0.016466687365075772,
+          -0.01068113835690601
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "below 0"
+      },
+      "BM25+S1 - BM25+RM3": {
+        "macro": 0.023318494026023106,
+        "holm_step": 4,
+        "level": 0.99,
+        "interval": [
+          0.019747246986397266,
+          0.026877799319208088
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S1 - BM25+Bo1": {
+        "macro": 0.016288253313216906,
+        "holm_step": 2,
+        "level": 0.9929,
+        "interval": [
+          0.012520368810030899,
+          0.01992954632486412
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S1 - BM25+BGE-QE": {
+        "macro": 0.009135532087706353,
+        "holm_step": 1,
+        "level": 0.9938,
+        "interval": [
+          0.005674983265761944,
+          0.01272786370619837
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S1 - BM25+LLM-Q2E": {
+        "macro": -0.009038249508823325,
+        "holm_step": 3,
+        "level": 0.9917,
+        "interval": [
+          -0.012088386595641447,
+          -0.005942719889762322
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "below 0"
+      },
+      "DPH+S1 - DPH+RM3": {
+        "macro": 0.010478568605623153,
+        "holm_step": 8,
+        "level": 0.95,
+        "interval": [
+          0.007752813014653626,
+          0.013178472065942118
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S1 - DPH+Bo1": {
+        "macro": 0.019367498864713843,
+        "holm_step": 6,
+        "level": 0.9833,
+        "interval": [
+          0.015476358555896118,
+          0.023190097865605663
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S1 - DPH+BGE-QE": {
+        "macro": 0.023292657204879906,
+        "holm_step": 5,
+        "level": 0.9875,
+        "interval": [
+          0.019658869427957307,
+          0.026954725764061802
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S1 - DPH+LLM-Q2E": {
+        "macro": -0.01600646479191503,
+        "holm_step": 7,
+        "level": 0.975,
+        "interval": [
+          -0.01894582986687837,
+          -0.013131163000273696
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "below 0"
+      }
+    }
+  },
+  "fresh": {
+    "under_1M": {
+      "BM25+S2 - BM25+RM3": {
+        "macro": 0.02688516248984597,
+        "holm_step": 3,
+        "level": 0.9917,
+        "interval": [
+          0.011841852098711067,
+          0.044611957543238386
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S2 - BM25+Bo1": {
+        "macro": 0.03463992843595383,
+        "holm_step": 2,
+        "level": 0.9929,
+        "interval": [
+          0.02147082972324725,
+          0.049353399462175034
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S2 - BM25+BGE-QE": {
+        "macro": 0.03250111018668044,
+        "holm_step": 1,
+        "level": 0.9938,
+        "interval": [
+          0.017979462575813333,
+          0.04711774646756891
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S2 - BM25+LLM-Q2E": {
+        "macro": 0.005558032948415052,
+        "holm_step": 8,
+        "level": 0.95,
+        "interval": [
+          -0.002443941184652831,
+          0.013861939189460208
+        ],
+        "p_two_sided": 0.1754,
+        "decided": false,
+        "direction": "undecided"
+      },
+      "DPH+S2 - DPH+RM3": {
+        "macro": 0.03434058220983947,
+        "holm_step": 6,
+        "level": 0.9833,
+        "interval": [
+          0.020903689069944473,
+          0.05071193510613974
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S2 - DPH+Bo1": {
+        "macro": 0.045864368229340764,
+        "holm_step": 5,
+        "level": 0.9875,
+        "interval": [
+          0.03350850400363925,
+          0.05930920957088051
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S2 - DPH+BGE-QE": {
+        "macro": 0.04653560085953306,
+        "holm_step": 4,
+        "level": 0.99,
+        "interval": [
+          0.03533030182725488,
+          0.05940052906874869
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S2 - DPH+LLM-Q2E": {
+        "macro": 0.008792530668781301,
+        "holm_step": 7,
+        "level": 0.975,
+        "interval": [
+          0.00014344178170331252,
+          0.01811464294338425
+        ],
+        "p_two_sided": 0.0222,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S1 - BM25+RM3": {
+        "macro": 0.026422967494545282,
+        "holm_step": 3,
+        "level": 0.9917,
+        "interval": [
+          0.01303303471421051,
+          0.04108146168369903
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S1 - BM25+Bo1": {
+        "macro": 0.03417773344065314,
+        "holm_step": 2,
+        "level": 0.9929,
+        "interval": [
+          0.019917549266797323,
+          0.04854887244908911
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S1 - BM25+BGE-QE": {
+        "macro": 0.03203891519137977,
+        "holm_step": 1,
+        "level": 0.9938,
+        "interval": [
+          0.019853466174702305,
+          0.045210249318667906
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S1 - BM25+LLM-Q2E": {
+        "macro": 0.005095837953114365,
+        "holm_step": 8,
+        "level": 0.95,
+        "interval": [
+          -0.0021197953982077006,
+          0.012626001119368756
+        ],
+        "p_two_sided": 0.1654,
+        "decided": false,
+        "direction": "undecided"
+      },
+      "DPH+S1 - DPH+RM3": {
+        "macro": 0.031878475506092956,
+        "holm_step": 6,
+        "level": 0.9833,
+        "interval": [
+          0.0206771518335576,
+          0.04564640052909073
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S1 - DPH+Bo1": {
+        "macro": 0.04340226152559425,
+        "holm_step": 5,
+        "level": 0.9875,
+        "interval": [
+          0.03131263273907556,
+          0.05625237913756168
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S1 - DPH+BGE-QE": {
+        "macro": 0.04407349415578654,
+        "holm_step": 4,
+        "level": 0.99,
+        "interval": [
+          0.03371799416736733,
+          0.05546782322599892
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S1 - DPH+LLM-Q2E": {
+        "macro": 0.006330423965034784,
+        "holm_step": 7,
+        "level": 0.975,
+        "interval": [
+          -0.0003243305955303916,
+          0.01359490828145276
+        ],
+        "p_two_sided": 0.0318,
+        "decided": false,
+        "direction": "undecided"
+      }
+    },
+    "over_1M": {
+      "BM25+S2 - BM25+RM3": {
+        "macro": 0.02518138906029882,
+        "holm_step": 4,
+        "level": 0.99,
+        "interval": [
+          0.02071094578525625,
+          0.02978902406739767
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S2 - BM25+Bo1": {
+        "macro": 0.017329884815243602,
+        "holm_step": 2,
+        "level": 0.9929,
+        "interval": [
+          0.013004532873995481,
+          0.021963536056738432
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S2 - BM25+BGE-QE": {
+        "macro": 0.009976237405698191,
+        "holm_step": 1,
+        "level": 0.9938,
+        "interval": [
+          0.005204035948986346,
+          0.014774293536960765
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S2 - BM25+LLM-Q2E": {
+        "macro": -0.008020172550972404,
+        "holm_step": 3,
+        "level": 0.9917,
+        "interval": [
+          -0.01186286839104384,
+          -0.004033669739554773
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "below 0"
+      },
+      "DPH+S2 - DPH+RM3": {
+        "macro": 0.01377512250015693,
+        "holm_step": 8,
+        "level": 0.95,
+        "interval": [
+          0.010586067837797735,
+          0.01697495485137954
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S2 - DPH+Bo1": {
+        "macro": 0.021361697807571266,
+        "holm_step": 6,
+        "level": 0.9833,
+        "interval": [
+          0.0169297544446376,
+          0.02590389284941976
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S2 - DPH+BGE-QE": {
+        "macro": 0.025815459008666598,
+        "holm_step": 5,
+        "level": 0.9875,
+        "interval": [
+          0.020840988840669112,
+          0.030715271574209314
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S2 - DPH+LLM-Q2E": {
+        "macro": -0.012787877477089848,
+        "holm_step": 7,
+        "level": 0.975,
+        "interval": [
+          -0.016121286228860627,
+          -0.009551522311485495
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "below 0"
+      },
+      "BM25+S1 - BM25+RM3": {
+        "macro": 0.023324860415104537,
+        "holm_step": 4,
+        "level": 0.99,
+        "interval": [
+          0.019051386055234383,
+          0.02792052561682705
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S1 - BM25+Bo1": {
+        "macro": 0.015473356170049324,
+        "holm_step": 2,
+        "level": 0.9929,
+        "interval": [
+          0.01134783819748674,
+          0.019761701611453672
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S1 - BM25+BGE-QE": {
+        "macro": 0.00811970876050391,
+        "holm_step": 1,
+        "level": 0.9938,
+        "interval": [
+          0.0037149136059403697,
+          0.012577944748016674
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "BM25+S1 - BM25+LLM-Q2E": {
+        "macro": -0.009876701196166685,
+        "holm_step": 3,
+        "level": 0.9917,
+        "interval": [
+          -0.013841336724102635,
+          -0.0060577006299823094
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "below 0"
+      },
+      "DPH+S1 - DPH+RM3": {
+        "macro": 0.010254203598148243,
+        "holm_step": 8,
+        "level": 0.95,
+        "interval": [
+          0.006924266829236263,
+          0.013554688566027432
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S1 - DPH+Bo1": {
+        "macro": 0.017840778905562578,
+        "holm_step": 6,
+        "level": 0.9833,
+        "interval": [
+          0.01316816972927061,
+          0.022557202178257692
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S1 - DPH+BGE-QE": {
+        "macro": 0.022294540106657913,
+        "holm_step": 5,
+        "level": 0.9875,
+        "interval": [
+          0.017617404074206314,
+          0.026918955436461348
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "above 0"
+      },
+      "DPH+S1 - DPH+LLM-Q2E": {
+        "macro": -0.016308796379098534,
+        "holm_step": 7,
+        "level": 0.975,
+        "interval": [
+          -0.019938155677271842,
+          -0.012750692230373109
+        ],
+        "p_two_sided": 0.0,
+        "decided": true,
+        "direction": "below 0"
+      }
+    }
+  }
+}

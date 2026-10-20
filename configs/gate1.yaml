@@ -1,0 +1,15 @@
+# Gate 1 configuration read by crve.selection.gate1_sidecars.Gate1SidecarManager (validated by
+# validate_gate1_config). Values are those of the runs behind the paper. M = 600 and the profile windows (R = 50,
+# h = 32 / 31) are fixed in the code; the RRF fusion of the two channels (k = 60, L = 200) is set in crve.pipeline.gate1.
+memory_watchdog:
+  jvm_heap_gib: 4          # JVM heap of the Terrier process
+  hard_abort_rss_gib: 12   # a sidecar build aborts above this process-tree RSS
+sidecars:
+  lexical_profiles:
+    reservoir_seed: 42     # seed of the profile sampler
+build_ceilings_sec:        # time limits of a build (they do not change any output)
+  ppmi_sidecar: 28800
+  lexical_profiles: 28800
+build_disk_caps_mb:
+  ppmi_sidecar: 250
+  lexical_profiles: 350

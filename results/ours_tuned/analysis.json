@@ -1,0 +1,510 @@
+{
+  "under_1M": {
+    "bm25_absolute_ndcg10": {
+      "S1_cv": 0.25182175110113264,
+      "S1_default": 0.2512732624061539,
+      "S1_oracle": 0.25892734060713896,
+      "S2_cv": 0.2517442640677598,
+      "S2_default": 0.25130525033107315,
+      "S2_oracle": 0.2561923033343678,
+      "base": 0.2421674764845549,
+      "bo1_cv": 0.24563052098707291,
+      "bo1_default": 0.24130762081813778,
+      "bo1_oracle": 0.2532051847691955,
+      "prf_oracle": 0.25866891097828554,
+      "rm3_cv": 0.23862066756223482,
+      "rm3_default": 0.2310126023170887,
+      "rm3_oracle": 0.2413282405769051
+    },
+    "dph_absolute_ndcg10": {
+      "S1_cv": 0.27883650231985957,
+      "S1_default": 0.27364941018397937,
+      "S1_oracle": 0.28372805520019584,
+      "S2_cv": 0.2782459495173792,
+      "S2_default": 0.2768407299936488,
+      "S2_oracle": 0.2826460688756968,
+      "base": 0.2654250878389966,
+      "bo1_cv": 0.2559288019255689,
+      "bo1_default": 0.25247698064415613,
+      "bo1_oracle": 0.2627069865665348,
+      "prf_oracle": 0.27679363829500314,
+      "rm3_cv": 0.27036458803129443,
+      "rm3_default": 0.261947185174804,
+      "rm3_oracle": 0.2756156876781161
+    },
+    "bm25: S1_oracle - rm3_oracle": {
+      "macro": 0.017599100030233846,
+      "holm_step": 1,
+      "level": 0.9938,
+      "interval": [
+        0.009759618045091838,
+        0.02566214971902375
+      ],
+      "p_two_sided": 0.0,
+      "decided": true,
+      "direction": "above 0",
+      "reading": "better",
+      "per_corpus": {
+        "arguana": 0.026664916434511528,
+        "bright_aops": 0.030061675973367855,
+        "bright_biology": 0.01841889393943812,
+        "bright_earth_science": 0.043687473742832834,
+        "bright_economics": 0.04159088871407363,
+        "bright_leetcode": 0.022105970117910167,
+        "bright_pony": 0.021148642474320904,
+        "bright_psychology": 0.029824166101985728,
+        "bright_robotics": 0.0213602590450559,
+        "bright_stackoverflow": 0.011858594022340657,
+        "bright_sustainable_living": 0.027356865185504814,
+        "bright_theoremqa_questions": 0.01253965410161805,
+        "bright_theoremqa_theorems": 0.01656448300282281,
+        "fiqa": 0.007960617316096177,
+        "nfcorpus": 0.01731255647993967,
+        "quora": 0.008352916828969196,
+        "scidocs": 0.002902286390750937,
+        "scifact": 0.029479392564529427,
+        "trec_covid": -0.014707921228435063,
+        "webis_touche2020": -0.022500330602956437
+      }
+    },
+    "bm25: S1_oracle - bo1_oracle": {
+      "macro": 0.005722155837943471,
+      "holm_step": 7,
+      "level": 0.975,
+      "interval": [
+        -0.0011688655831756107,
+        0.012637548859198959
+      ],
+      "p_two_sided": 0.0584,
+      "decided": false,
+      "direction": "undecided",
+      "reading": "non-inferior",
+      "per_corpus": {
+        "arguana": 0.05117656290937885,
+        "bright_aops": 0.024194544343553247,
+        "bright_biology": -0.023141697071014444,
+        "bright_earth_science": -0.05286700611733589,
+        "bright_economics": 0.003523551730196856,
+        "bright_leetcode": 0.0115872946238899,
+        "bright_pony": 0.022646903042973742,
+        "bright_psychology": -0.0037252034121335828,
+        "bright_robotics": -0.0006919556546262443,
+        "bright_stackoverflow": -0.018200971514899026,
+        "bright_sustainable_living": 0.017813024922742986,
+        "bright_theoremqa_questions": 0.018836881558985205,
+        "bright_theoremqa_theorems": -0.014801111241447408,
+        "fiqa": 0.015031061623420782,
+        "nfcorpus": 0.023687827623527145,
+        "quora": 0.031134628449707463,
+        "scidocs": 0.0015846172731994197,
+        "scifact": 0.0666622140246956,
+        "trec_covid": -0.011150780079338013,
+        "webis_touche2020": -0.048857270276607155
+      }
+    },
+    "bm25: S2_oracle - rm3_oracle": {
+      "macro": 0.01486406275746269,
+      "holm_step": 2,
+      "level": 0.9929,
+      "interval": [
+        0.0075757450649612664,
+        0.0223770595505596
+      ],
+      "p_two_sided": 0.0,
+      "decided": true,
+      "direction": "above 0",
+      "reading": "better",
+      "per_corpus": {
+        "arguana": 0.02934412806225837,
+        "bright_aops": 0.01606946547871978,
+        "bright_biology": 0.014301775317406182,
+        "bright_earth_science": 0.03260075945008952,
+        "bright_economics": 0.041066912951423416,
+        "bright_leetcode": 0.021469130672605925,
+        "bright_pony": 0.00852869594183345,
+        "bright_psychology": 0.02949264732665256,
+        "bright_robotics": 0.019633635622735617,
+        "bright_stackoverflow": 0.010600463938474688,
+        "bright_sustainable_living": 0.023600720326511677,
+        "bright_theoremqa_questions": 0.013201284506541537,
+        "bright_theoremqa_theorems": 0.014878954124405448,
+        "fiqa": 0.00749399243035173,
+        "nfcorpus": 0.0166397351173601,
+        "quora": 0.009291380092380482,
+        "scidocs": 0.004795294065612915,
+        "scifact": 0.034129241437248915,
+        "trec_covid": -0.009986574151492763,
+        "webis_touche2020": -0.03987038756186572
+      }
+    },
+    "bm25: S2_oracle - bo1_oracle": {
+      "macro": 0.002987118565172319,
+      "holm_step": 8,
+      "level": 0.95,
+      "interval": [
+        -0.0028276479152347634,
+        0.008955315239901026
+      ],
+      "p_two_sided": 0.3174,
+      "decided": false,
+      "direction": "undecided",
+      "reading": "unclear",
+      "per_corpus": {
+        "arguana": 0.0538557745371257,
+        "bright_aops": 0.010202333848905173,
+        "bright_biology": -0.027258815693046383,
+        "bright_earth_science": -0.06395372041007918,
+        "bright_economics": 0.0029995759675466387,
+        "bright_leetcode": 0.01095045517858566,
+        "bright_pony": 0.010026956510486289,
+        "bright_psychology": -0.004056722187466749,
+        "bright_robotics": -0.0024185790769465244,
+        "bright_stackoverflow": -0.019459101598764995,
+        "bright_sustainable_living": 0.014056880063749845,
+        "bright_theoremqa_questions": 0.019498511963908696,
+        "bright_theoremqa_theorems": -0.016486640119864775,
+        "fiqa": 0.014564436737676338,
+        "nfcorpus": 0.023015006260947567,
+        "quora": 0.03207309171311875,
+        "scidocs": 0.0034776249480613975,
+        "scifact": 0.07131206289741507,
+        "trec_covid": -0.006429433002395707,
+        "webis_touche2020": -0.06622732723551643
+      }
+    },
+    "dph: S1_oracle - rm3_oracle": {
+      "macro": 0.00811236752207976,
+      "holm_step": 5,
+      "level": 0.9875,
+      "interval": [
+        0.0007046273477669223,
+        0.015652394462033807
+      ],
+      "p_two_sided": 0.0068,
+      "decided": true,
+      "direction": "above 0",
+      "reading": "better",
+      "per_corpus": {
+        "arguana": 0.03479222714894844,
+        "bright_aops": 0.020897915076863068,
+        "bright_biology": -0.020441642393144714,
+        "bright_earth_science": 0.010801674536764493,
+        "bright_economics": 0.011948892348656594,
+        "bright_leetcode": 0.003897687095350397,
+        "bright_pony": 0.02977846501067851,
+        "bright_psychology": -0.0032954578423642885,
+        "bright_robotics": 0.010182171637046001,
+        "bright_stackoverflow": -0.013593194508176412,
+        "bright_sustainable_living": 0.007385774172285685,
+        "bright_theoremqa_questions": 0.02096384915952452,
+        "bright_theoremqa_theorems": -0.011791292168566506,
+        "fiqa": 0.011196872279554654,
+        "nfcorpus": 0.016434762404711277,
+        "quora": 0.027066203962963963,
+        "scidocs": 0.006421616388336148,
+        "scifact": 0.039652642360117445,
+        "trec_covid": -0.018155356081763364,
+        "webis_touche2020": -0.02189646014619071
+      }
+    },
+    "dph: S1_oracle - bo1_oracle": {
+      "macro": 0.021021068633661093,
+      "holm_step": 3,
+      "level": 0.9917,
+      "interval": [
+        0.013053071984098873,
+        0.029432867877146638
+      ],
+      "p_two_sided": 0.0,
+      "decided": true,
+      "direction": "above 0",
+      "reading": "better",
+      "per_corpus": {
+        "arguana": 0.0639220960029693,
+        "bright_aops": 0.031493260450090696,
+        "bright_biology": -0.013486642132419149,
+        "bright_earth_science": 0.06258991099844478,
+        "bright_economics": -0.004265202854232168,
+        "bright_leetcode": 0.01129677187688928,
+        "bright_pony": 0.03708863918743883,
+        "bright_psychology": 0.008777260800068586,
+        "bright_robotics": 0.03219609775403116,
+        "bright_stackoverflow": 0.002968350934206728,
+        "bright_sustainable_living": 0.013074715059882152,
+        "bright_theoremqa_questions": 0.029724987691328166,
+        "bright_theoremqa_theorems": -0.012133264491758798,
+        "fiqa": 0.029265933016860212,
+        "nfcorpus": 0.028055556714058155,
+        "quora": 0.06726895654035518,
+        "scidocs": 0.005448228419500591,
+        "scifact": 0.06787857230771444,
+        "trec_covid": -0.02418491292458684,
+        "webis_touche2020": -0.01655794267761945
+      }
+    },
+    "dph: S2_oracle - rm3_oracle": {
+      "macro": 0.007030381197580739,
+      "holm_step": 6,
+      "level": 0.9833,
+      "interval": [
+        -0.0011189229784746072,
+        0.014894056457677456
+      ],
+      "p_two_sided": 0.0378,
+      "decided": false,
+      "direction": "undecided",
+      "reading": "non-inferior",
+      "per_corpus": {
+        "arguana": 0.04335313583069444,
+        "bright_aops": 0.004965689795594808,
+        "bright_biology": -0.02305780890461184,
+        "bright_earth_science": -0.0037451023224141207,
+        "bright_economics": 0.015172898215638065,
+        "bright_leetcode": 0.006413311810172078,
+        "bright_pony": 0.01963182731676024,
+        "bright_psychology": 0.005743156533352535,
+        "bright_robotics": 0.01003005593230831,
+        "bright_stackoverflow": -0.014083496852212265,
+        "bright_sustainable_living": 0.005295639548669123,
+        "bright_theoremqa_questions": 0.022543274111937624,
+        "bright_theoremqa_theorems": -0.011791292168566506,
+        "fiqa": 0.011989040446492079,
+        "nfcorpus": 0.010328135435080384,
+        "quora": 0.028655315304674932,
+        "scidocs": 0.008358374562970134,
+        "scifact": 0.03695824315293558,
+        "trec_covid": 0.00862445254087322,
+        "webis_touche2020": -0.04477722633873405
+      }
+    },
+    "dph: S2_oracle - bo1_oracle": {
+      "macro": 0.01993908230916207,
+      "holm_step": 4,
+      "level": 0.99,
+      "interval": [
+        0.011655726224717732,
+        0.028583681039334126
+      ],
+      "p_two_sided": 0.0,
+      "decided": true,
+      "direction": "above 0",
+      "reading": "better",
+      "per_corpus": {
+        "arguana": 0.0724830046847153,
+        "bright_aops": 0.015561035168822433,
+        "bright_biology": -0.01610280864388627,
+        "bright_earth_science": 0.048043134139266155,
+        "bright_economics": -0.0010411969872507006,
+        "bright_leetcode": 0.013812396591710963,
+        "bright_pony": 0.02694200149352056,
+        "bright_psychology": 0.01781587517578541,
+        "bright_robotics": 0.03204398204929347,
+        "bright_stackoverflow": 0.0024780485901708662,
+        "bright_sustainable_living": 0.010984580436265589,
+        "bright_theoremqa_questions": 0.03130441264374127,
+        "bright_theoremqa_theorems": -0.012133264491758798,
+        "fiqa": 0.030058101183797637,
+        "nfcorpus": 0.021948929744427272,
+        "quora": 0.06885806788206617,
+        "scidocs": 0.007384986594134577,
+        "scifact": 0.06518417310053258,
+        "trec_covid": 0.0025948956980497463,
+        "webis_touche2020": -0.03943870887016279
+      }
+    }
+  },
+  "over_1M": {
+    "bm25_absolute_ndcg10": {
+      "S1_cv": 0.36941101958324135,
+      "S1_default": 0.36724576154354505,
+      "S1_oracle": 0.37130099737194006,
+      "S2_cv": 0.36577492500059566,
+      "S2_default": 0.3666622202869549,
+      "S2_oracle": 0.36973993580468856,
+      "base": 0.3622655454286498,
+      "bo1_cv": 0.3550183095825245,
+      "bo1_default": 0.3504688522440839,
+      "bo1_oracle": 0.3562463255071609,
+      "prf_oracle": 0.3639272612123743,
+      "rm3_cv": 0.3615772823571449,
+      "rm3_default": 0.34572037525717075,
+      "rm3_oracle": 0.36271270207847933
+    },
+    "dph_absolute_ndcg10": {
+      "S1_cv": 0.40959263400751517,
+      "S1_default": 0.40642361153606776,
+      "S1_oracle": 0.41289122748716467,
+      "S2_cv": 0.41261538684739846,
+      "S2_default": 0.4083708169977963,
+      "S2_oracle": 0.41457007556313713,
+      "base": 0.40843372024735647,
+      "bo1_cv": 0.39270560879138516,
+      "bo1_default": 0.38571825794534587,
+      "bo1_oracle": 0.39418936015363715,
+      "prf_oracle": 0.41205225285011765,
+      "rm3_cv": 0.408119375110265,
+      "rm3_default": 0.39741900897917354,
+      "rm3_oracle": 0.4111135937325554
+    },
+    "bm25: S1_oracle - rm3_oracle": {
+      "macro": 0.008588295293460772,
+      "holm_step": 5,
+      "level": 0.9875,
+      "interval": [
+        0.0028171913361384423,
+        0.01445722887611907
+      ],
+      "p_two_sided": 0.0002,
+      "decided": true,
+      "direction": "above 0",
+      "reading": "better",
+      "per_corpus": {
+        "climate_fever": -0.003082274990317224,
+        "dbpedia_entity": 0.00037929739587181586,
+        "fever": 0.02593780876632957,
+        "hotpotqa": 0.032396730501582,
+        "nq": -0.012690085206162292
+      }
+    },
+    "bm25: S1_oracle - bo1_oracle": {
+      "macro": 0.015054671864779257,
+      "holm_step": 1,
+      "level": 0.9938,
+      "interval": [
+        0.00682852636446944,
+        0.02330675218313982
+      ],
+      "p_two_sided": 0.0,
+      "decided": true,
+      "direction": "above 0",
+      "reading": "better",
+      "per_corpus": {
+        "climate_fever": -0.009155070659792272,
+        "dbpedia_entity": 0.0006556358186256339,
+        "fever": 0.03650194542453821,
+        "hotpotqa": 0.04723396570762923,
+        "nq": 3.6883032895472566e-05
+      }
+    },
+    "bm25: S2_oracle - rm3_oracle": {
+      "macro": 0.007027233726209144,
+      "holm_step": 6,
+      "level": 0.9833,
+      "interval": [
+        0.0017094111092886058,
+        0.012548578519288636
+      ],
+      "p_two_sided": 0.001,
+      "decided": true,
+      "direction": "above 0",
+      "reading": "better",
+      "per_corpus": {
+        "climate_fever": -0.007434427779520364,
+        "dbpedia_entity": 0.0017773349438236807,
+        "fever": 0.017957009692585933,
+        "hotpotqa": 0.033821509324177185,
+        "nq": -0.010985257550020713
+      }
+    },
+    "bm25: S2_oracle - bo1_oracle": {
+      "macro": 0.013493610297527625,
+      "holm_step": 2,
+      "level": 0.9929,
+      "interval": [
+        0.005600278687127809,
+        0.02147621738576331
+      ],
+      "p_two_sided": 0.0,
+      "decided": true,
+      "direction": "above 0",
+      "reading": "better",
+      "per_corpus": {
+        "climate_fever": -0.013507223448995414,
+        "dbpedia_entity": 0.0020536733665774986,
+        "fever": 0.028521146350794575,
+        "hotpotqa": 0.04865874453022442,
+        "nq": 0.0017417106890370527
+      }
+    },
+    "dph: S1_oracle - rm3_oracle": {
+      "macro": 0.001777633754609334,
+      "holm_step": 8,
+      "level": 0.95,
+      "interval": [
+        -0.0025919956620622017,
+        0.00610308682717873
+      ],
+      "p_two_sided": 0.4146,
+      "decided": false,
+      "direction": "undecided",
+      "reading": "unclear",
+      "per_corpus": {
+        "climate_fever": -0.013095743621492026,
+        "dbpedia_entity": -0.0030548678250393395,
+        "fever": 0.007071930299557895,
+        "hotpotqa": 0.025015575946605254,
+        "nq": -0.007048726026585115
+      }
+    },
+    "dph: S1_oracle - bo1_oracle": {
+      "macro": 0.018701867333527588,
+      "holm_step": 3,
+      "level": 0.9917,
+      "interval": [
+        0.01060628929937915,
+        0.027086078824180352
+      ],
+      "p_two_sided": 0.0,
+      "decided": true,
+      "direction": "above 0",
+      "reading": "better",
+      "per_corpus": {
+        "climate_fever": -0.017789039209303213,
+        "dbpedia_entity": 0.0003117958328575482,
+        "fever": 0.03965347268426853,
+        "hotpotqa": 0.051357575552176675,
+        "nq": 0.0199755318076384
+      }
+    },
+    "dph: S2_oracle - rm3_oracle": {
+      "macro": 0.003456481830581737,
+      "holm_step": 7,
+      "level": 0.975,
+      "interval": [
+        -0.001788738706609116,
+        0.008626421241346554
+      ],
+      "p_two_sided": 0.1254,
+      "decided": false,
+      "direction": "undecided",
+      "reading": "non-inferior",
+      "per_corpus": {
+        "climate_fever": -0.006435813256189334,
+        "dbpedia_entity": 0.0003829397209242752,
+        "fever": 0.004016588848159038,
+        "hotpotqa": 0.02375017839387827,
+        "nq": -0.004431484553863564
+      }
+    },
+    "dph: S2_oracle - bo1_oracle": {
+      "macro": 0.020380715409499994,
+      "holm_step": 4,
+      "level": 0.99,
+      "interval": [
+        0.012330344340850837,
+        0.028733615102572056
+      ],
+      "p_two_sided": 0.0,
+      "decided": true,
+      "direction": "above 0",
+      "reading": "better",
+      "per_corpus": {
+        "climate_fever": -0.011129108844000523,
+        "dbpedia_entity": 0.0037496033788211613,
+        "fever": 0.03659813123286968,
+        "hotpotqa": 0.050092177999449705,
+        "nq": 0.022592773280359944
+      }
+    }
+  }
+}

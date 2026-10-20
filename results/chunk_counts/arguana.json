@@ -1,0 +1,20 @@
+{
+  "corpus": "arguana",
+  "chunks_total": 20869,
+  "chunks_with_pool_term": 20863,
+  "distinct_texts_with_pool_term": 20634,
+  "sidecar_unique_chunks": 20130,
+  "sidecar_unique_chunks_by_seed": {
+    "42": 20130,
+    "1": 20189,
+    "2": 20158,
+    "3": 20160,
+    "4": 20145,
+    "5": 20126
+  },
+  "terms": 9841,
+  "term_coverage_mean": 0.7865364459300745,
+  "term_coverage_median": 1.0,
+  "terms_fully_covered_share": 0.6587745147850829,
+  "seconds": 14.8
+}

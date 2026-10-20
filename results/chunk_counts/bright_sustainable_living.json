@@ -1,0 +1,20 @@
+{
+  "corpus": "bright_sustainable_living",
+  "chunks_total": 99312,
+  "chunks_with_pool_term": 96881,
+  "distinct_texts_with_pool_term": 84848,
+  "sidecar_unique_chunks": 60160,
+  "sidecar_unique_chunks_by_seed": {
+    "42": 60160,
+    "1": 60204,
+    "2": 60110,
+    "3": 60176,
+    "4": 60201,
+    "5": 60150
+  },
+  "terms": 10000,
+  "term_coverage_mean": 0.6385851500015622,
+  "term_coverage_median": 0.7692307692307693,
+  "terms_fully_covered_share": 0.4334,
+  "seconds": 36.7
+}

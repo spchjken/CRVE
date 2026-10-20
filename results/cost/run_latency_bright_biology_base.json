@@ -1,0 +1,15 @@
+{
+  "stage": "latency_bright_biology_base",
+  "queries": 53,
+  "load_seconds": {
+    "terrier_index_s": 0.6453646589998243,
+    "ours_assets_s": 8.484475102000033,
+    "bge_qe_s": 0.37667506299976594
+  },
+  "rss_gib": {
+    "after_index_gib": 0.9200172424316406,
+    "after_ours_gib": 2.1196670532226562,
+    "after_bge_qe_gib": 2.5191879272460938
+  },
+  "peak_rss_gib": 3.592060089111328
+}

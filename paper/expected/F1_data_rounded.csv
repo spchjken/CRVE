@@ -1,0 +1,51 @@
+dataset,collection,group,base,queries,base_ndcg10,crve_s2_ndcg10,gain,ci_low,ci_high,relative_gain_pct
+scifact,SciFact,under_1M,BM25,250,0.691,0.725,0.0344,0.0155,0.0548,5.0
+scifact,SciFact,under_1M,DPH,250,0.684,0.722,0.0380,0.0196,0.0581,5.6
+nfcorpus,NFCorpus,under_1M,BM25,273,0.326,0.361,0.0351,0.0244,0.0463,10.8
+nfcorpus,NFCorpus,under_1M,DPH,273,0.318,0.352,0.0339,0.0235,0.0449,10.7
+trec_covid,TREC-COVID,under_1M,BM25,50,0.628,0.656,0.0282,-0.0029,0.0587,4.5
+trec_covid,TREC-COVID,under_1M,DPH,50,0.631,0.675,0.0438,0.0177,0.0706,6.9
+fiqa,FiQA,under_1M,BM25,598,0.255,0.263,0.0079,-0.0007,0.0168,3.1
+fiqa,FiQA,under_1M,DPH,598,0.245,0.256,0.0109,0.0022,0.0198,4.4
+quora,Quora,under_1M,BM25,9950,0.769,0.756,-0.0137,-0.0158,-0.0117,-1.8
+quora,Quora,under_1M,DPH,9950,0.444,0.423,-0.0209,-0.0228,-0.0191,-4.7
+arguana,ArguAna,under_1M,BM25,1310,0.493,0.503,0.0100,0.0058,0.0141,2.0
+arguana,ArguAna,under_1M,DPH,1310,0.436,0.447,0.0102,0.0062,0.0143,2.3
+scidocs,SCIDOCS,under_1M,BM25,902,0.157,0.167,0.0100,0.0061,0.0139,6.4
+scidocs,SCIDOCS,under_1M,DPH,902,0.149,0.161,0.0116,0.0079,0.0153,7.8
+webis_touche2020,Touché-2020,under_1M,BM25,49,0.299,0.317,0.0174,-0.0116,0.0463,5.8
+webis_touche2020,Touché-2020,under_1M,DPH,49,0.420,0.425,0.0053,-0.0276,0.0385,1.3
+bright_aops,AoPS,under_1M,BM25,61,0.058,0.057,-0.0018,-0.0055,0.0000,-3.2
+bright_aops,AoPS,under_1M,DPH,61,0.059,0.059,0.0002,-0.0005,0.0009,0.3
+bright_economics,Economics,under_1M,BM25,53,0.146,0.152,0.0059,0.0007,0.0141,4.0
+bright_economics,Economics,under_1M,DPH,53,0.228,0.243,0.0160,-0.0038,0.0392,7.0
+bright_leetcode,LeetCode,under_1M,BM25,92,0.236,0.236,-0.0007,-0.0056,0.0026,-0.3
+bright_leetcode,LeetCode,under_1M,DPH,92,0.225,0.226,0.0002,0.0000,0.0007,0.1
+bright_stackoverflow,Stack Overflow,under_1M,BM25,67,0.185,0.180,-0.0050,-0.0108,-0.0005,-2.7
+bright_stackoverflow,Stack Overflow,under_1M,DPH,67,0.211,0.212,0.0003,-0.0001,0.0011,0.2
+bright_sustainable_living,Sustainable Living,under_1M,BM25,58,0.108,0.117,0.0088,0.0018,0.0204,8.2
+bright_sustainable_living,Sustainable Living,under_1M,DPH,58,0.162,0.169,0.0069,-0.0045,0.0205,4.2
+bright_biology,Biology,under_1M,BM25,53,0.067,0.071,0.0042,-0.0123,0.0203,6.2
+bright_biology,Biology,under_1M,DPH,53,0.239,0.262,0.0228,0.0076,0.0414,9.5
+bright_earth_science,Earth Science,under_1M,BM25,66,0.157,0.167,0.0099,0.0004,0.0199,6.3
+bright_earth_science,Earth Science,under_1M,DPH,66,0.425,0.438,0.0136,0.0006,0.0302,3.2
+bright_psychology,Psychology,under_1M,BM25,51,0.108,0.120,0.0121,0.0002,0.0336,11.2
+bright_psychology,Psychology,under_1M,DPH,51,0.184,0.197,0.0126,-0.0010,0.0296,6.8
+bright_robotics,Robotics,under_1M,BM25,51,0.063,0.068,0.0054,-0.0001,0.0161,8.6
+bright_robotics,Robotics,under_1M,DPH,51,0.130,0.136,0.0061,0.0002,0.0164,4.7
+bright_pony,Pony,under_1M,BM25,62,0.030,0.039,0.0083,-0.0005,0.0189,27.3
+bright_pony,Pony,under_1M,DPH,62,0.072,0.082,0.0096,0.0024,0.0176,13.4
+bright_theoremqa_questions,TheoremQA-Questions,under_1M,BM25,144,0.074,0.077,0.0026,0.0001,0.0063,3.5
+bright_theoremqa_questions,TheoremQA-Questions,under_1M,DPH,144,0.070,0.074,0.0035,0.0000,0.0086,5.0
+bright_theoremqa_theorems,TheoremQA-Theorems,under_1M,BM25,26,0.013,0.015,0.0021,0.0000,0.0062,16.1
+bright_theoremqa_theorems,TheoremQA-Theorems,under_1M,DPH,26,0.000,0.000,0.0000,0.0000,0.0000,
+nq,NQ,over_1M,BM25,3452,0.281,0.286,0.0050,0.0012,0.0091,1.8
+nq,NQ,over_1M,DPH,3452,0.285,0.284,0.0000,-0.0039,0.0039,0.0
+dbpedia_entity,DBPedia-Entity,over_1M,BM25,400,0.309,0.313,0.0038,-0.0041,0.0116,1.2
+dbpedia_entity,DBPedia-Entity,over_1M,DPH,400,0.311,0.304,-0.0063,-0.0143,0.0014,-2.0
+hotpotqa,HotpotQA,over_1M,BM25,7405,0.586,0.588,0.0016,0.0005,0.0028,0.3
+hotpotqa,HotpotQA,over_1M,DPH,7405,0.617,0.615,-0.0020,-0.0032,-0.0007,-0.3
+fever,FEVER,over_1M,BM25,6666,0.508,0.518,0.0100,0.0077,0.0125,2.0
+fever,FEVER,over_1M,DPH,6666,0.681,0.684,0.0028,0.0000,0.0057,0.4
+climate_fever,Climate-FEVER,over_1M,BM25,1535,0.139,0.145,0.0060,0.0031,0.0090,4.3
+climate_fever,Climate-FEVER,over_1M,DPH,1535,0.172,0.182,0.0098,0.0062,0.0133,5.7

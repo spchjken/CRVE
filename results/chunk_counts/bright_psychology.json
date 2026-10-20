@@ -1,0 +1,20 @@
+{
+  "corpus": "bright_psychology",
+  "chunks_total": 93878,
+  "chunks_with_pool_term": 91804,
+  "distinct_texts_with_pool_term": 81149,
+  "sidecar_unique_chunks": 59872,
+  "sidecar_unique_chunks_by_seed": {
+    "42": 59872,
+    "1": 59718,
+    "2": 59839,
+    "3": 59906,
+    "4": 59776,
+    "5": 59780
+  },
+  "terms": 10000,
+  "term_coverage_mean": 0.625809760958807,
+  "term_coverage_median": 0.7142857142857143,
+  "terms_fully_covered_share": 0.3938,
+  "seconds": 34.2
+}

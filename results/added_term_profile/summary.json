@@ -1,0 +1,39 @@
+{
+  "LLM-Q2E": {
+    "queries": 9950,
+    "added_term_occurrences": 70570,
+    "distinct_added_terms": 8154,
+    "df_share_quartiles_pct": [
+      0.030405541075208774,
+      0.11225190321476448,
+      0.2977448267553463
+    ],
+    "idf_quartiles": [
+      5.788580055266041,
+      6.750121708000405,
+      8.045903003565508
+    ],
+    "share_df_above_1pct": 0.032478390250814795,
+    "share_df_above_10pct": 0.0006518350573898257,
+    "share_absent_from_lexicon": 0.010471871900240896,
+    "added_terms_per_query_median": 6.0,
+    "added_terms_per_query_mean": 7.092462311557789,
+    "added_mass_share_median": 0.25111042841562453,
+    "added_mass_share_mean": 0.25583553823423266,
+    "added_weight_share_median": 0.21621621621621623,
+    "mean_delta_ndcg10": -0.0023713588738248008,
+    "share_queries_changed": 0.14391959798994974,
+    "mean_abs_delta_ndcg10": 0.02762160188893754,
+    "spearman_mass_share_vs_abs_delta": 0.17556335936303638,
+    "share_generated_terms_repeating_a_query_term": 0.33978295921879814
+  },
+  "reference_crve_median_df_share_pct": {
+    "six_draws": 0.01357731708389,
+    "S2": 0.012621167993479999
+  },
+  "_meta": {
+    "corpus": "quora",
+    "documents": 522931,
+    "elapsed_seconds": 17.5
+  }
+}

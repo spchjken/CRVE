@@ -1,0 +1,20 @@
+{
+  "corpus": "fiqa",
+  "chunks_total": 120440,
+  "chunks_with_pool_term": 120286,
+  "distinct_texts_with_pool_term": 119713,
+  "sidecar_unique_chunks": 82847,
+  "sidecar_unique_chunks_by_seed": {
+    "42": 82847,
+    "1": 82975,
+    "2": 82863,
+    "3": 82764,
+    "4": 82856,
+    "5": 83053
+  },
+  "terms": 10000,
+  "term_coverage_mean": 0.5569256917787343,
+  "term_coverage_median": 0.5555555555555556,
+  "terms_fully_covered_share": 0.3379,
+  "seconds": 67.0
+}

@@ -1,0 +1,74 @@
+{
+  "S1 - draw_mean": {
+    "macro": 0.0015680124992641907,
+    "holm_step": 1,
+    "level": 0.9833,
+    "interval": [
+      -0.0014060711705687415,
+      0.004792578747190106
+    ],
+    "p_two_sided": 0.2112,
+    "decided": false,
+    "direction": "undecided",
+    "reading": "non-inferior"
+  },
+  "S2 - draw_mean": {
+    "macro": 0.0011290672322036223,
+    "holm_step": 2,
+    "level": 0.975,
+    "interval": [
+      -0.0009603662601682393,
+      0.003242455527328608
+    ],
+    "p_two_sided": 0.2224,
+    "decided": false,
+    "direction": "undecided",
+    "reading": "non-inferior"
+  },
+  "S3 - draw_mean": {
+    "macro": -6.597478306319925e-06,
+    "holm_step": 3,
+    "level": 0.95,
+    "interval": [
+      -0.002006204026334346,
+      0.0020213785832764283
+    ],
+    "p_two_sided": 0.9808,
+    "decided": false,
+    "direction": "undecided",
+    "reading": "unclear"
+  },
+  "bm25_gain_over_base": {
+    "arms": {
+      "S1": 0.009484510555520685,
+      "S2": 0.009045565288460126,
+      "S3": 0.007909900577950185
+    },
+    "random_draws": {
+      "1": 0.0073899471701343224,
+      "2": 0.00836574277021351,
+      "3": 0.007390494034307917,
+      "4": 0.008741578656432245,
+      "5": 0.00796897273789219,
+      "42": 0.007642252968558855
+    },
+    "draw_mean": 0.007916498056256506,
+    "draw_min": 0.0073899471701343224,
+    "draw_max": 0.008741578656432245
+  },
+  "selection_check": {
+    "S1": {
+      "jaccard_vs_draws": 0.34238325418196985,
+      "identical_vs_draws": 0.035083283491438015
+    },
+    "S2": {
+      "jaccard_vs_draws": 0.3514294573619034,
+      "identical_vs_draws": 0.03692584985126157
+    },
+    "S3": {
+      "jaccard_vs_draws": 0.34797781370625164,
+      "identical_vs_draws": 0.03429215078613278
+    },
+    "draws_pairwise_jaccard": 0.350744108165493
+  }
+}

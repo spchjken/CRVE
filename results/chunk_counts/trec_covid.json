@@ -1,0 +1,20 @@
+{
+  "corpus": "trec_covid",
+  "chunks_total": 496484,
+  "chunks_with_pool_term": 492714,
+  "distinct_texts_with_pool_term": 477201,
+  "sidecar_unique_chunks": 154343,
+  "sidecar_unique_chunks_by_seed": {
+    "42": 154343,
+    "1": 154909,
+    "2": 154660,
+    "3": 154592,
+    "4": 154690,
+    "5": 154504
+  },
+  "terms": 10000,
+  "term_coverage_mean": 0.14195571399972506,
+  "term_coverage_median": 0.11299435028248588,
+  "terms_fully_covered_share": 0.0,
+  "seconds": 278.9
+}

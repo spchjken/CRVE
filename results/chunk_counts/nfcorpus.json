@@ -1,0 +1,20 @@
+{
+  "corpus": "nfcorpus",
+  "chunks_total": 14186,
+  "chunks_with_pool_term": 14185,
+  "distinct_texts_with_pool_term": 14011,
+  "sidecar_unique_chunks": 13755,
+  "sidecar_unique_chunks_by_seed": {
+    "42": 13755,
+    "1": 13780,
+    "2": 13772,
+    "3": 13765,
+    "4": 13756,
+    "5": 13767
+  },
+  "terms": 7783,
+  "term_coverage_mean": 0.8217180377085435,
+  "term_coverage_median": 1.0,
+  "terms_fully_covered_share": 0.6938198638057305,
+  "seconds": 8.5
+}

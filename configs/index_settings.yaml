@@ -1,0 +1,258 @@
+# Terrier index settings of the paper's runs, read from each stored index's data.properties (frozen).
+# scripts/build_index.py builds data/cache/terrier_indices/<c>_default with these settings and checks the
+# collection statistics and the lexicon hash (SHA-256 over the sorted 'term<TAB>df<TAB>cf' lines,
+# crve.selection.gate1_sidecars.compute_lexicon_semantic_hash) against the values below.
+# docno_length: Terrier truncates longer document ids (DBPedia-Entity, FEVER and Climate-FEVER keep 64).
+# text_length: length of the stored text meta field (does not affect retrieval).
+terrier_version: "5.11"
+collections:
+  arguana:
+    docno_length: 64
+    text_length: 32768
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 8674
+    num_terms: 22568
+    num_tokens: 776273
+    num_pointers: 573639
+    lexicon_sha256: b9bad1e7c72cb630732f66404e889029b35735bb73d1fb28eba3078344765144
+  bright_aops:
+    docno_length: 64
+    text_length: 4096
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 188002
+    num_terms: 47808
+    num_tokens: 16059480
+    num_pointers: 6273199
+    lexicon_sha256: d7ceec650144359738eb5ba593dbdc2261982ab4d2cc7e3207e2c2c29359e2f0
+  bright_biology:
+    docno_length: 512
+    text_length: 4096
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 57359
+    num_terms: 57949
+    num_tokens: 1868507
+    num_pointers: 1432683
+    lexicon_sha256: 905ba224ba47e5e56a3a4390d00b1f5af00c2b0f8a7f74d131c15f150a1d91cd
+  bright_earth_science:
+    docno_length: 512
+    text_length: 4096
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 121249
+    num_terms: 145688
+    num_tokens: 5064715
+    num_pointers: 3101627
+    lexicon_sha256: 3afa00c26db0005bc2e6272d30ec1f4de9b7ce43ec803de34c3fb532c3fb7d0f
+  bright_economics:
+    docno_length: 512
+    text_length: 4096
+    max_term_length: 512
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 50220
+    num_terms: 51902
+    num_tokens: 2047117
+    num_pointers: 1116688
+    lexicon_sha256: c7f75936968a487192178cd933c36133ac4daf0212db7ddbab2192dc843023c2
+  bright_leetcode:
+    docno_length: 64
+    text_length: 4096
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 413932
+    num_terms: 338748
+    num_tokens: 39304550
+    num_pointers: 14788022
+    lexicon_sha256: 7f5d23885a476075624997d014ad744088988c543eea54df070d6f6bc65c90a1
+  bright_pony:
+    docno_length: 64
+    text_length: 4096
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 7894
+    num_terms: 6307
+    num_tokens: 258406
+    num_pointers: 143748
+    lexicon_sha256: 5f6421ebd4a7905ee442e26bbcdd54b2b1d933b66152a03d0fcbbc0479bfcbb8
+  bright_psychology:
+    docno_length: 512
+    text_length: 4096
+    max_term_length: 512
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 52835
+    num_terms: 64140
+    num_tokens: 2087752
+    num_pointers: 1146454
+    lexicon_sha256: 86ad479ecc9bdac84685aebbe37a5ce219c0e7d06d8a4bdc16719af53c284200
+  bright_robotics:
+    docno_length: 64
+    text_length: 4096
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 61961
+    num_terms: 62007
+    num_tokens: 2248293
+    num_pointers: 891881
+    lexicon_sha256: 932695b812360846a9505a67d07bb845372c7ecd968576ceb1afb8ce18174cc2
+  bright_stackoverflow:
+    docno_length: 512
+    text_length: 4096
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 107081
+    num_terms: 78012
+    num_tokens: 20273806
+    num_pointers: 4465677
+    lexicon_sha256: 77607cf66c7271c30ed82c0436be676cb56060c0e221821ccb59c94e64adb5e8
+  bright_sustainable_living:
+    docno_length: 512
+    text_length: 4096
+    max_term_length: 512
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 60792
+    num_terms: 56684
+    num_tokens: 2330343
+    num_pointers: 1256252
+    lexicon_sha256: 57a300903e5b2954030a48da7dc007c8a5bb65993fa4b6158e34b50d9437c4af
+  bright_theoremqa_questions:
+    docno_length: 64
+    text_length: 4096
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 188002
+    num_terms: 47808
+    num_tokens: 16059480
+    num_pointers: 6273199
+    lexicon_sha256: d7ceec650144359738eb5ba593dbdc2261982ab4d2cc7e3207e2c2c29359e2f0
+  bright_theoremqa_theorems:
+    docno_length: 64
+    text_length: 4096
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 23839
+    num_terms: 10220
+    num_tokens: 1975517
+    num_pointers: 701256
+    lexicon_sha256: 56c9a9505588932cbe88ee3fb3ca0cd04a0594959dda89a17bf033e7e6241263
+  fiqa:
+    docno_length: 64
+    text_length: 32768
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 57600
+    num_terms: 51260
+    num_tokens: 3783214
+    num_pointers: 2714611
+    lexicon_sha256: 2e62ff42381baba9310b16daa398036d939dff2b2421fb2abfb66a0def8e300c
+  nfcorpus:
+    docno_length: 64
+    text_length: 32768
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 3633
+    num_terms: 18596
+    num_tokens: 567901
+    num_pointers: 336960
+    lexicon_sha256: 5ce8f6e68ff066229104610828e9f73f170c5f32c94ee7f8db3d440bc83380d4
+  quora:
+    docno_length: 64
+    text_length: 4096
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 522931
+    num_terms: 63571
+    num_tokens: 2897313
+    num_pointers: 2790896
+    lexicon_sha256: 464b28b9c78d5405281f67f30a43f1cf6c2488fa434fce6f3ecc3ae03d1c916a
+  scidocs:
+    docno_length: 64
+    text_length: 32768
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 25657
+    num_terms: 55565
+    num_tokens: 2804317
+    num_pointers: 1783189
+    lexicon_sha256: 02668efd7f7a549728bd0a8b95fee223afc667fe3c2465d63b22a781a4562a39
+  scifact:
+    docno_length: 64
+    text_length: 32768
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 5183
+    num_terms: 25508
+    num_tokens: 745811
+    num_pointers: 442057
+    lexicon_sha256: e5f7b1dc290f177b3273d3e372ab9d55edc75893bcaa62f7a0a41a825dac70ab
+  trec_covid:
+    docno_length: 64
+    text_length: 4096
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 171331
+    num_terms: 158398
+    num_tokens: 18425387
+    num_pointers: 11497332
+    lexicon_sha256: b3f4d8784dd2c77f0ed8916f637e991d9fba8678a7e07961f0ff12aedd85adec
+  webis_touche2020:
+    docno_length: 64
+    text_length: 4096
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 382545
+    num_terms: 330603
+    num_tokens: 54905976
+    num_pointers: 32264833
+    lexicon_sha256: 89c184e1db2dfe0d64e441098e5dcb1940d74e6eccc0de0c54ea205196bf008f
+  nq:
+    docno_length: 64
+    text_length: 4096
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 2681468
+    num_terms: 740730
+    num_tokens: 126925054
+    num_pointers: 99220547
+    lexicon_sha256: 79b53f1af5ff76de4450407da88e003e5651540bea763e721ab33c1d3bb9380d
+  dbpedia_entity:
+    docno_length: 64
+    text_length: 4096
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 4635922
+    num_terms: 1998674
+    num_tokens: 148642859
+    num_pointers: 115167429
+    lexicon_sha256: b1660ddd9067fda9f8315c055df5962a70bc6fcfc264415b35e163bbeaa3afb8
+  hotpotqa:
+    docno_length: 64
+    text_length: 4096
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 5233329
+    num_terms: 1959063
+    num_tokens: 154790351
+    num_pointers: 119203757
+    lexicon_sha256: 1bff17b456270521f8f2504b4218ec0e79044baef726b4d9fcb8448828bb914f
+  fever:
+    docno_length: 64
+    text_length: 4096
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 5416568
+    num_terms: 2483660
+    num_tokens: 284096782
+    num_pointers: 204183202
+    lexicon_sha256: f6f6c9488a3138037ce3d3126b7377cb54fc27a3b3e7688ff28499f2bcad0319
+  climate_fever:
+    docno_length: 64
+    text_length: 4096
+    max_term_length: 256
+    termpipelines: Stopwords,PorterStemmer
+    num_documents: 5416593
+    num_terms: 2483659
+    num_tokens: 284101854
+    num_pointers: 204186215
+    lexicon_sha256: 60a93620f736bdb96b483235615b28da62cb845771944bd217ea1494ab453b56

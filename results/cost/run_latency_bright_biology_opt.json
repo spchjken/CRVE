@@ -1,0 +1,12 @@
+{
+  "stage": "latency_bright_biology_opt",
+  "queries": 53,
+  "same_top5": {
+    "ours_A_cpu": 53,
+    "ours_B_gpu": 53,
+    "ours_C_gpu_parallel": 53
+  },
+  "torch_threads": 4,
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "peak_rss_gib": 2.5251846313476562
+}

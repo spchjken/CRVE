@@ -1,0 +1,108 @@
+panel,source,group,base,series,L,K,chunk_length_tokens,chunks_per_term,w,crve_default,gain_ndcg10,ci95_low,ci95_high,gain_rel_pct,collections_below_-0.005,collections,notes
+a,F2_data,under 1M,BM25,S2 alone,10,,,,,,0.0028,-0.0002,0.0058,1.1,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,BM25,S2 alone,25,,,,,,0.0032,-0.0001,0.0067,1.3,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,BM25,S2 alone,50,,,,,,0.0052,0.0017,0.0089,2.1,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,BM25,S2 alone,100,,,,,,0.0068,0.0038,0.0099,2.8,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,BM25,S2 alone,200,,,,,,0.0090,0.0061,0.0120,3.7,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,BM25,S2 alone,300,,,,,,0.0101,0.0071,0.0132,4.2,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,BM25,S2 alone,500,,,,,,0.0115,0.0084,0.0147,4.7,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,BM25,mean of S1 and S2 (per query),10,,,,,,0.0024,-0.0006,0.0055,1.0,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,BM25,mean of S1 and S2 (per query),25,,,,,,0.0048,0.0017,0.0080,2.0,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,BM25,mean of S1 and S2 (per query),50,,,,,,0.0062,0.0030,0.0095,2.5,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,BM25,mean of S1 and S2 (per query),100,,,,,,0.0078,0.0050,0.0108,3.2,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,BM25,mean of S1 and S2 (per query),200,,,,,,0.0093,0.0064,0.0121,3.8,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,BM25,mean of S1 and S2 (per query),300,,,,,,0.0096,0.0068,0.0124,4.0,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,BM25,mean of S1 and S2 (per query),500,,,,,,0.0098,0.0070,0.0126,4.0,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,DPH,S2 alone,10,,,,,,0.0044,0.0018,0.0069,1.6,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,DPH,S2 alone,25,,,,,,0.0054,0.0022,0.0085,2.0,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,DPH,S2 alone,50,,,,,,0.0075,0.0040,0.0110,2.8,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,DPH,S2 alone,100,,,,,,0.0094,0.0065,0.0123,3.5,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,DPH,S2 alone,200,,,,,,0.0112,0.0081,0.0144,4.2,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,DPH,S2 alone,300,,,,,,0.0124,0.0090,0.0158,4.6,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,DPH,S2 alone,500,,,,,,0.0124,0.0089,0.0161,4.6,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,DPH,mean of S1 and S2 (per query),10,,,,,,0.0041,0.0018,0.0066,1.6,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,DPH,mean of S1 and S2 (per query),25,,,,,,0.0050,0.0020,0.0079,1.9,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,DPH,mean of S1 and S2 (per query),50,,,,,,0.0073,0.0043,0.0103,2.7,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,DPH,mean of S1 and S2 (per query),100,,,,,,0.0092,0.0064,0.0119,3.4,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,DPH,mean of S1 and S2 (per query),200,,,,,,0.0097,0.0069,0.0126,3.6,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,DPH,mean of S1 and S2 (per query),300,,,,,,0.0105,0.0076,0.0135,3.9,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+a,F2_data,under 1M,DPH,mean of S1 and S2 (per query),500,,,,,,0.0102,0.0071,0.0133,3.8,,,"S1/S2 sidecars, two-channel Gate 1, K = 5, w = 0.20; all queries; intervals 95%, unadjusted"
+b,F3_data,under 1M (18 collections),BM25,CRVE setting (star),,5,100,20,,,0.0071,,,3.4,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 32 tokens,,5,32,5,,,0.0017,,,0.8,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 32 tokens,,5,32,10,,,0.0045,,,2.1,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 32 tokens,,5,32,20,,,0.0046,,,2.2,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 32 tokens,,5,32,30,,,0.0040,,,1.9,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 32 tokens,,5,32,50,,,0.0056,,,2.7,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 32 tokens,,5,32,100,,,0.0063,,,3.0,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 64 tokens,,5,64,5,,,0.0027,,,1.3,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 64 tokens,,5,64,10,,,0.0054,,,2.6,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 64 tokens,,5,64,20,,,0.0055,,,2.7,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 64 tokens,,5,64,30,,,0.0072,,,3.5,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 64 tokens,,5,64,50,,,0.0072,,,3.5,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 64 tokens,,5,64,100,,,0.0070,,,3.4,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 100 tokens,,5,100,5,,,0.0044,,,2.1,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 100 tokens,,5,100,10,,,0.0047,,,2.3,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 100 tokens,,5,100,20,,,0.0080,,,3.9,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 100 tokens,,5,100,30,,,0.0084,,,4.1,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 100 tokens,,5,100,50,,,0.0090,,,4.4,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 100 tokens,,5,100,100,,,0.0086,,,4.2,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 128 tokens,,5,128,5,,,0.0034,,,1.6,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 128 tokens,,5,128,10,,,0.0051,,,2.5,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 128 tokens,,5,128,20,,,0.0058,,,2.8,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 128 tokens,,5,128,30,,,0.0080,,,3.9,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 128 tokens,,5,128,50,,,0.0076,,,3.7,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 128 tokens,,5,128,100,,,0.0087,,,4.2,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 256 tokens,,5,256,5,,,0.0048,,,2.3,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 256 tokens,,5,256,10,,,0.0069,,,3.3,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 256 tokens,,5,256,20,,,0.0072,,,3.5,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 256 tokens,,5,256,30,,,0.0079,,,3.8,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 256 tokens,,5,256,50,,,0.0084,,,4.1,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+b,F3_data,under 1M (18 collections),BM25,chunk length 256 tokens,,5,256,100,,,0.0086,,,4.2,,,"computed before the evaluation corrections; 18 collections under 1M, 1,984 queries; randomly drawn chunks (seed 42), five-channel Gate 1, w = 0.20; point estimates"
+c,T8,under 1M,BM25,K = 1,,1,,,0.10,False,0.0028,,,1.2,0,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,BM25,K = 1,,1,,,0.20,False,0.0040,,,1.6,0,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,BM25,K = 1,,1,,,0.30,False,0.0041,,,1.7,1,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,BM25,K = 3,,3,,,0.10,False,0.0048,,,2.0,0,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,BM25,K = 3,,3,,,0.20,False,0.0078,,,3.2,1,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,BM25,K = 3,,3,,,0.30,False,0.0065,,,2.7,2,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,BM25,K = 5,,5,,,0.10,False,0.0069,,,2.8,0,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,BM25,K = 5,,5,,,0.20,True,0.0091,,,3.8,1,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,BM25,K = 5,,5,,,0.30,False,0.0087,,,3.6,2,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,BM25,K = 10,,10,,,0.10,False,0.0076,,,3.2,0,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,BM25,K = 10,,10,,,0.20,False,0.0087,,,3.6,1,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,BM25,K = 10,,10,,,0.30,False,0.0056,,,2.3,4,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,BM25,K = 1,,1,,,0.10,False,0.0025,,,0.7,0,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,BM25,K = 1,,1,,,0.20,False,0.0028,,,0.8,0,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,BM25,K = 1,,1,,,0.30,False,0.0014,,,0.4,0,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,BM25,K = 3,,3,,,0.10,False,0.0046,,,1.3,0,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,BM25,K = 3,,3,,,0.20,False,0.0044,,,1.2,0,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,BM25,K = 3,,3,,,0.30,False,0.0008,,,0.2,1,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,BM25,K = 5,,5,,,0.10,False,0.0056,,,1.5,0,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,BM25,K = 5,,5,,,0.20,True,0.0044,,,1.2,0,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,BM25,K = 5,,5,,,0.30,False,-0.0015,,,-0.4,2,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,BM25,K = 10,,10,,,0.10,False,0.0064,,,1.8,0,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,BM25,K = 10,,10,,,0.20,False,0.0043,,,1.2,0,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,BM25,K = 10,,10,,,0.30,False,-0.0038,,,-1.0,2,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,DPH,K = 1,,1,,,0.10,False,0.0021,,,0.8,0,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,DPH,K = 1,,1,,,0.20,False,0.0043,,,1.6,0,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,DPH,K = 1,,1,,,0.30,False,0.0058,,,2.2,2,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,DPH,K = 3,,3,,,0.10,False,0.0056,,,2.1,0,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,DPH,K = 3,,3,,,0.20,False,0.0097,,,3.6,1,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,DPH,K = 3,,3,,,0.30,False,0.0103,,,3.9,1,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,DPH,K = 5,,5,,,0.10,False,0.0073,,,2.7,1,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,DPH,K = 5,,5,,,0.20,True,0.0114,,,4.3,1,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,DPH,K = 5,,5,,,0.30,False,0.0122,,,4.6,2,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,DPH,K = 10,,10,,,0.10,False,0.0081,,,3.0,1,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,DPH,K = 10,,10,,,0.20,False,0.0114,,,4.3,1,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,under 1M,DPH,K = 10,,10,,,0.30,False,0.0085,,,3.2,2,20,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,DPH,K = 1,,1,,,0.10,False,0.0011,,,0.3,0,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,DPH,K = 1,,1,,,0.20,False,0.0015,,,0.4,0,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,DPH,K = 1,,1,,,0.30,False,-0.0015,,,-0.4,1,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,DPH,K = 3,,3,,,0.10,False,0.0027,,,0.7,0,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,DPH,K = 3,,3,,,0.20,False,0.0013,,,0.3,0,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,DPH,K = 3,,3,,,0.30,False,-0.0041,,,-1.0,2,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,DPH,K = 5,,5,,,0.10,False,0.0033,,,0.8,0,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,DPH,K = 5,,5,,,0.20,True,-0.0001,,,0.0,3,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,DPH,K = 5,,5,,,0.30,False,-0.0085,,,-2.1,4,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,DPH,K = 10,,10,,,0.10,False,0.0031,,,0.8,0,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,DPH,K = 10,,10,,,0.20,False,-0.0027,,,-0.7,3,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates
+c,T8,over 1M,DPH,K = 10,,10,,,0.30,False,-0.0159,,,-3.9,4,5,S2 sidecar; capped query sets of ours_tuned/ (at most 500 queries per collection); point estimates

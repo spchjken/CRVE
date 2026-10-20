@@ -1,0 +1,28 @@
+{
+  "under_1M": {
+    "macro": 0.001185847894259333,
+    "holm_step": 1,
+    "level": 0.975,
+    "interval": [
+      -0.00113265405234386,
+      0.0035110414400089086
+    ],
+    "p_two_sided": 0.252,
+    "decided": false,
+    "direction": "undecided",
+    "reading": "non-inferior"
+  },
+  "over_1M": {
+    "macro": 0.0004055459818775828,
+    "holm_step": 2,
+    "level": 0.95,
+    "interval": [
+      -0.0010830117975265203,
+      0.0018731765577561128
+    ],
+    "p_two_sided": 0.594,
+    "decided": false,
+    "direction": "undecided",
+    "reading": "non-inferior"
+  }
+}

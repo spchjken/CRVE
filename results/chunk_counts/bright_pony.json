@@ -1,0 +1,20 @@
+{
+  "corpus": "bright_pony",
+  "chunks_total": 10734,
+  "chunks_with_pool_term": 9195,
+  "distinct_texts_with_pool_term": 8859,
+  "sidecar_unique_chunks": 7693,
+  "sidecar_unique_chunks_by_seed": {
+    "42": 7693,
+    "1": 7662,
+    "2": 7647,
+    "3": 7658,
+    "4": 7674,
+    "5": 7667
+  },
+  "terms": 3081,
+  "term_coverage_mean": 0.8595030067468059,
+  "term_coverage_median": 1.0,
+  "terms_fully_covered_share": 0.7487828627069133,
+  "seconds": 5.5
+}

@@ -1,0 +1,62 @@
+{
+ "_note": "Prebuilt assets of the paper (Google Drive). scripts/fetch_assets.py downloads them by file id, checks the SHA-256 and unpacks them into the repository root.",
+ "archives": [
+  {
+   "key": "gate1",
+   "name": "crve_gate1_assets.tar.gz",
+   "google_drive_id": "1p1e2tU7fRdm-GXqyNwB94brlGgHjkj2E",
+   "bytes": 1205775862,
+   "sha256": "d6a0ff380b5329fb6a33da23c9c9b78e4795bd10060629e7884900fbe532a8f9",
+   "extracts_to": [
+    "data/cache/gate1/<c>_canonical_pool.json",
+    "data/cache/gate1/<c>_lexical_profiles.parquet",
+    "data/cache/gate1/<c>_lexical_profiles_idx/"
+   ],
+   "description": "Vocabulary pools and the sparse lexical profiles with their Terrier indexes, 25 collections. Needed to reproduce CRVE exactly (a profile rebuild depends on the string hash seed)."
+  },
+  {
+   "key": "sidecars",
+   "name": "crve_s2_sidecars.tar.gz",
+   "google_drive_id": "1unBTyeLUOEVUBr-tu6geXwEw5XQyWZKo",
+   "bytes": 2179819859,
+   "sha256": "028332e9a000e3f576c28ad09a8946495cd1b4da53fcb9860b2ef637d6c9818a",
+   "extracts_to": [
+    "data/cache/sidecars/S2/<c>/"
+   ],
+   "description": "S2 context sidecars (chunks, term references, BGE-small-en-v1.5 float16 vectors), 25 collections. Rebuildable with scripts/build_sidecar.py on a GPU."
+  },
+  {
+   "key": "ppmi",
+   "name": "crve_ppmi_over1m.tar.gz",
+   "google_drive_id": "1hAbVPWp1YUmdgfOr2nwH3okdybs_pkiL",
+   "bytes": 116836842,
+   "sha256": "4e81b1ae5f76f07240bcf516771a9c05f0a2155c5c7e355e40c677cf759ad45d",
+   "extracts_to": [
+    "data/cache/gate1/<c>_bounded_ppmi.parquet"
+   ],
+   "description": "PPMI co-occurrence lists of the five collections over 1M documents, restricted to the anchors of the evaluated queries (for these anchors the lists equal a full computation). Hours to rebuild."
+  },
+  {
+   "key": "llm",
+   "name": "crve_qe_llm_cache.tar.gz",
+   "google_drive_id": "1FTrq7FWihMB-bPDXhh1dvvjMD_VRtAl5",
+   "bytes": 5438363,
+   "sha256": "f2cfb0b2dd2ebe7b88d6b3660672f4d5325a83977337d1ee9a38bcecb1abbf28",
+   "extracts_to": [
+    "data/cache/qe_llm/raw/<hash>.json"
+   ],
+   "description": "LLM-Q2E keyword generations (qwen3.5:4b through Ollama), 34,299 queries, replayed by scripts/run_qe_baselines.py. Not regenerable exactly."
+  },
+  {
+   "key": "vocab",
+   "name": "crve_qe_vocab.tar.gz",
+   "google_drive_id": "1Ah1TzNdpRTdraXGOGB5znaIQcBTWWnCy",
+   "bytes": 248077532,
+   "sha256": "7f27171a8098ac54f6a08543b215449a5a6b9b93471fbcb95856a452059c0f1e",
+   "extracts_to": [
+    "data/cache/qe_vocab/<c>/<id>/"
+   ],
+   "description": "BGE-QE vocabulary sidecars, 25 collections. A rebuild can pick other surface forms for a few terms."
+  }
+ ]
+}

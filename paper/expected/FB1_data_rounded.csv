@@ -1,0 +1,51 @@
+group,collection,base,queries,s2_default_ndcg10,prf_oracle_ndcg10,diff,rel_pct
+under 1M,SciFact,BM25,250,0.725,0.697,0.0282,4.0
+under 1M,SciFact,DPH,250,0.722,0.689,0.0330,4.8
+under 1M,ArguAna,BM25,500,0.494,0.471,0.0231,4.9
+under 1M,ArguAna,DPH,500,0.437,0.404,0.0332,8.2
+under 1M,NFCorpus,BM25,273,0.361,0.348,0.0128,3.7
+under 1M,NFCorpus,DPH,273,0.352,0.346,0.0054,1.6
+under 1M,TheoremQA-Questions,BM25,144,0.077,0.065,0.0116,17.7
+under 1M,TheoremQA-Questions,DPH,144,0.074,0.053,0.0208,39.2
+under 1M,LeetCode,BM25,92,0.236,0.225,0.0102,4.5
+under 1M,LeetCode,DPH,92,0.226,0.222,0.0039,1.8
+under 1M,Sustainable Living,BM25,58,0.117,0.109,0.0081,7.5
+under 1M,Sustainable Living,DPH,58,0.169,0.170,-0.0010,-0.6
+under 1M,AoPS,BM25,61,0.057,0.050,0.0070,14.2
+under 1M,AoPS,DPH,61,0.059,0.056,0.0029,5.1
+under 1M,Pony,BM25,62,0.039,0.032,0.0068,21.3
+under 1M,Pony,DPH,62,0.082,0.069,0.0129,18.8
+under 1M,FiQA,BM25,500,0.259,0.254,0.0044,1.7
+under 1M,FiQA,DPH,500,0.254,0.243,0.0105,4.3
+under 1M,SCIDOCS,BM25,500,0.165,0.161,0.0035,2.2
+under 1M,SCIDOCS,DPH,500,0.157,0.152,0.0046,3.0
+under 1M,Quora,BM25,500,0.753,0.753,-0.0004,-0.1
+under 1M,Quora,DPH,500,0.417,0.407,0.0105,2.6
+under 1M,Economics,BM25,53,0.152,0.153,-0.0016,-1.0
+under 1M,Economics,DPH,53,0.243,0.249,-0.0053,-2.1
+under 1M,Robotics,BM25,51,0.068,0.071,-0.0029,-4.1
+under 1M,Robotics,DPH,51,0.136,0.127,0.0094,7.4
+under 1M,TREC-COVID,BM25,50,0.656,0.666,-0.0100,-1.5
+under 1M,TREC-COVID,DPH,50,0.675,0.675,0.0004,0.1
+under 1M,TheoremQA-Theorems,BM25,26,0.015,0.031,-0.0165,-52.6
+under 1M,TheoremQA-Theorems,DPH,26,0.000,0.012,-0.0121,-100.0
+under 1M,Psychology,BM25,51,0.120,0.137,-0.0171,-12.5
+under 1M,Psychology,DPH,51,0.197,0.205,-0.0076,-3.7
+under 1M,Stack Overflow,BM25,67,0.180,0.203,-0.0234,-11.5
+under 1M,Stack Overflow,DPH,67,0.212,0.227,-0.0156,-6.9
+under 1M,Biology,BM25,53,0.071,0.113,-0.0419,-37.1
+under 1M,Biology,DPH,53,0.262,0.303,-0.0413,-13.6
+under 1M,Touché-2020,BM25,49,0.317,0.387,-0.0700,-18.1
+under 1M,Touché-2020,DPH,49,0.425,0.478,-0.0528,-11.0
+under 1M,Earth Science,BM25,66,0.167,0.246,-0.0794,-32.2
+under 1M,Earth Science,DPH,66,0.438,0.449,-0.0107,-2.4
+over 1M,HotpotQA,BM25,500,0.586,0.556,0.0293,5.3
+over 1M,HotpotQA,DPH,500,0.609,0.592,0.0172,2.9
+over 1M,FEVER,BM25,500,0.501,0.489,0.0120,2.5
+over 1M,FEVER,DPH,500,0.665,0.664,0.0014,0.2
+over 1M,DBPedia-Entity,BM25,400,0.313,0.311,0.0014,0.4
+over 1M,DBPedia-Entity,DPH,400,0.304,0.313,-0.0082,-2.6
+over 1M,Climate-FEVER,BM25,500,0.141,0.155,-0.0144,-9.3
+over 1M,Climate-FEVER,DPH,500,0.178,0.191,-0.0130,-6.8
+over 1M,NQ,BM25,500,0.293,0.308,-0.0145,-4.7
+over 1M,NQ,DPH,500,0.285,0.300,-0.0157,-5.2

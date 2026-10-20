@@ -1,0 +1,20 @@
+{
+  "corpus": "bright_economics",
+  "chunks_total": 88660,
+  "chunks_with_pool_term": 86301,
+  "distinct_texts_with_pool_term": 74859,
+  "sidecar_unique_chunks": 54709,
+  "sidecar_unique_chunks_by_seed": {
+    "42": 54709,
+    "1": 54807,
+    "2": 54771,
+    "3": 54698,
+    "4": 54773,
+    "5": 54830
+  },
+  "terms": 10000,
+  "term_coverage_mean": 0.6559408013103514,
+  "term_coverage_median": 0.8333333333333334,
+  "terms_fully_covered_share": 0.458,
+  "seconds": 32.8
+}

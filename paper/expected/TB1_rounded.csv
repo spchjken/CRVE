@@ -1,0 +1,29 @@
+group,base,comparison,diff,low,high,interval,level,reading,reference_ndcg10,rel_pct
+under 1M,BM25,rm3_oracle,0.0100,0.0032,0.0170,Holm (4 per group),98.75%,better,0.241,4.1
+under 1M,BM25,bo1_oracle,-0.0019,-0.0087,0.0049,Holm (4 per group),97.5%,unclear,0.253,-0.8
+under 1M,BM25,prf_oracle,-0.0074,-0.0132,-0.0015,95%,95%,below zero,0.259,-2.8
+under 1M,BM25,rm3_cv (seed-42 split),0.0127,0.0074,0.0182,95%,95%,above zero,0.239,5.3
+under 1M,BM25,bo1_cv (seed-42 split),0.0057,-0.0004,0.0118,95%,95%,uncertain,0.246,2.3
+under 1M,BM25,"rm3_cv (30 splits, seeds 0-29)",0.0142,0.0126,0.0167,"range over 30 splits (min, max)",,above zero in every split,0.237,6.0
+under 1M,BM25,"bo1_cv (30 splits, seeds 0-29)",0.0036,-0.0001,0.0073,"range over 30 splits (min, max)",,uncertain,0.248,1.5
+under 1M,DPH,rm3_oracle,0.0012,-0.0046,0.0069,Holm (4 per group),95%,unclear,0.276,0.4
+under 1M,DPH,bo1_oracle,0.0141,0.0070,0.0217,Holm (4 per group),98.33%,better,0.263,5.4
+under 1M,DPH,prf_oracle,0.0000,-0.0056,0.0055,95%,95%,uncertain,0.277,0.0
+under 1M,DPH,rm3_cv (seed-42 split),0.0065,0.0008,0.0121,95%,95%,above zero,0.270,2.4
+under 1M,DPH,bo1_cv (seed-42 split),0.0209,0.0143,0.0275,95%,95%,above zero,0.256,8.2
+under 1M,DPH,"rm3_cv (30 splits, seeds 0-29)",0.0063,0.0047,0.0082,"range over 30 splits (min, max)",,above zero in every split,0.271,2.3
+under 1M,DPH,"bo1_cv (30 splits, seeds 0-29)",0.0217,0.0182,0.0246,"range over 30 splits (min, max)",,above zero in every split,0.255,8.5
+over 1M,BM25,rm3_oracle,0.0039,-0.0012,0.0091,Holm (4 per group),97.5%,non-inferior,0.363,1.1
+over 1M,BM25,bo1_oracle,0.0104,0.0032,0.0176,Holm (4 per group),98.33%,better,0.356,2.9
+over 1M,BM25,prf_oracle,0.0027,-0.0018,0.0072,95%,95%,uncertain,0.364,0.8
+over 1M,BM25,rm3_cv (seed-42 split),0.0051,0.0006,0.0095,95%,95%,above zero,0.362,1.4
+over 1M,BM25,bo1_cv (seed-42 split),0.0116,0.0057,0.0176,95%,95%,above zero,0.355,3.3
+over 1M,BM25,"rm3_cv (30 splits, seeds 0-29)",0.0051,0.0041,0.0064,"range over 30 splits (min, max)",,above zero in every split,0.362,1.4
+over 1M,BM25,"bo1_cv (30 splits, seeds 0-29)",0.0138,0.0117,0.0156,"range over 30 splits (min, max)",,above zero in every split,0.353,3.9
+over 1M,DPH,rm3_oracle,-0.0027,-0.0078,0.0023,Holm (4 per group),95%,unclear,0.411,-0.7
+over 1M,DPH,bo1_oracle,0.0142,0.0060,0.0226,Holm (4 per group),98.75%,better,0.394,3.6
+over 1M,DPH,prf_oracle,-0.0037,-0.0087,0.0014,95%,95%,uncertain,0.412,-0.9
+over 1M,DPH,rm3_cv (seed-42 split),0.0003,-0.0050,0.0053,95%,95%,uncertain,0.408,0.1
+over 1M,DPH,bo1_cv (seed-42 split),0.0157,0.0093,0.0221,95%,95%,above zero,0.393,4.0
+over 1M,DPH,"rm3_cv (30 splits, seeds 0-29)",-0.0009,-0.0024,0.0011,"range over 30 splits (min, max)",,uncertain,0.409,-0.2
+over 1M,DPH,"bo1_cv (30 splits, seeds 0-29)",0.0172,0.0142,0.0233,"range over 30 splits (min, max)",,above zero in every split,0.391,4.4
