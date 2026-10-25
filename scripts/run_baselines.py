@@ -14,7 +14,7 @@ metrics  per-query nDCG@10/20/50 and Recall@100/1000 of the ten harness pipeline
 tuned    RM3 (feedback documents 5/10/20 x terms 10/20 x lambda 0.3/0.5/0.7) and Bo1 (5/10/20 x 10/20) over BM25 and
          DPH on at most 500 evaluated queries (seed-42 sample) -> grid_<c>.parquet; per collection the oracle (best grid
          point on these queries, ties to the earlier point) and the two-fold cross-validated choice -> tuned_<c>.parquet,
-         chosen_<c>.csv (Appendix B).
+         chosen_<c>.csv (Supplementary Section S1).
 --compare prints the largest per-query difference against stored results and exits with status 1 if any is not zero.
 """
 

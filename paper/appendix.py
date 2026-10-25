@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Appendices A, B and C of the paper: Tables A1, A2 (TA1, TA2), A6 to A9 (TB1 to TB4), A10, A11 (TC1, TC2) and the per-collection
-comparison with the best-of-both PRF oracle (FB1_data, Section 6.2 and Appendix B).
+Appendix A and Supplementary Sections S1 and S2 of the paper: Tables A1, A2 (TA1, TA2), S1 to S4 (TB1 to TB4), S5, S6 (TC1, TC2)
+and the per-collection comparison with the best-of-both PRF oracle (FB1_data, Section 6.2 and Supplementary Section S1).
 Read-only re-aggregation of stored result files; no retrieval.
 
   python paper/appendix.py   (from the repository root; or run everything with python paper/make_all.py)
@@ -46,7 +46,7 @@ def check(ok, msg):
 
 
 def reading(lo, hi):
-    """Reading of the Holm rows of Tables A6 and A7 (non-inferiority margin -0.002, set in advance)."""
+    """Reading of the Holm rows of Tables S1 and S2 (non-inferiority margin -0.002, set in advance)."""
     return "better" if lo > 0 else "worse" if hi < 0 else "non-inferior" if lo > -0.002 else "unclear"
 
 
@@ -153,7 +153,7 @@ def stage_A():
 
 
 # --------------------------------------------------------------------------------------------------------------------
-# Appendix B
+# Supplementary Section S1 (tuning on both sides)
 # --------------------------------------------------------------------------------------------------------------------
 def prf_cv_by_split():
     """Per collection x model x method x seed: mean nDCG@10 of cross-validated PRF (two folds, the grid of lib_prf_oracle), seeds 0-29 and 42.
@@ -252,7 +252,7 @@ def stage_TB1(cvsplit, qsets):
     s2df = ot[ot.arm.isin(["S2_default"] + prf_arms)]
     s2mean = {m: s2df[(s2df.model == m) & (s2df.arm == "S2_default")].groupby("dataset").ndcg10.mean() for m in MODELS}
     main = tb1_column(s2df, "S2_default", cvsplit, s2mean)
-    # cross-checks against reference constants: rows of Table A6 as printed
+    # cross-checks against reference constants: rows of Table S1 as printed
     t = main.set_index(["group", "base", "comparison"])
     for key, v in ((("under 1M", "BM25", "rm3_oracle"), "+0.0100 +0.0032 +0.0170 98.75% better"),
                    (("under 1M", "BM25", "prf_oracle"), "-0.0074 -0.0132 -0.0015 95% below zero"),
@@ -260,7 +260,7 @@ def stage_TB1(cvsplit, qsets):
                    (("under 1M", "BM25", "bo1_cv (30 splits, seeds 0-29)"), "+0.0036 -0.0001 +0.0073 uncertain")):
         r = t.loc[key]
         got = f"{r['diff']:+.4f} {r.low:+.4f} {r.high:+.4f} " + (f"{lvl(r.level)} " if np.isfinite(r.level) else "") + r.reading
-        check(got == v, f"TB1 {key} equals Table A6: {got}")
+        check(got == v, f"TB1 {key} equals Table S1: {got}")
     # PRF CV against its default, 30 splits, equals ours_tuned/posthoc_cv_gain_over_default.csv (rm3/bo1 rows)
     ph = pd.read_csv(f"{OT_DIR}/posthoc_cv_gain_over_default.csv")
     dflt = cvsplit[cvsplit.seed == "default"].set_index(["dataset", "model", "method"]).cv
@@ -311,16 +311,16 @@ def stage_TB2():
     tb2 = pd.DataFrame(rows)
     d = ["oracle_diff", "oracle_low", "oracle_high", "cv42_diff", "cv42_low", "cv42_high", "cv30_mean", "cv30_min", "cv30_max"]
     write("TB2", tb2, delta_cols=d, pct_cols=["oracle_rel_pct", "cv42_rel_pct"])
-    # cross-checks against reference constants: values printed in Table A7
+    # cross-checks against reference constants: values printed in Table S2
     t = tb2.set_index(["group", "base", "sidecar", "prf"])
     for key, exp in ((("under 1M", "BM25", "S2", "Bo1"), ("oracle_diff", 0.0030)), (("over 1M", "DPH", "S1", "RM3"), ("oracle_diff", 0.0018)),
                      (("under 1M", "BM25", "S2", "Bo1"), ("cv30_mean", 0.0043)), (("under 1M", "BM25", "S2", "Bo1"), ("cv30_min", -0.0004)),
                      (("over 1M", "DPH", "S1", "RM3"), ("cv30_min", -0.0014)), (("under 1M", "BM25", "S2", "best of both (oracle only)"), ("oracle_diff", -0.0025)),
                      (("under 1M", "DPH", "S1", "Bo1"), ("cv42_diff", 0.0229))):
         g = t.loc[key, exp[0]]
-        check(abs(g - exp[1]) < 6e-5, f"TB2 {key} {exp[0]}: {g:+.4f} (Table A7: {exp[1]:+.4f})")
+        check(abs(g - exp[1]) < 6e-5, f"TB2 {key} {exp[0]}: {g:+.4f} (Table S2: {exp[1]:+.4f})")
     rd = tb2[tb2.prf != "best of both (oracle only)"].oracle_reading.value_counts().to_dict()
-    check(rd == {"better": 11, "non-inferior": 3, "unclear": 2}, f"TB2 Holm readings {rd} (Table A7: 11 better, 3 non-inferior, 2 unclear)")
+    check(rd == {"better": 11, "non-inferior": 3, "unclear": 2}, f"TB2 Holm readings {rd} (Table S2: 11 better, 3 non-inferior, 2 unclear)")
     return tb2
 
 
@@ -360,7 +360,7 @@ def stage_TB3():
     for key, col, exp in ((("under 1M", "BM25", "CRVE S1"), "oracle_minus_default", 0.0077), (("over 1M", "DPH", "RM3"), "oracle_minus_default", 0.0137),
                           (("under 1M", "BM25", "CRVE S1"), "cv42_minus_default", 0.0005), (("over 1M", "BM25", "CRVE S2"), "cv42_minus_default", -0.0009),
                           (("under 1M", "DPH", "CRVE S1"), "cv30_mean_minus_default", 0.0061), (("over 1M", "BM25", "RM3"), "cv30_mean_minus_default", 0.0158)):
-        check(abs(t.loc[key, col] - exp) < 6e-5, f"TB3 {key} {col}: {t.loc[key, col]:+.4f} (Table A8: {exp:+.4f})")
+        check(abs(t.loc[key, col] - exp) < 6e-5, f"TB3 {key} {col}: {t.loc[key, col]:+.4f} (Table S3: {exp:+.4f})")
     return tb3
 
 
@@ -394,19 +394,19 @@ def stage_TB4():
     tb4 = pd.DataFrame(rows)
     write("TB4", tb4, delta_cols=["worst_gain", "mean_gain_over_base"], level_cols=["worst_collection_base_ndcg10", "base_ndcg10_macro"],
           pct_cols=["worst_gain_rel_pct", "mean_gain_over_base_rel_pct"], int_cols=["collections", "below_-0.005", "above_+0.005"])
-    # cross-check against reference constants: counts printed in Table A9
+    # cross-check against reference constants: counts printed in Table S4
     t = tb4.set_index(["group", "base", "method", "tuning"])["below_-0.005"]
     exp = {("under 1M", "BM25", "CRVE S1", "cross-validated (seed-42 split)"): 2, ("over 1M", "DPH", "CRVE S2", "default"): 3,
            ("under 1M", "DPH", "Bo1", "cross-validated (seed-42 split)"): 13, ("under 1M", "BM25", "PRF best of both", "oracle"): 5}
     for k, e in exp.items():
-        check(t.loc[k] == e, f"TB4 {k}: {t.loc[k]} below -0.005 (Table A9: {e})")
+        check(t.loc[k] == e, f"TB4 {k}: {t.loc[k]} below -0.005 (Table S4: {e})")
     check(int(t.xs("oracle", level="tuning").loc[(slice(None), slice(None), ["CRVE S1", "CRVE S2"])].sum()) == 0, "TB4 tuned CRVE oracle lowers no collection")
     return tb4
 
 
 def stage_FB1():
     """Per collection, CRVE (S2) at its fixed setting minus the best-of-both PRF oracle (capped query sets): the counts of
-    Section 6.2 and Appendix B and the TREC-COVID difference of Section 6.3 (point estimates)."""
+    Section 6.2 and Supplementary Section S1 and the TREC-COVID difference of Section 6.3 (point estimates)."""
     arms = pd.read_parquet(f"{OT_DIR}/per_query_arms.parquet", columns=["dataset", "model", "arm", "qid", "ndcg10"])
     arms = arms[arms.arm.isin(["S2_default", "prf_oracle"])]
     rows = []
@@ -427,11 +427,11 @@ def stage_FB1():
     fb = fb.sort_values(["_g", "_k", "base"], ascending=[True, False, True]).drop(columns=["_g", "_k"]).reset_index(drop=True)
     write("FB1_data", fb.drop(columns=["dataset"]), delta_cols=["diff"], level_cols=["s2_default_ndcg10", "prf_oracle_ndcg10"],
           pct_cols=["rel_pct"], int_cols=["queries"])
-    # reference constants: ahead / behind / within +-0.005 (Appendix B: 10, 9, 6 over BM25 and 9, 10, 6 over DPH)
+    # reference constants: ahead / behind / within +-0.005 (Supplementary Section S1: 10, 9, 6 over BM25 and 9, 10, 6 over DPH)
     for model, exp in (("BM25", (10, 9, 6)), ("DPH", (9, 10, 6))):
         x = fb[fb.base == model]["diff"]
         got = (int((x > 0.005).sum()), int((x < -0.005).sum()), int((x.abs() <= 0.005).sum()))
-        check(got == exp, f"FB1 {model}: CRVE (S2) vs best-of-both oracle ahead/behind/within +-0.005 {got} (Appendix B: {exp})")
+        check(got == exp, f"FB1 {model}: CRVE (S2) vs best-of-both oracle ahead/behind/within +-0.005 {got} (Supplementary Section S1: {exp})")
     tc = fb[(fb.dataset == "trec_covid") & (fb.base == "BM25")].iloc[0]
     check(f"{tc['diff']:+.3f} {tc.rel_pct:+.1f}" == "-0.010 -1.5",
           f"FB1 TREC-COVID over BM25: {tc['diff']:+.4f} ({tc.rel_pct:+.1f}%) (Section 6.3: -0.010, -1.5%)")
@@ -439,7 +439,7 @@ def stage_FB1():
 
 
 # --------------------------------------------------------------------------------------------------------------------
-# Appendix C
+# Supplementary Section S2 (cost)
 # --------------------------------------------------------------------------------------------------------------------
 COST_NOTE = ("Research implementation (Python, through PyTerrier) set against Terrier's native PRF implementations; most of our overhead "
              "over BM25 is implementation cost (per-call PyTerrier overhead in the sparse lexical channel of Gate 1, Python-side query "
@@ -472,14 +472,14 @@ def stage_TC1():
           f">100% on {(u.extra_disk_pct_of_index > 100).sum()}), peak RSS {u.peak_rss_gib.min():.1f}-{u.peak_rss_gib.max():.1f} GiB; "
           f"over 1M: build {o.build_min.min():.0f}-{o.build_min.max():.0f} min, disk {o.extra_disk_mb.min():.0f}-{o.extra_disk_mb.max():.0f} MB, "
           f"share {o.extra_disk_pct_of_index.min():.0f}-{o.extra_disk_pct_of_index.max():.0f}%, peak RSS {o.peak_rss_gib.min():.1f}-{o.peak_rss_gib.max():.1f} GiB", flush=True)
-    # reference constants: rows of Table A10 as printed (build min, encoding s, peak RSS GiB, extra disk MB, index MB, disk / index %, chunks)
+    # reference constants: rows of Table S5 as printed (build min, encoding s, peak RSS GiB, extra disk MB, index MB, disk / index %, chunks)
     t = tc1.set_index("collection")
     for c, v in (("SciFact", "0.8 7.2 2.378 61.1 25.5 239.4 18942"), ("Touché-2020", "35.9 57.1 7.628 405.2 685.1 59.2 183630"),
                  ("NQ", "62.4 59.8 2.476 324.7 2304.9 14.1 193789"), ("Climate-FEVER", "133.6 62.2 2.515 349.3 5555.7 6.3 197099")):
         r = t.loc[c]
         got = (f"{r.build_min:.1f} {r.of_which_encoding_s:.1f} {r.peak_rss_gib:.3f} {r.extra_disk_mb:.1f} {r.terrier_index_mb:.1f} "
                f"{r.extra_disk_pct_of_index:.1f} {int(r.gate2_chunks)}")
-        check(got == v, f"TC1 {c} equals Table A10: {got}")
+        check(got == v, f"TC1 {c} equals Table S5: {got}")
     return tc1
 
 
@@ -501,7 +501,7 @@ def stage_TC2():
     gpu_hq = float(pd.read_parquet(f"{COST}/latency_hotpotqa_opt.parquet").query("method == 'ours_B_gpu'").total_ms.median())
     cpu_hq = float(s[(s.method == "bm25_ours") & (s.dataset == "hotpotqa")].total_ms_p50.iloc[0])
     check(round(min(part_a.values())) == 78 and round(max(part_a.values())) == 103 and round(gpu_hq) == 108 and gpu_hq > cpu_hq,
-          f"TC2 separate timing session: CPU run {min(part_a.values()):.1f}-{max(part_a.values()):.1f} ms (Table A11, note c: 78 to 103); HotpotQA GPU "
+          f"TC2 separate timing session: CPU run {min(part_a.values()):.1f}-{max(part_a.values()):.1f} ms (Table S6, note c: 78 to 103); HotpotQA GPU "
           f"{gpu_hq:.1f} ms > CPU row {cpu_hq:.1f} ms")
     GPU_NOTE = (f"From a separate timing session (latency_<collection>_opt.parquet), not the session "
                 f"of the other rows; that session's own CPU run gives {min(part_a.values()):.0f}-{max(part_a.values()):.0f} ms; on HotpotQA "
@@ -537,7 +537,7 @@ def stage_TC2():
     g = tc2[tc2.method.str.contains("GPU; separate timing session")]
     print(f"TC2 CRVE GPU total median {g.total_ms_p50.min():.0f}-{g.total_ms_p50.max():.0f} ms; encode {g.encode_ms_p50.min():.1f}-{g.encode_ms_p50.max():.1f} ms", flush=True)
     got = " ".join(f"{x:.1f}" for x in g.total_ms_p50)
-    check(got == "66.2 52.4 67.4 73.8 108.3", f"TC2 CRVE encoding on GPU, total median per collection {got} (Table A11: 66.2, 52.4, 67.4, 73.8, 108.3)")
+    check(got == "66.2 52.4 67.4 73.8 108.3", f"TC2 CRVE encoding on GPU, total median per collection {got} (Table S6: 66.2, 52.4, 67.4, 73.8, 108.3)")
     return tc2
 
 

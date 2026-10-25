@@ -3,8 +3,8 @@
 This folder regenerates every table and figure of the paper from the stored results under `results/`. Nothing is retrieved
 or re-encoded: the scripts re-aggregate stored per-query outcomes and summaries, recompute the bootstrap intervals and Holm
 tests, cross-check what they compute against the stored summaries and against selected numbers printed in the paper
-(reference constants), and stop with a non-zero exit status on any mismatch. Every number printed in Tables 3 to 6 and A1 to
-A11 is in the outputs; each output holds only rows and columns that the paper prints or that a number of the text uses.
+(reference constants), and stop with a non-zero exit status on any mismatch. Every number printed in Tables 3 to 6, A1 to A5
+and S1 to S6 (Supplementary Materials) is in the outputs; each output holds only rows and columns that the paper prints or that a number of the text uses.
 
 ```bash
 pip install -r requirements.txt     # numpy, pandas, pyarrow, matplotlib (pinned)
@@ -39,7 +39,7 @@ paths point at the folders under `results/`.
 - **CRVE** is the S2 sidecar, two-channel Gate 1, K = 5, w = 0.20, unless marked. **Six-draw mean** (Table 6) is the
   per-query mean of the six random sidecars (seed 42 and seeds 1–5). **Seed 42** marks the sidecar of 20 randomly drawn
   chunks per term used where the paper says randomly drawn chunks. **Capped** means at most 500 queries per collection (the
-  tuned-PRF and tuned-CRVE comparisons of Appendix B).
+  tuned-PRF and tuned-CRVE comparisons of Supplementary Section S1).
 - All values use the corrected evaluation of four collections (ArguAna, Biology, Earth Science, Stack Overflow; see
   `results/fix_eval/`), except where an item says it was computed before it: F3 / Figure 4b, the pool-size line and the
   paired difference of the lexical profile channel (T3).
@@ -76,16 +76,16 @@ All sources are under `results/`.
 | Table A3 | `T4.csv` (nDCG@50, Recall@1000 columns) | `s51.py` | as Table 3 | 95% intervals. |
 | Table A4 | `T8.csv` | `s52_53.py` | `recheck/risk_by_cell.csv`, `ours_tuned/grid_<c>.parquet` (base levels) | Capped sets, so the default cell is +0.0091 here against +0.0090 in Table 5. |
 | Table A5 | `T6.csv` | `s52_53.py` | `recheck/gate1_order_paired.csv`, `gate1_order_18_corpora.csv`, `recheck/{unseen_queries,new_corpora}/query_outcomes_F.parquet`, `queries.csv` | Gate 2 against the five-channel Gate 1 order (randomly drawn chunks, BM25), 18 collections. |
-| Table A6 | `TB1.csv` | `appendix.py` | `ours_tuned/per_query_arms.parquet`, `posthoc_cv_gain_over_default.csv`; `prf_oracle/grid_<c>.parquet`, `per_query_arms.parquet` | Capped sets. Cross-validated PRF recomputed for seeds 0–29 and 42. |
-| Table A7 | `TB2.csv` | `appendix.py` | `ours_tuned/{analysis.json,summary.csv,cv_split_sensitivity.csv}` | Both sides tuned. |
-| Table A8 | `TB3.csv` | `appendix.py` | `ours_tuned/{analysis.json,summary.csv,posthoc_cv_gain_over_default.csv,per_query_arms.parquet}` | Tuning headroom; RM3/Bo1 CV − default intervals recomputed. |
-| Table A9 | `TB4.csv` | `appendix.py` | `ours_tuned/risk_profile.csv`, `per_query_arms.parquet` | Risk counts of the tuned arms. |
-| Table A10 | `TC1.csv` | `appendix.py` | `cost/build_costs.csv` | Build cost per collection. Costs the random seed-42 sidecar. Over-1M values are lower bounds (restricted PPMI lists; their peak memory not measured). |
-| Table A11 | `TC2.csv` | `appendix.py` | `cost/latency_summary.csv`, `cost/latency_<c>_{base,opt}.parquet` | Latency per stage (median, p90), five collections. The GPU-encoding rows come from a separate timing session (`latency_<c>_opt.parquet`). Random seed-42 sidecar in the benchmark. |
+| Table S1 | `TB1.csv` | `appendix.py` | `ours_tuned/per_query_arms.parquet`, `posthoc_cv_gain_over_default.csv`; `prf_oracle/grid_<c>.parquet`, `per_query_arms.parquet` | Capped sets. Cross-validated PRF recomputed for seeds 0–29 and 42. |
+| Table S2 | `TB2.csv` | `appendix.py` | `ours_tuned/{analysis.json,summary.csv,cv_split_sensitivity.csv}` | Both sides tuned. |
+| Table S3 | `TB3.csv` | `appendix.py` | `ours_tuned/{analysis.json,summary.csv,posthoc_cv_gain_over_default.csv,per_query_arms.parquet}` | Tuning headroom; RM3/Bo1 CV − default intervals recomputed. |
+| Table S4 | `TB4.csv` | `appendix.py` | `ours_tuned/risk_profile.csv`, `per_query_arms.parquet` | Risk counts of the tuned arms. |
+| Table S5 | `TC1.csv` | `appendix.py` | `cost/build_costs.csv` | Build cost per collection. Costs the random seed-42 sidecar. Over-1M values are lower bounds (restricted PPMI lists; their peak memory not measured). |
+| Table S6 | `TC2.csv` | `appendix.py` | `cost/latency_summary.csv`, `cost/latency_<c>_{base,opt}.parquet` | Latency per stage (median, p90), five collections. The GPU-encoding rows come from a separate timing session (`latency_<c>_opt.parquet`). Random seed-42 sidecar in the benchmark. |
 
 Outputs that are not tables of the paper but hold numbers of its text: `T3` (Gate 1 channels, Section 5.3), `T3b`
 (collections above/below ±0.005, Section 5.1), `F1_data` (per-collection gains, Sections 1 and 5.1), `T5b` (Quora by BM25
-level, Section 6.2), `FB1_data` (per collection, CRVE minus the best-of-both PRF oracle; Sections 6.2, 6.3 and Appendix B),
+level, Section 6.2), `FB1_data` (per collection, CRVE minus the best-of-both PRF oracle; Sections 6.2, 6.3 and Supplementary Section S1),
 `pool_and_weighting.md` (Section 5.3), `F2_data`, `F3_data` (Figure 4a, 4b), `checks_s52_53.csv` (the cross-checks of
 `s52_53.py`).
 
@@ -106,7 +106,7 @@ level, Section 6.2), `FB1_data` (per collection, CRVE minus the best-of-both PRF
 | 4 | 1,559 of 33,624 queries longer than 128 tokens | `results/paper_posthoc/d_query_truncation.csv`, `run_d.json` |
 | 4 | Quora holds 70% of the queries under 1M | `F1_data.csv` (queries) |
 | 5.1 | nDCG@50 and Recall@1000 readings | `T4.csv` |
-| 5.1, App. B | Against tuned PRF (cross-validated and oracle); best-of-both −0.0074 | `TB1.csv` |
+| 5.1, Suppl. S1 | Against tuned PRF (cross-validated and oracle); best-of-both −0.0074 | `TB1.csv` |
 | 5.2 | Tuned RM3/Bo1 risk counts (11 and 3; 5 and 3; 8 to 13) | `TB4.csv`; `T5.csv` (capped rows) |
 | 5.2 | Robustness index (mean +0.074; pooled −0.037 / −0.068) | `T5.csv` |
 | 5.2, 6.3 | Quora and other per-collection levels | `TA1.csv` |
@@ -122,13 +122,13 @@ level, Section 6.2), `FB1_data` (per collection, CRVE minus the best-of-both PRF
 | 6.1 | 3% to 6% of documents with a stored chunk over 1M | `results/recheck/coverage_documents_with_chunk.csv` |
 | 6.1 | Median added term in less than 0.5% of documents | `results/paper_posthoc/c_df_of_chosen_terms.csv` |
 | 6.1 | Quora: CRVE's added terms about eight times rarer than LLM-Q2E's | `results/paper_posthoc/c_df_of_chosen_terms.csv`, `results/added_term_profile/summary.json` |
-| 6.2, App. B | CRVE vs best-of-both PRF oracle per collection (10/9/6, 9/10/6) | `FB1_data.csv` |
+| 6.2, Suppl. S1 | CRVE vs best-of-both PRF oracle per collection (10/9/6, 9/10/6) | `FB1_data.csv` |
 | 6.2 | Quora: BM25 perfect on 60% of queries; about four fifths of CRVE's net loss from them | `T5b.csv` (from `results/added_term_profile/ceiling_by_bm25_level.csv`) |
 | 6.3 | TREC-COVID: the best of tuned RM3 and Bo1 ahead by 0.010 (−1.5%) | `FB1_data.csv` |
 | 6.3 | Build takes minutes under and hours over 1M | `TC1.csv` |
-| App. B | Grids and chosen settings | `results/ours_tuned/chosen_cells.csv`, `results/prf_oracle/chosen_configs.csv` |
-| App. B | Both sides tuned (14 of 16), tuning headroom | `TB2.csv`, `TB3.csv` |
-| App. C | Retrieval with five added terms costs about 5 to 17 ms more; LLM-Q2E 604 to 757 ms; fresh generations differ from the cache on 44% of timed queries | `TC2.csv`, `results/cost/latency_summary.csv`, `results/cost/run_latency_<c>_llm.json` |
-| App. C | CPU run of the GPU session 78–103 ms; same top five terms on CPU and GPU | `TC2.csv`; `results/cost/run_latency_<c>_opt.json` (`same_top5`) |
+| Suppl. S1 | Grids and chosen settings | `results/ours_tuned/chosen_cells.csv`, `results/prf_oracle/chosen_configs.csv` |
+| Suppl. S1 | Both sides tuned (14 of 16), tuning headroom | `TB2.csv`, `TB3.csv` |
+| Suppl. S2 | Retrieval with five added terms costs about 5 to 17 ms more; LLM-Q2E 604 to 757 ms; fresh generations differ from the cache on 44% of timed queries | `TC2.csv`, `results/cost/latency_summary.csv`, `results/cost/run_latency_<c>_llm.json` |
+| Suppl. S2 | CPU run of the GPU session 78–103 ms; same top five terms on CPU and GPU | `TC2.csv`; `results/cost/run_latency_<c>_opt.json` (`same_top5`) |
 
 Sources named without a folder are outputs in `paper/output/`.

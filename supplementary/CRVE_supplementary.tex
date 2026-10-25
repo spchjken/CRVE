@@ -1,0 +1,348 @@
+%=================================================================
+% Supplementary Materials of the paper
+% "CRVE: Low-Risk, LLM-Free Query Expansion for Lexical Retrieval from Stored Corpus Contexts".
+% Sections S1 and S2 are the former Appendices B and C of the manuscript, unchanged except for
+% numbering (Tables A6-A11 -> S1-S6) and references to the paper written out as numbers.
+% Build: latexmk -pdf CRVE_supplementary.tex
+%=================================================================
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage[a4paper,hmargin=1.27cm,vmargin=1.8cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,tabularx,array,multirow}
+\usepackage{changepage}
+\usepackage{xcolor,xspace,placeins}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Supplementary Materials: CRVE: Low-Risk, LLM-Free Query Expansion for Lexical Retrieval from Stored Corpus Contexts},pdfauthor={Dong Hoang Van, Jialu Shen, Md Monjurul Karim, Qiang Qu}}
+\newcommand{\method}{CRVE\xspace}
+% lengths of the MDPI class used by the tables (full-width tables span the text width here)
+\newlength{\extralength}\setlength{\extralength}{0pt}
+\newlength{\fulllength}\setlength{\fulllength}{\textwidth}
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.6}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+
+\title{Supplementary Materials\\[4pt]\large CRVE: Low-Risk, LLM-Free Query Expansion for Lexical Retrieval\\ from Stored Corpus Contexts}
+\author{Dong Hoang Van, Jialu Shen, Md Monjurul Karim and Qiang Qu}
+\date{}
+
+\begin{document}
+\maketitle
+
+\noindent Section~S1 (Tables~S1--S4) and Section~S2 (Tables~S5 and S6) accompany the paper. Section, table and figure numbers without the prefix S refer to the paper. Elsewhere, S1 and S2 name the chunk-selection scores of the context sidecar (Section~3.2 of the paper): ``\method S1'' and ``\method S2'' are \method with the sidecar chunks chosen by that score. Code, stored results and the scripts that regenerate every table are in the repository at \url{https://github.com/spchjken/CRVE} (\texttt{paper/README.md} maps each table to its script and output file).
+
+\section{Tuning on Both Sides}\label{app:tuned}
+
+The baselines of Section~5 of the paper run at one fixed setting each. This comparison was declared before the chunk-selection score S2 was adopted; the readings for \method with S2 apply its family and reading rules post hoc. Here RM3 and Bo1 are tuned per collection on the evaluation queries themselves (oracle), which favours them, and by two-fold cross-validation; \method is tuned the same way over $K$ and $w$. For RM3, tuning varies the number of feedback documents, the number of expansion terms and the interpolation weight $\lambda$. The grids differ in size: 12 settings for \method, 18 for RM3 and 6 for Bo1, and the oracles often chose settings at the edge of their grid ($K = 10$ and $w = 0.30$ for \method, $\lambda = 0.7$ for RM3). The query sets are capped at 500 queries per collection.
+Table~\ref{tab:B-tuned-prf} gives the comparison with tuned PRF summarised in Section~5.1 of the paper. When both sides are tuned on the test queries (oracle against oracle), \method is better or non-inferior in 14 of 16 contrasts and never worse (Table~\ref{tab:B-both-tuned}); with S2 alone, in 7 of 8. In each of the four settings, cross-validated tuning adds less on average to \method with S2 than to RM3 and to Bo1 (Table~\ref{tab:B-headroom}), although against Bo1 the ranges over the 30 splits overlap in three of the four settings (both over DPH and over BM25 over 1M): averaged over 30 random splits, it adds between $-0.0001$ and $+0.0036$ nDCG@10 to the fixed setting of \method with S2, against $+0.0024$ to $+0.0158$ for RM3 and Bo1. Tuned PRF still lowers several collections (Table~\ref{tab:B-tuned-risk}). Per collection, \method (S2) at its fixed setting is ahead of the best-of-both oracle by more than 0.005 on 10 collections, behind it on 9 and within $\pm 0.005$ on 6 over BM25, and 9, 10 and 6 over DPH.
+
+% BEGIN table TB1
+\begin{table}[!htbp]
+\caption{Difference in nDCG@10 between \method and RM3 or Bo1 tuned against it: oracle (parameters chosen on the test queries), cross-validated (CV) and best of both. Best of both: the better of the two oracles. CV (42): seed-42 split; CV (30): 30 splits. \method with the S2 chunks (default $K=5$, $w=0.20$); the comparison was declared before S2 was adopted, and these readings apply its family and reading rules post hoc; capped query sets (at most 500 queries per collection). Level: Holm-adjusted over four contrasts per group, 95\%, or the range (smallest, largest) over 30 cross-validation splits. Rel.: percentage of the tuned PRF\textquotesingle s nDCG@10.\label{tab:B-tuned-prf}}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{lccl>{\raggedright\arraybackslash}Xr}
+\toprule
+\method minus & Difference & Interval & Level & Reading & Rel. (\%) \\
+\midrule
+\multicolumn{6}{l}{\emph{Under 1M, base BM25}} \\
+RM3 oracle & $+0.0100$ & $[+0.0032, +0.0170]$ & 98.75\% Holm & better & $+4.1$ \\
+Bo1 oracle & $-0.0019$ & $[-0.0087, +0.0049]$ & 97.5\% Holm & unclear & $-0.8$ \\
+Best of both & $-0.0074$ & $[-0.0132, -0.0015]$ & 95\% & below zero & $-2.8$ \\
+RM3 CV (42) & $+0.0127$ & $[+0.0074, +0.0182]$ & 95\% & above zero & $+5.3$ \\
+Bo1 CV (42) & $+0.0057$ & $[-0.0004, +0.0118]$ & 95\% & uncertain & $+2.3$ \\
+RM3 CV (30) & $+0.0142$ & $[+0.0126, +0.0167]$ & range & above zero in every split & $+6.0$ \\
+Bo1 CV (30) & $+0.0036$ & $[-0.0001, +0.0073]$ & range & uncertain & $+1.5$ \\
+\midrule
+\multicolumn{6}{l}{\emph{Under 1M, base DPH}} \\
+RM3 oracle & $+0.0012$ & $[-0.0046, +0.0069]$ & 95\% Holm & unclear & $+0.4$ \\
+Bo1 oracle & $+0.0141$ & $[+0.0070, +0.0217]$ & 98.33\% Holm & better & $+5.4$ \\
+Best of both & $0.0000$ & $[-0.0056, +0.0055]$ & 95\% & uncertain & $0.0$ \\
+RM3 CV (42) & $+0.0065$ & $[+0.0008, +0.0121]$ & 95\% & above zero & $+2.4$ \\
+Bo1 CV (42) & $+0.0209$ & $[+0.0143, +0.0275]$ & 95\% & above zero & $+8.2$ \\
+RM3 CV (30) & $+0.0063$ & $[+0.0047, +0.0082]$ & range & above zero in every split & $+2.3$ \\
+Bo1 CV (30) & $+0.0217$ & $[+0.0182, +0.0246]$ & range & above zero in every split & $+8.5$ \\
+\midrule
+\multicolumn{6}{l}{\emph{Over 1M, base BM25}} \\
+RM3 oracle & $+0.0039$ & $[-0.0012, +0.0091]$ & 97.5\% Holm & non-inferior & $+1.1$ \\
+Bo1 oracle & $+0.0104$ & $[+0.0032, +0.0176]$ & 98.33\% Holm & better & $+2.9$ \\
+Best of both & $+0.0027$ & $[-0.0018, +0.0072]$ & 95\% & uncertain & $+0.8$ \\
+RM3 CV (42) & $+0.0051$ & $[+0.0006, +0.0095]$ & 95\% & above zero & $+1.4$ \\
+Bo1 CV (42) & $+0.0116$ & $[+0.0057, +0.0176]$ & 95\% & above zero & $+3.3$ \\
+RM3 CV (30) & $+0.0051$ & $[+0.0041, +0.0064]$ & range & above zero in every split & $+1.4$ \\
+Bo1 CV (30) & $+0.0138$ & $[+0.0117, +0.0156]$ & range & above zero in every split & $+3.9$ \\
+\midrule
+\multicolumn{6}{l}{\emph{Over 1M, base DPH}} \\
+RM3 oracle & $-0.0027$ & $[-0.0078, +0.0023]$ & 95\% Holm & unclear & $-0.7$ \\
+Bo1 oracle & $+0.0142$ & $[+0.0060, +0.0226]$ & 98.75\% Holm & better & $+3.6$ \\
+Best of both & $-0.0037$ & $[-0.0087, +0.0014]$ & 95\% & uncertain & $-0.9$ \\
+RM3 CV (42) & $+0.0003$ & $[-0.0050, +0.0053]$ & 95\% & uncertain & $+0.1$ \\
+Bo1 CV (42) & $+0.0157$ & $[+0.0093, +0.0221]$ & 95\% & above zero & $+4.0$ \\
+RM3 CV (30) & $-0.0009$ & $[-0.0024, +0.0011]$ & range & uncertain & $-0.2$ \\
+Bo1 CV (30) & $+0.0172$ & $[+0.0142, +0.0233]$ & range & above zero in every split & $+4.4$ \\
+\bottomrule
+\end{tabularx}
+\noindent{\footnotesize{Holm rows keep the declared reading (better, non-inferior with lower bound above $-0.002$, or unclear); 95\% rows and the ranges over the 30 splits read above zero, below zero or uncertain. A positive difference favours \method.}}
+\end{table}
+% END table TB1
+
+% BEGIN table TB2
+\begin{table}[!htbp]
+\caption{Both sides tuned: difference in nDCG@10 between tuned \method (S1 or S2) and tuned RM3, tuned Bo1 or the best-of-both oracle. $\Delta$: absolute difference; Both: best-of-both oracle. Oracle: parameters chosen on the test queries; CV: parameters chosen by cross-validation, with the seed-42 split (95\% interval) and the mean of 30 splits with their smallest and largest value. Capped query sets (at most 500 queries per collection).\label{tab:B-both-tuned}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\fontsize{8}{9.6}\selectfont
+\setlength{\tabcolsep}{1.5pt}
+\begin{tabularx}{\fulllength}{>{\raggedright\arraybackslash}Xcclcccccccc}
+\toprule
+Sidecar / PRF & \multicolumn{5}{c}{Oracle against oracle} & \multicolumn{4}{c}{CV against CV (seed 42)} & \multicolumn{2}{c}{CV, 30 splits} \\
+\cmidrule(lr){2-6}\cmidrule(lr){7-10}\cmidrule(lr){11-12}
+ & $\Delta$ & Interval & Level & Reading & (\%) & $\Delta$ & Interval & Reading & (\%) & Mean & Min, max \\
+\midrule
+\multicolumn{12}{l}{\emph{Under 1M, base BM25}} \\
+S1 / RM3 & $+0.0176$ & $[+0.0098, +0.0257]$ & 99.38\% Holm & better & $+7.3$ & $+0.0132$ & $[+0.0078, +0.0186]$ & above zero & $+5.5$ & $+0.0182$ & $[+0.0157, +0.0209]$ \\
+S1 / Bo1 & $+0.0057$ & $[-0.0012, +0.0126]$ & 97.5\% Holm & non-inferior & $+2.3$ & $+0.0062$ & $[+0.0000, +0.0124]$ & above zero & $+2.5$ & $+0.0076$ & $[+0.0031, +0.0127]$ \\
+S1 / both & $+0.0003$ & $[-0.0056, +0.0061]$ & 95\% & uncertain & $+0.1$ &  &  &  &  &  &  \\
+S2 / RM3 & $+0.0149$ & $[+0.0076, +0.0224]$ & 99.29\% Holm & better & $+6.2$ & $+0.0131$ & $[+0.0077, +0.0186]$ & above zero & $+5.5$ & $+0.0149$ & $[+0.0128, +0.0171]$ \\
+S2 / Bo1 & $+0.0030$ & $[-0.0028, +0.0090]$ & 95\% Holm & unclear & $+1.2$ & $+0.0061$ & $[-0.0001, +0.0123]$ & uncertain & $+2.5$ & $+0.0043$ & $[-0.0004, +0.0089]$ \\
+S2 / both & $-0.0025$ & $[-0.0082, +0.0033]$ & 95\% & uncertain & $-1.0$ &  &  &  &  &  &  \\
+\midrule
+\multicolumn{12}{l}{\emph{Under 1M, base DPH}} \\
+S1 / RM3 & $+0.0081$ & $[+0.0007, +0.0157]$ & 98.75\% Holm & better & $+2.9$ & $+0.0085$ & $[+0.0025, +0.0143]$ & above zero & $+3.1$ & $+0.0092$ & $[+0.0062, +0.0112]$ \\
+S1 / Bo1 & $+0.0210$ & $[+0.0131, +0.0294]$ & 99.17\% Holm & better & $+8.0$ & $+0.0229$ & $[+0.0162, +0.0299]$ & above zero & $+9.0$ & $+0.0246$ & $[+0.0208, +0.0278]$ \\
+S1 / both & $+0.0069$ & $[+0.0014, +0.0125]$ & 95\% & above zero & $+2.5$ &  &  &  &  &  &  \\
+S2 / RM3 & $+0.0070$ & $[-0.0011, +0.0149]$ & 98.33\% Holm & non-inferior & $+2.6$ & $+0.0079$ & $[+0.0018, +0.0140]$ & above zero & $+2.9$ & $+0.0076$ & $[+0.0053, +0.0093]$ \\
+S2 / Bo1 & $+0.0199$ & $[+0.0117, +0.0286]$ & 99\% Holm & better & $+7.6$ & $+0.0223$ & $[+0.0157, +0.0291]$ & above zero & $+8.7$ & $+0.0230$ & $[+0.0194, +0.0263]$ \\
+S2 / both & $+0.0059$ & $[-0.0003, +0.0120]$ & 95\% & uncertain & $+2.1$ &  &  &  &  &  &  \\
+\midrule
+\multicolumn{12}{l}{\emph{Over 1M, base BM25}} \\
+S1 / RM3 & $+0.0086$ & $[+0.0028, +0.0145]$ & 98.75\% Holm & better & $+2.4$ & $+0.0078$ & $[+0.0031, +0.0126]$ & above zero & $+2.2$ & $+0.0080$ & $[+0.0055, +0.0098]$ \\
+S1 / Bo1 & $+0.0151$ & $[+0.0068, +0.0233]$ & 99.38\% Holm & better & $+4.2$ & $+0.0144$ & $[+0.0084, +0.0205]$ & above zero & $+4.1$ & $+0.0167$ & $[+0.0132, +0.0190]$ \\
+S1 / both & $+0.0074$ & $[+0.0027, +0.0120]$ & 95\% & above zero & $+2.0$ &  &  &  &  &  &  \\
+S2 / RM3 & $+0.0070$ & $[+0.0017, +0.0125]$ & 98.33\% Holm & better & $+1.9$ & $+0.0042$ & $[-0.0002, +0.0086]$ & uncertain & $+1.2$ & $+0.0050$ & $[+0.0024, +0.0074]$ \\
+S2 / Bo1 & $+0.0135$ & $[+0.0056, +0.0215]$ & 99.29\% Holm & better & $+3.8$ & $+0.0108$ & $[+0.0049, +0.0168]$ & above zero & $+3.0$ & $+0.0137$ & $[+0.0100, +0.0162]$ \\
+S2 / both & $+0.0058$ & $[+0.0014, +0.0103]$ & 95\% & above zero & $+1.6$ &  &  &  &  &  &  \\
+\midrule
+\multicolumn{12}{l}{\emph{Over 1M, base DPH}} \\
+S1 / RM3 & $+0.0018$ & $[-0.0026, +0.0061]$ & 95\% Holm & unclear & $+0.4$ & $+0.0015$ & $[-0.0029, +0.0059]$ & uncertain & $+0.4$ & $+0.0011$ & $[-0.0014, +0.0045]$ \\
+S1 / Bo1 & $+0.0187$ & $[+0.0106, +0.0271]$ & 99.17\% Holm & better & $+4.7$ & $+0.0169$ & $[+0.0110, +0.0231]$ & above zero & $+4.3$ & $+0.0192$ & $[+0.0148, +0.0250]$ \\
+S1 / both & $+0.0008$ & $[-0.0034, +0.0051]$ & 95\% & uncertain & $+0.2$ &  &  &  &  &  &  \\
+S2 / RM3 & $+0.0035$ & $[-0.0018, +0.0086]$ & 97.5\% Holm & non-inferior & $+0.8$ & $+0.0045$ & $[-0.0000, +0.0089]$ & uncertain & $+1.1$ & $+0.0027$ & $[+0.0001, +0.0050]$ \\
+S2 / Bo1 & $+0.0204$ & $[+0.0123, +0.0287]$ & 99\% Holm & better & $+5.2$ & $+0.0199$ & $[+0.0140, +0.0260]$ & above zero & $+5.1$ & $+0.0208$ & $[+0.0165, +0.0261]$ \\
+S2 / both & $+0.0025$ & $[-0.0018, +0.0069]$ & 95\% & uncertain & $+0.6$ &  &  &  &  &  &  \\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\noindent{\footnotesize{Level: Holm-adjusted over eight contrasts per group, or 95\% for the best-of-both oracle. Holm rows keep the declared reading (better, non-inferior, unclear); the other rows read above zero, below zero or uncertain. A positive difference favours \method. Percentage columns: difference as a percentage of the PRF\textquotesingle s nDCG@10. Bounds printed as $\pm 0.0000$ are read from the unrounded values.}}
+\end{table}
+% END table TB2
+
+% BEGIN table TB3
+\begin{table}[!htbp]
+\caption{Headroom from tuning: gain in nDCG@10 of the oracle and of cross-validated (CV) settings over the default settings, for \method (S1, S2), RM3 and Bo1. Default: nDCG@10 of the default setting; 95\% query-bootstrap intervals for the oracle and the seed-42 split; for the 30 splits, the mean with the smallest and largest value; Rel.: percentage of the default level. Capped query sets (at most 500 queries per collection).\label{tab:B-headroom}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\fontsize{8}{9.6}\selectfont
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\fulllength}{>{\raggedright\arraybackslash}Xcccccccccc}
+\toprule
+Method & Default & \multicolumn{3}{c}{Oracle minus default} & \multicolumn{3}{c}{CV minus default (seed 42)} & \multicolumn{3}{c}{CV minus default, 30 splits} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}\cmidrule(lr){9-11}
+ & nDCG@10 & Difference & Interval & Rel. (\%) & Difference & Interval & Rel. (\%) & Mean & Min, max & Rel. (\%) \\
+\midrule
+\multicolumn{11}{l}{\emph{Under 1M, base BM25}} \\
+\method S1 & 0.251 & $+0.0077$ & $[+0.0050, +0.0105]$ & $+3.0$ & $+0.0005$ & $[-0.0019, +0.0030]$ & $+0.2$ & $+0.0040$ & $[+0.0011, +0.0059]$ & $+1.6$ \\
+\method S2 & 0.251 & $+0.0049$ & $[+0.0031, +0.0069]$ & $+1.9$ & $+0.0004$ & $[-0.0015, +0.0023]$ & $+0.2$ & $+0.0007$ & $[-0.0016, +0.0026]$ & $+0.3$ \\
+RM3 & 0.231 & $+0.0103$ & $[+0.0077, +0.0131]$ & $+4.5$ & $+0.0076$ & $[+0.0051, +0.0103]$ & $+3.3$ & $+0.0061$ & $[+0.0036, +0.0077]$ & $+2.6$ \\
+Bo1 & 0.241 & $+0.0119$ & $[+0.0081, +0.0157]$ & $+4.9$ & $+0.0043$ & $[-0.0008, +0.0092]$ & $+1.8$ & $+0.0064$ & $[+0.0027, +0.0100]$ & $+2.6$ \\
+\midrule
+\multicolumn{11}{l}{\emph{Under 1M, base DPH}} \\
+\method S1 & 0.274 & $+0.0101$ & $[+0.0075, +0.0127]$ & $+3.7$ & $+0.0052$ & $[+0.0026, +0.0078]$ & $+1.9$ & $+0.0061$ & $[+0.0042, +0.0085]$ & $+2.2$ \\
+\method S2 & 0.277 & $+0.0058$ & $[+0.0031, +0.0085]$ & $+2.1$ & $+0.0014$ & $[-0.0012, +0.0040]$ & $+0.5$ & $+0.0014$ & $[-0.0004, +0.0025]$ & $+0.5$ \\
+RM3 & 0.262 & $+0.0137$ & $[+0.0104, +0.0169]$ & $+5.2$ & $+0.0084$ & $[+0.0057, +0.0112]$ & $+3.2$ & $+0.0086$ & $[+0.0067, +0.0102]$ & $+3.3$ \\
+Bo1 & 0.252 & $+0.0102$ & $[+0.0057, +0.0150]$ & $+4.1$ & $+0.0035$ & $[-0.0004, +0.0073]$ & $+1.4$ & $+0.0027$ & $[-0.0003, +0.0061]$ & $+1.1$ \\
+\midrule
+\multicolumn{11}{l}{\emph{Over 1M, base BM25}} \\
+\method S1 & 0.367 & $+0.0041$ & $[+0.0019, +0.0063]$ & $+1.1$ & $+0.0022$ & $[-0.0002, +0.0046]$ & $+0.6$ & $+0.0023$ & $[+0.0001, +0.0034]$ & $+0.6$ \\
+\method S2 & 0.367 & $+0.0031$ & $[+0.0008, +0.0053]$ & $+0.8$ & $-0.0009$ & $[-0.0030, +0.0012]$ & $-0.2$ & $-0.0001$ & $[-0.0029, +0.0019]$ & $0.0$ \\
+RM3 & 0.346 & $+0.0170$ & $[+0.0137, +0.0204]$ & $+4.9$ & $+0.0159$ & $[+0.0126, +0.0191]$ & $+4.6$ & $+0.0158$ & $[+0.0145, +0.0168]$ & $+4.6$ \\
+Bo1 & 0.350 & $+0.0058$ & $[+0.0025, +0.0092]$ & $+1.6$ & $+0.0045$ & $[+0.0014, +0.0077]$ & $+1.3$ & $+0.0024$ & $[+0.0006, +0.0045]$ & $+0.7$ \\
+\midrule
+\multicolumn{11}{l}{\emph{Over 1M, base DPH}} \\
+\method S1 & 0.406 & $+0.0065$ & $[+0.0034, +0.0095]$ & $+1.6$ & $+0.0032$ & $[0.0000, +0.0064]$ & $+0.8$ & $+0.0039$ & $[+0.0019, +0.0056]$ & $+1.0$ \\
+\method S2 & 0.408 & $+0.0062$ & $[+0.0031, +0.0094]$ & $+1.5$ & $+0.0042$ & $[+0.0013, +0.0072]$ & $+1.0$ & $+0.0036$ & $[+0.0013, +0.0053]$ & $+0.9$ \\
+RM3 & 0.397 & $+0.0137$ & $[+0.0104, +0.0169]$ & $+3.4$ & $+0.0107$ & $[+0.0075, +0.0139]$ & $+2.7$ & $+0.0118$ & $[+0.0099, +0.0133]$ & $+3.0$ \\
+Bo1 & 0.386 & $+0.0085$ & $[+0.0040, +0.0129]$ & $+2.2$ & $+0.0070$ & $[+0.0030, +0.0109]$ & $+1.8$ & $+0.0054$ & $[-0.0006, +0.0085]$ & $+1.4$ \\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
+% END table TB3
+
+% BEGIN table TB4
+\begin{table}[!htbp]
+\caption{Risk of tuned arms against our base retriever, in nDCG@10, on capped query sets (at most 500 queries per collection). Setting: default parameters, oracle (chosen on the test queries) or cross-validated (CV, seed-42 split). Below, above: collections more than 0.005 below or above the base. Worst: the collection with the lowest gain, with its change as a percentage of that collection\textquotesingle s base level. Mean gain: macro mean, with its percentage of the group\textquotesingle s base level (Rel.).\label{tab:B-tuned-risk}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\fontsize{8}{9.6}\selectfont
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\fulllength}{>{\raggedright\arraybackslash}Xlcclrrrr}
+\toprule
+Method & Setting & $<-0.005$ & $>+0.005$ & Worst collection & Worst gain & Rel. (\%) & Mean gain & Rel. (\%) \\
+\midrule
+\multicolumn{9}{l}{\emph{Under 1M, base BM25: 20 collections, macro nDCG@10 0.242}} \\
+\method S1 & default & 1 & 12 & Quora & $-0.0122$ & $-1.6$ & $+0.0091$ & $+3.8$ \\
+\method S1 & oracle & 0 & 15 & Quora & $-0.0003$ & $0.0$ & $+0.0168$ & $+6.9$ \\
+\method S1 & CV (seed 42) & 2 & 11 & TREC-COVID & $-0.0235$ & $-3.7$ & $+0.0097$ & $+4.0$ \\
+\method S2 & default & 1 & 13 & Quora & $-0.0091$ & $-1.2$ & $+0.0091$ & $+3.8$ \\
+\method S2 & oracle & 0 & 14 & Stack Overflow & $-0.0010$ & $-0.6$ & $+0.0140$ & $+5.8$ \\
+\method S2 & CV (seed 42) & 1 & 12 & Biology & $-0.0072$ & $-10.7$ & $+0.0096$ & $+4.0$ \\
+RM3 & default & 16 & 3 & Economics & $-0.0451$ & $-31.0$ & $-0.0112$ & $-4.6$ \\
+RM3 & oracle & 11 & 5 & Economics & $-0.0306$ & $-21.0$ & $-0.0008$ & $-0.3$ \\
+RM3 & CV (seed 42) & 11 & 5 & Economics & $-0.0345$ & $-23.7$ & $-0.0035$ & $-1.5$ \\
+Bo1 & default & 7 & 11 & ArguAna & $-0.0707$ & $-14.5$ & $-0.0009$ & $-0.4$ \\
+Bo1 & oracle & 6 & 11 & ArguAna & $-0.0417$ & $-8.5$ & $+0.0110$ & $+4.6$ \\
+Bo1 & CV (seed 42) & 11 & 7 & SciFact & $-0.0472$ & $-6.8$ & $+0.0035$ & $+1.4$ \\
+RM3/Bo1 best of both & oracle & 5 & 12 & ArguAna & $-0.0171$ & $-3.5$ & $+0.0165$ & $+6.8$ \\
+\midrule
+\multicolumn{9}{l}{\emph{Under 1M, base DPH: 20 collections, macro nDCG@10 0.265}} \\
+\method S1 & default & 1 & 13 & Quora & $-0.0233$ & $-5.4$ & $+0.0082$ & $+3.1$ \\
+\method S1 & oracle & 0 & 15 & TheoremQA-Theorems & $0.0000$ & --$^{a}$ & $+0.0183$ & $+6.9$ \\
+\method S1 & CV (seed 42) & 1 & 11 & TREC-COVID & $-0.0077$ & $-1.2$ & $+0.0134$ & $+5.1$ \\
+\method S2 & default & 1 & 14 & Quora & $-0.0159$ & $-3.7$ & $+0.0114$ & $+4.3$ \\
+\method S2 & oracle & 0 & 15 & TheoremQA-Theorems & $0.0000$ & --$^{a}$ & $+0.0172$ & $+6.5$ \\
+\method S2 & CV (seed 42) & 0 & 11 & Touché-2020 & $-0.0024$ & $-0.6$ & $+0.0128$ & $+4.8$ \\
+RM3 & default & 11 & 6 & Quora & $-0.0475$ & $-11.0$ & $-0.0035$ & $-1.3$ \\
+RM3 & oracle & 3 & 12 & Quora & $-0.0264$ & $-6.1$ & $+0.0102$ & $+3.8$ \\
+RM3 & CV (seed 42) & 8 & 8 & Quora & $-0.0264$ & $-6.1$ & $+0.0049$ & $+1.9$ \\
+Bo1 & default & 11 & 4 & Quora & $-0.0812$ & $-18.7$ & $-0.0129$ & $-4.9$ \\
+Bo1 & oracle & 10 & 8 & Quora & $-0.0666$ & $-15.4$ & $-0.0027$ & $-1.0$ \\
+Bo1 & CV (seed 42) & 13 & 5 & Quora & $-0.0668$ & $-15.4$ & $-0.0095$ & $-3.6$ \\
+RM3/Bo1 best of both & oracle & 3 & 12 & Quora & $-0.0264$ & $-6.1$ & $+0.0114$ & $+4.3$ \\
+\midrule
+\multicolumn{9}{l}{\emph{Over 1M, base BM25: 5 collections, macro nDCG@10 0.362}} \\
+\method S1 & default & 0 & 3 & DBPedia-Entity & $-0.0026$ & $-0.8$ & $+0.0050$ & $+1.4$ \\
+\method S1 & oracle & 0 & 3 & DBPedia-Entity & $+0.0028$ & $+0.9$ & $+0.0090$ & $+2.5$ \\
+\method S1 & CV (seed 42) & 0 & 3 & HotpotQA & $-0.0005$ & $-0.1$ & $+0.0071$ & $+2.0$ \\
+\method S2 & default & 0 & 2 & HotpotQA & $+0.0005$ & $+0.1$ & $+0.0044$ & $+1.2$ \\
+\method S2 & oracle & 0 & 3 & DBPedia-Entity & $+0.0042$ & $+1.3$ & $+0.0075$ & $+2.1$ \\
+\method S2 & CV (seed 42) & 0 & 2 & DBPedia-Entity & $-0.0003$ & $-0.1$ & $+0.0035$ & $+1.0$ \\
+RM3 & default & 3 & 1 & HotpotQA & $-0.0608$ & $-10.4$ & $-0.0165$ & $-4.6$ \\
+RM3 & oracle & 2 & 2 & HotpotQA & $-0.0287$ & $-4.9$ & $+0.0004$ & $+0.1$ \\
+RM3 & CV (seed 42) & 2 & 2 & HotpotQA & $-0.0304$ & $-5.2$ & $-0.0007$ & $-0.2$ \\
+Bo1 & default & 2 & 1 & HotpotQA & $-0.0498$ & $-8.5$ & $-0.0118$ & $-3.3$ \\
+Bo1 & oracle & 2 & 2 & HotpotQA & $-0.0436$ & $-7.4$ & $-0.0060$ & $-1.7$ \\
+Bo1 & CV (seed 42) & 2 & 2 & HotpotQA & $-0.0457$ & $-7.8$ & $-0.0072$ & $-2.0$ \\
+RM3/Bo1 best of both & oracle & 2 & 2 & HotpotQA & $-0.0287$ & $-4.9$ & $+0.0017$ & $+0.5$ \\
+\midrule
+\multicolumn{9}{l}{\emph{Over 1M, base DPH: 5 collections, macro nDCG@10 0.408}} \\
+\method S1 & default & 2 & 2 & DBPedia-Entity & $-0.0141$ & $-4.5$ & $-0.0020$ & $-0.5$ \\
+\method S1 & oracle & 0 & 2 & DBPedia-Entity & $-0.0011$ & $-0.4$ & $+0.0045$ & $+1.1$ \\
+\method S1 & CV (seed 42) & 0 & 1 & NQ & $-0.0025$ & $-0.9$ & $+0.0012$ & $+0.3$ \\
+\method S2 & default & 3 & 1 & NQ & $-0.0080$ & $-2.7$ & $-0.0001$ & $0.0$ \\
+\method S2 & oracle & 0 & 2 & HotpotQA & $+0.0002$ & $0.0$ & $+0.0061$ & $+1.5$ \\
+\method S2 & CV (seed 42) & 0 & 1 & DBPedia-Entity & $0.0000$ & $0.0$ & $+0.0042$ & $+1.0$ \\
+RM3 & default & 2 & 1 & HotpotQA & $-0.0562$ & $-9.1$ & $-0.0110$ & $-2.7$ \\
+RM3 & oracle & 1 & 2 & HotpotQA & $-0.0236$ & $-3.8$ & $+0.0027$ & $+0.7$ \\
+RM3 & CV (seed 42) & 1 & 2 & HotpotQA & $-0.0258$ & $-4.2$ & $-0.0003$ & $-0.1$ \\
+Bo1 & default & 4 & 1 & HotpotQA & $-0.0625$ & $-10.1$ & $-0.0227$ & $-5.6$ \\
+Bo1 & oracle & 3 & 1 & HotpotQA & $-0.0499$ & $-8.1$ & $-0.0142$ & $-3.5$ \\
+Bo1 & CV (seed 42) & 3 & 1 & HotpotQA & $-0.0499$ & $-8.1$ & $-0.0157$ & $-3.9$ \\
+RM3/Bo1 best of both & oracle & 1 & 2 & HotpotQA & $-0.0236$ & $-3.8$ & $+0.0036$ & $+0.9$ \\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\noindent{\footnotesize{$^{a}$ Undefined: the base nDCG@10 of this collection is zero.}}
+\end{table}
+% END table TB4
+
+
+\FloatBarrier
+\section{Cost of the Research Implementation}\label{app:cost}
+
+Table~\ref{tab:C-build} gives the offline build cost per collection and Table~\ref{tab:C-latency} the query latency on the experiment machine. Our latency is that of a research implementation (Python, through PyTerrier) set against Terrier's native PRF implementations. Most of the overhead of \method over BM25 is implementation cost, in the per-call PyTerrier overhead of the lexical profile channel of Gate~1 and in the Python-side query encoding, rather than cost inherent to the method: the retrieval with the five added terms itself costs about 5 to 17~ms more than BM25 when the query is encoded on the CPU. Native implementations of Gate~1 and Gate~2 are expected to narrow the gap to PRF. LLM-Q2E takes 604 to 757~ms per query; the timed generations are fresh and differ from the cached generations of the effectiveness runs on 44\% of the timed queries. On the five large collections the build figures are lower bounds, since the co-occurrence lists were computed only for the anchors of the evaluated queries.
+
+% BEGIN table TC1
+\begin{table}[!htbp]
+\caption{Offline build cost of \method per collection: build time, peak memory and extra disk. The figures use randomly drawn chunks (seed 42), not S2-selected chunks. Build: total time in minutes, of which encoding in seconds; Peak RSS: peak resident set size (RSS), the resident memory of the build; Extra disk: size of the \method files, also as a percentage of the Terrier index; Chunks: stored chunks.\label{tab:C-build}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\fulllength}{>{\raggedright\arraybackslash}Xrrrrrrrr}
+\toprule
+Collection & Documents & Build (min) & Encoding (s) & Peak RSS (GiB) & Extra disk (MB) & Index (MB) & Disk / index (\%) & Chunks \\
+\midrule
+\multicolumn{9}{l}{\emph{Under one million documents}} \\
+SciFact & 5,183 & 0.8 & 7.2 & 2.378 & 61.1 & 25.5 & 239.4 & 18,942 \\
+NFCorpus & 3,633 & 0.5 & 5.4 & 2.980 & 44.4 & 18.6 & 238.9 & 13,755 \\
+TREC-COVID & 171,331 & 11.6 & 49.2 & 5.186 & 312.4 & 287.0 & 108.9 & 154,343 \\
+FiQA & 57,600 & 3.5 & 26.0 & 5.041 & 159.2 & 84.0 & 189.7 & 82,847 \\
+Quora & 522,931 & 3.0 & 29.8 & 4.594 & 153.4 & 212.6 & 72.1 & 158,730 \\
+ArguAna & 8,674 & 0.8 & 8.1 & 2.482 & 64.2 & 25.6 & 250.9 & 20,130 \\
+SCIDOCS & 25,657 & 2.5 & 20.6 & 3.520 & 137.8 & 69.0 & 199.7 & 58,443 \\
+Touché-2020 & 382,545 & 35.9 & 57.1 & 7.628 & 405.2 & 685.1 & 59.2 & 183,630 \\
+AoPS & 188,002 & 8.8 & 39.6 & 4.778 & 173.2 & 165.7 & 104.5 & 125,773 \\
+Economics & 50,220 & 1.9 & 16.6 & 5.298 & 114.2 & 168.8 & 67.7 & 54,709 \\
+LeetCode & 413,932 & 19.2 & 57.2 & 5.888 & 313.6 & 577.6 & 54.3 & 180,836 \\
+Stack Overflow & 107,081 & 9.3 & 27.4 & 5.248 & 154.3 & 285.1 & 54.1 & 87,527 \\
+Sustainable Living & 60,792 & 2.0 & 18.3 & 5.311 & 118.2 & 193.5 & 61.1 & 60,160 \\
+Biology & 57,359 & 1.7 & 16.1 & 6.206 & 113.5 & 149.1 & 76.1 & 53,026 \\
+Earth Science & 121,249 & 3.7 & 31.4 & 6.730 & 182.0 & 330.7 & 55.0 & 100,419 \\
+Psychology & 52,835 & 2.1 & 18.0 & 6.683 & 126.5 & 191.0 & 66.2 & 59,872 \\
+Robotics & 61,961 & 1.6 & 16.2 & 6.650 & 88.9 & 74.3 & 119.7 & 54,080 \\
+Pony & 7,894 & 0.2 & 3.6 & 6.504 & 12.1 & 8.3 & 145.6 & 7,693 \\
+TheoremQA-Questions & 188,002 & 8.8 & 40.1 & 6.617 & 173.2 & 165.7 & 104.5 & 125,773 \\
+TheoremQA-Theorems & 23,839 & 1.3 & 12.0 & 6.593 & 43.1 & 23.8 & 181.0 & 33,293 \\
+\midrule
+\multicolumn{9}{l}{\emph{Over one million documents (lower bounds$^{\dagger}$)}} \\
+NQ & 2,681,468 & 62.4$^{\dagger}$ & 59.8 & 2.476$^{\dagger}$ & 324.7 & 2304.9 & 14.1 & 193,789 \\
+DBPedia-Entity & 4,635,922 & 72.6$^{\dagger}$ & 59.7 & 2.453$^{\dagger}$ & 302.5 & 4041.0 & 7.5 & 194,873 \\
+HotpotQA & 5,233,329 & 78.3$^{\dagger}$ & 60.6 & 2.430$^{\dagger}$ & 335.3 & 4178.7 & 8.0 & 195,537 \\
+FEVER & 5,416,568 & 132.9$^{\dagger}$ & 61.9 & 2.657$^{\dagger}$ & 355.5 & 5555.7 & 6.4 & 197,098 \\
+Climate-FEVER & 5,416,593 & 133.6$^{\dagger}$ & 62.2 & 2.515$^{\dagger}$ & 349.3 & 5555.7 & 6.3 & 197,099 \\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\noindent{\footnotesize{$^{\dagger}$ Lower bounds: the co-occurrence lists are restricted to the anchors of the tested queries, and the peak memory excludes the PPMI step, which was not measured, because the full co-occurrence lists do not fit the RAM budget with the current code.}}
+\end{table}
+% END table TC1
+
+% BEGIN table TC2
+\begin{table}[!htbp]
+\caption{Query latency of BM25, its expansion variants and \method on five collections (milliseconds per query, one query at a time; p90 denotes the 90th percentile). Implementation caveats: Section~\ref{app:cost}. \method is timed with randomly drawn chunks (seed 42); Gate 2 scores at most $L \cdot n$ stored vectors whichever score chose them, and the S2 sidecar was not timed. Number of queries timed in brackets after each collection.\label{tab:C-latency}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\small
+\begin{tabularx}{\fulllength}{>{\raggedright\arraybackslash}Xccccc}
+\toprule
+Median (p90), ms & FiQA (100) & Quora (100) & Biology (53) & NQ (100) & HotpotQA (100) \\
+\midrule
+\multicolumn{6}{l}{\emph{Total time per query, with BM25 as base}} \\
+BM25 & 24.2 (26.2) & 13.7 (16.1) & 16.8 (19.1) & 28.2 (38.4) & 46.5 (81.5) \\
+RM3 & 33.5 (35.5) & 22.3 (26.3) & 27.3 (31.5) & 63.7 (88.1) & 105.3 (185.1) \\
+Bo1 & 32.3 (34.2) & 22.3 (26.2) & 26.5 (36.0) & 55.3 (78.9) & 94.7 (177.9) \\
+BGE-QE$^{a}$ & 33.2 (35.9) & 21.1 (24.5) & 27.7 (33.4) & 48.7 (66.5) & 81.7 (126.2) \\
+LLM-Q2E$^{b}$ & 603.5 (749.7) & 681.7 (835.2) & 757.0 (924.5) & 660.3 (840.4) & 666.1 (821.7) \\
+\method, encoding on CPU & 78.3 (85.3) & 79.1 (86.9) & 92.3 (105.2) & 79.0 (98.8) & 101.1 (140.4) \\
+\method, encoding on GPU$^{c}$ & 66.2 (73.2) & 52.4 (62.4) & 67.4 (76.5) & 73.8 (90.9) & 108.3 (230.1) \\
+\midrule
+\multicolumn{6}{l}{\emph{Stages of \method (median, ms)}} \\
+Gate 1, CPU & 21.6 & 20.1 & 29.5 & 20.7 & 19.2 \\
+Query encoding, CPU & 19.8 & 33.1 & 33.2 & 12.8 & 10.3 \\
+Gate 2, CPU & 5.0 & 6.2 & 4.9 & 5.2 & 5.3 \\
+Retrieval, CPU & 30.5 & 18.8 & 21.5 & 39.4 & 63.3 \\
+Gate 1, GPU$^{c}$ & 21.7 & 19.9 & 28.0 & 20.9 & 19.1 \\
+Query encoding, GPU$^{c}$ & 7.6 & 7.0 & 8.8 & 7.4 & 8.1 \\
+Gate 2, GPU$^{c}$ & 5.0 & 5.5 & 5.0 & 5.5 & 5.1 \\
+Retrieval, GPU$^{c}$ & 30.6 & 18.1 & 21.6 & 39.6 & 71.1 \\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\noindent{\footnotesize{$^{a}$ BGE-QE encodes the query on the GPU, as in its pipeline, and the encoding is included. $^{b}$ qwen3.5:4b through Ollama, a fresh generation for every timed query; the model is reloaded every 20 queries. $^{c}$ From a separate timing session, not the session of the other rows; the CPU configuration measured in that session gives 78 to 103 ms; on HotpotQA the GPU row (108.3 ms) is slower than the CPU row (101.1 ms) because of variation in retrieval. The top five terms are the same as with the CPU configuration for every query.}}
+\end{table}
+% END table TC2
+
+\FloatBarrier
+
+\end{document}

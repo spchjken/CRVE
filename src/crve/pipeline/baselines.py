@@ -6,7 +6,7 @@
   run_qe               BGE-QE and LLM-Q2E over BM25 and DPH with termpipelines=NoOp; LLM calls are blocked, so a query
                        missing from the keyword cache stops the run
   per_query_from_runs  per-query metrics of the saved runs on the evaluated queries (results/queries/<c>.txt)
-  grid_runs            RM3 and Bo1 on the tuning grid of Appendix B (at most 500 queries per collection, query_subset)
+  grid_runs            RM3 and Bo1 on the tuning grid of Supplementary Section S1 (at most 500 queries per collection, query_subset)
   tuned_arms           per collection: default, oracle (best grid point), two-fold cross-validated choice and the
                        best-of-both oracle of RM3 / Bo1
 """
@@ -126,7 +126,7 @@ def per_query_from_runs(ds, q_ids, run_file):
 
 
 # ---------------------------------------------------------------------------------------------
-# tuned RM3 / Bo1 (Appendix B: oracle and two-fold cross-validated choice on at most 500 queries)
+# tuned RM3 / Bo1 (Supplementary Section S1: oracle and two-fold cross-validated choice on at most 500 queries)
 # ---------------------------------------------------------------------------------------------
 
 def cfg_name(c):

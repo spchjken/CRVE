@@ -69,6 +69,6 @@ instead of the Terrier indexes and raw corpora, and checks the document counts a
 constants). Reference constants of the cross-checks are numbers printed in the paper; each check names the table or
 section.
 
-**Outputs.** Every number printed in Tables 3 to 6 and A1 to A11 is in the outputs (checked cell by cell for Tables 3, 4, 5,
+**Outputs.** Every number printed in Tables 3 to 6, A1 to A5 and S1 to S6 is in the outputs (checked cell by cell for Tables 3, 4, 5,
 6, A3 and A4, and as a multiset of the printed numbers for the other tables), and the three figure PDFs (Figures 2, 3 and 4)
 are byte-identical to the figures of the paper's build.

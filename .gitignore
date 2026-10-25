@@ -6,3 +6,10 @@ __pycache__/
 results/runs/
 .pytest_cache/
 data/archives/
+
+# LaTeX build files of the supplementary
+supplementary/*.aux
+supplementary/*.fdb_latexmk
+supplementary/*.fls
+supplementary/*.log
+supplementary/*.out

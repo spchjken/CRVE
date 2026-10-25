@@ -10,7 +10,7 @@ Each step runs in its own Python process, in this order (later steps read the ou
   f1_split.py               Figures 2 and 3 (F1_under1M, F1_over1M) from F1_data.csv
   s52_53.py                 Tables 4, 6, A4, A5 (T5, T7, T8, T6), T5b, F2_data, F3_data, pool_and_weighting.md, checks_s52_53.csv
   f_sens.py                 Figure 4 (F_sens) from F2_data.csv, F3_data.csv, T8.csv
-  appendix.py               Tables A1, A2, A6-A11 (TA1, TA2, TB1-TB4, TC1, TC2), FB1_data
+  appendix.py               Tables A1, A2, S1-S6 (TA1, TA2, TB1-TB4, TC1, TC2), FB1_data
   gate2_twochannel.py       Table 5 (T6b)
 Every script cross-checks its numbers and stops with a non-zero exit status on a mismatch.
 """

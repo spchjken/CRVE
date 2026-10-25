@@ -3,7 +3,7 @@
 Code, stored results and prebuilt assets for the paper
 
 > **CRVE: Low-Risk, LLM-Free Query Expansion for Lexical Retrieval from Stored Corpus Contexts**
-> Dong Hoang Van, Md Monjurul Karim, Qiang Qu
+> Dong Hoang Van, Jialu Shen, Md Monjurul Karim, Qiang Qu
 
 Query expansion can improve lexical retrieval, but selecting terms that actually help a query remains difficult.
 Context-Ranked Vocabulary Expansion (CRVE) uses a small set of passages stored from the target collection as evidence
@@ -14,6 +14,16 @@ profile channels, Gate 2 ranks them by the similarity between the query and thei
 added to the query at a small fixed weight for a single BM25 or DPH retrieval. No first-pass retrieval and no text
 generation are needed. The paper evaluates CRVE over BM25 and DPH on 25 collections from BEIR and BRIGHT.
 
+## Supplementary Materials
+
+The Supplementary Materials of the paper are in [`supplementary/CRVE_supplementary.pdf`](supplementary/CRVE_supplementary.pdf)
+(LaTeX source: `supplementary/CRVE_supplementary.tex`):
+
+- Section S1, tuning on both sides: RM3, Bo1 and CRVE tuned per collection (Tables S1 to S4).
+- Section S2, cost of the research implementation: offline build cost and query latency (Tables S5 and S6).
+
+`paper/README.md` maps each of these tables to the script and output file that regenerate it.
+
 ## Citation
 
 To be updated on publication.
@@ -21,7 +31,7 @@ To be updated on publication.
 ```bibtex
 @article{crve2026,
   title   = {{CRVE}: Low-Risk, {LLM}-Free Query Expansion for Lexical Retrieval from Stored Corpus Contexts},
-  author  = {Hoang Van, Dong and Karim, Md Monjurul and Qu, Qiang},
+  author  = {Hoang Van, Dong and Shen, Jialu and Karim, Md Monjurul and Qu, Qiang},
   journal = {to be updated on publication},
   year    = {2026}
 }
@@ -108,7 +118,7 @@ done
 
 Baselines (BM25 and DPH at Terrier's defaults; RM3 and Bo1 as implemented in Terrier, with 10 feedback documents, 10
 terms and RM3 λ = 0.5, set explicitly; BGE-QE; LLM-Q2E replayed from the stored keyword cache; tuned RM3
-and Bo1 of Appendix B):
+and Bo1 of Supplementary Section S1):
 
 ```bash
 python scripts/run_baselines.py prf --corpus $c
@@ -156,7 +166,7 @@ consumer GPU; the index, CRVE and baseline times were measured for this release)
 | Raw data (`download_data.py`) | corpora up to 0.7 GB | corpora of 1.5 to 3.3 GB |
 | Terrier index on disk | up to 0.7 GB | 2.4 to 5.8 GB |
 | Index (`build_index.py`) | ArguAna 8 s, Biology 8 s | not timed for this release |
-| Pool + PPMI + profiles + sidecar (if built) | 14 s to 36 min in all (Table A10) | 62 to 134 min, a lower bound (Table A10) |
+| Pool + PPMI + profiles + sidecar (if built) | 14 s to 36 min in all (Table S5) | 62 to 134 min, a lower bound (Table S5) |
 | Assets download (`fetch_assets.py`) | 3.8 GB once, for all collections | (same) |
 | CRVE run (`run_crve.py`) | ArguAna (1,310 queries) 3.6 min, Biology (53 queries) 20 s | longer (more queries and documents) |
 | Baselines (`prf`, `run_qe_baselines.py`, `metrics`) | ArguAna 15 min (BM25, DPH, RM3, Bo1 runs 9.3 min; BGE-QE and LLM-Q2E 5.6 min) | longer |
@@ -182,6 +192,7 @@ Table 2 of the paper, and where the settings live in the code:
 | Folder | Content |
 |---|---|
 | `paper/` | Scripts that regenerate the paper's tables and figures from `results/`; expected outputs (`paper/README.md`, `paper/PROVENANCE.md`) |
+| `supplementary/` | Supplementary Materials of the paper (PDF and LaTeX source) |
 | `results/` | Stored result files of the paper; `results/queries/<c>.txt`: the evaluated queries |
 | `src/` | The pipeline: `crve/` (Gate 1, Gate 2, context sidecar, retrieval), `evaluation/` (data loading, pool rules, Terrier baselines) |
 | `scripts/` | Command-line steps: data, indexes, assets (build or fetch), CRVE runs, baselines, Table 1 and Figure 1 |
